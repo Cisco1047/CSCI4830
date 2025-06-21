@@ -29,3 +29,9 @@ Thumbs.db          # Windows
 # Logs and other temporary files #
 *.log
 *.bak
+
+# .gitignore
+.env
+db.sqlite3
+__pycache__/
+*.pyc

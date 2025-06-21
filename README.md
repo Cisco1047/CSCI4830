@@ -1,1 +1,2 @@
-# CSCI4830
+RELEASE NOTES - 0.0
+Coding in progress...
