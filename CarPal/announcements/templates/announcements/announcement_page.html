@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    {{ announcement.title }}
+{% endblock title %}
+
+{% block content %}
+    <section>
+        <img 
+            class="banner"
+            src="{{ announcement.banner.url }}" 
+            alt="{{ announcement.title }}"
+        />
+    <h1>{{ announcement.title }}</h1>
+            <h2>{{ announcement.date }}</h2>
+            <p>{{ announcement.body }}</p>
+    </section>
+{% endblock content %}
