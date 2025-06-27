@@ -10,7 +10,24 @@ We plan to implement the platform using a Django frontend with a Python backend 
 
 Challenges include limited access to manufacturer repair data, development costs, and the overwhelming variety of vehicle types. Since many automakers restrict repair information, we may need to build our own database from scratch and initially focus on a select group of U.S. vehicles.
 
-### note summary from chatgpt taken from project proposal will rewrite later in my own words - Cisco
+---
+## Technology
+
+- Python 3
+- HTML
+- Django
+- Pillow
+
+---
+
+## How to use
+
+- Install Django and Pillow.
+- Host code on local machine.
+- Generate secret key for settings.py
+- In the terminal change directory to where the source code is saved ex. (C:\Users\Cisco\OneDrive\Documents\GitHub\CSCI4830\Carpal) please take note       that you must be inside the Carpal folder.
+- Now if on windows type this command "py manage.py runserver"
+- Now you can click on the generated link from the host server or you can go to "http://localhost:8000/" in your web browser. 
 
 ---
 
@@ -29,14 +46,22 @@ Challenges include limited access to manufacturer repair data, development costs
 
 ## Frontend:
 
-
-
+- Home page
+- Login page
+- Repair search page
+- Results page
 
 ---
 
 ## Backend: 
 
 - vehicle.py stores the vehicle information the users selects. 
-- vinDecode.py decodes a VIN if the user enters the vin as a vehicle selection. 
+- vinDecode.py decodes a VIN if the user enters the vin as a vehicle selection.
+
+---
+
+## Release Notes
+
+This is release 0.0. It is a rough prototype of features we plan on implementing. It has a home landing page, login page and search. By the next release we plan on have these feature further refined. 
 
 
