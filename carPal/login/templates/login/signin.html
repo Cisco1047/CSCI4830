@@ -6,10 +6,9 @@
 {% endblock %}
 
 {% block content %}
-<a href="search.html">
-    <div class="guest-link-container"> <a href="search.html" class="guest-link">Continue as Guest</a>
-    </div>
-    </a>
+<div class="guest-link-container">
+    <p><a href="{% url 'search' %}" class="guest-link">Continue as Guest</a></p>
+</div>
 
     <h1>CarPal</h1>
 
