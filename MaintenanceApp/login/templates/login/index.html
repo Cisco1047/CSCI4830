@@ -1,0 +1,73 @@
+{% extends 'layout.html' %}
+{% load static %}
+
+{% block content %}
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>vehicleSelection</title>
+    <link rel="stylesheet" href="{% static 'assets/bootstrap/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=ABeeZee&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Adamina&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Serif+Georgian&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair+Display&amp;display=swap">
+    <link rel="stylesheet" href="{% static 'assets/css/bss-overrides.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/main-style.css' %}">
+</head>
+
+<body style="border-color: var(--bs-info);--bs-body-bg: #2b7a69;">
+    <div class="container" style="--bs-body-bg: #e9ebe7;">
+        <nav class="navbar navbar-expand-md bg-white text-end" style="background: #00b760;border-radius: 61px;border-style: none;">
+            <div class="container-fluid"><a class="navbar-brand ms-5" href="#" style="background: var(--bs-light);font-family: 'Playfair Display', serif;font-weight: bold;"><strong>CarPal</strong></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse text-end" id="navcol-1" style="background: #ffffff;--bs-body-bg: #ffffff;">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#"><span style="color: rgba(0, 0, 0, 0.8);">Sign In</span></a></li>
+                        <li class="nav-item"><a class="nav-link" href="#"><span style="color: rgba(0, 0, 0, 0.8);">About</span></a></li>
+                        <li class="nav-item"></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="container mt-8">
+        <div class="row" style="text-align: center;padding-bottom: 20px;">
+            <div class="col">
+                <div class="dropdown ps-0" style="width: 416px;text-align: center;"><button class="btn btn-primary dropdown-toggle ms-0 ps-0 me-0" aria-expanded="false" data-bs-toggle="dropdown" id="yearButton" type="button" style="border-radius: 64px;background: #ffffff;color: rgb(0,0,0);--bs-body-bg: #7da098;font-family: 'Playfair Display', serif;font-weight: bold;text-align: center;width: 240px;">Year&nbsp;</button>
+                    <div class="dropdown-menu text-nowrap mt-0 pt-2" style="background: rgb(255,255,255);text-align: center;border-radius: 50px;border-width: 0px;width: 160px;font-family: 'Playfair Display', serif;font-size: 21px;"><a class="dropdown-item" id="year2000" href="#">2000</a><a class="dropdown-item" id="year2001" href="#">2001</a><a class="dropdown-item" id="year2002" href="#">2002</a><a class="dropdown-item" id="year2003" href="#">2003</a><a class="dropdown-item" id="year2004" href="#">2004</a><a class="dropdown-item" id="year2005" href="#">2005</a><a class="dropdown-item" id="year2006" href="#">2006</a><a class="dropdown-item" id="year2007" href="#">2007</a><a class="dropdown-item" id="year2008" href="#">2008</a><a class="dropdown-item" id="year2009" href="#">2009</a><a class="dropdown-item" id="year2010" href="#">2010</a><a class="dropdown-item" id="year2011" href="#">2011</a><a class="dropdown-item" id="year2012" href="#">2012</a><a class="dropdown-item" id="year2013" href="#">2013</a><a class="dropdown-item" id="year2014" href="#">2014</a><a class="dropdown-item" id="year2015" href="#">2015</a><a class="dropdown-item" id="year2016" href="#">2016</a><a class="dropdown-item" id="year2017" href="#">2017</a><a class="dropdown-item" id="year2018" href="#">2018</a><a class="dropdown-item" id="year2019" href="#">2019</a><a class="dropdown-item" id="year2020" href="#">2020</a><a class="dropdown-item" id="year2021" href="#">2021</a><a class="dropdown-item" id="year2022" href="#">2022</a><a class="dropdown-item" id="year2023" href="#">2023</a><a class="dropdown-item" id="year2024" href="#">2024</a><a class="dropdown-item" id="year2025" href="#">2025</a><a class="dropdown-item" id="year2026" href="#">2026</a></div>
+                </div>
+            </div>
+            <div class="col" style="text-align: center;">
+                <div class="dropdown ps-0" style="width: 416px;"><button class="btn btn-primary dropdown-toggle ms-0 ps-1 me-2 pe-0 pt-2 mb-1 pb-1" aria-expanded="false" data-bs-toggle="dropdown" id="makeButton" type="button" style="background: #ffffff;color: rgb(0,0,0);border-radius: 64px;font-family: 'Playfair Display', serif;font-weight: bold;text-align: center;width: 240px;">Make&nbsp;</button>
+                    <div class="dropdown-menu" style="border-radius: 50px;background: rgb(255,255,255);color: var(--bs-btn-border-color);font-family: 'Playfair Display', serif;font-size: 21px;"><a class="dropdown-item" id="hondaCar" href="#" onclick="updateDropdown(this)" style="text-align: center;">Honda</a><a class="dropdown-item" id="lexusCar" href="#" style="text-align: center;" onclick="updateDropdown(this)">Lexus</a><a class="dropdown-item" id="nissanCar" href="#" style="text-align: center;" onclick="updateDropdown(this)">Nissan</a><a class="dropdown-item" id="volkswagenCar" href="#" style="text-align: center;" onclick="updateDropdown(this)">Volkswagen</a></div>
+                </div>
+            </div>
+            <div class="col" style="text-align: center;">
+                <div class="dropdown ms-0 me-0" style="border-style: none;margin: 0px;text-align: center;"><button class="btn btn-primary dropdown-toggle ms-0 ps-0 pt-2" aria-expanded="false" data-bs-toggle="dropdown" id="modelButton" type="button" style="background: #ffffff;color: rgb(0,0,0);border-radius: 64px;font-family: 'Playfair Display', serif;font-weight: bold;text-align: center;width: 240px;">Model</button>
+                    <div class="dropdown-menu dropdown-menu-end" id="modelDropdown" style="background: rgb(255,255,255);border-radius: 50px;font-family: 'Playfair Display', serif;font-size: 21px;margin-left: 0px;padding-right: 0px;padding-left: 0px;"><a class="dropdown-item" id="accordModel" href="#" style="text-align: center;">Accord</a><a class="dropdown-item" id="gx470Model" href="#" style="text-align: center;"><span style="color: var(--bs-dropdown-link-hover-color); background-color: var(--bs-dropdown-link-hover-bg);">GX470</span></a><a class="dropdown-item" id="sentraModel" href="#" style="text-align: center;">Sentra</a><a class="dropdown-item" id="jettaModel" href="#" style="text-align: center;">Jetta</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row" style="text-align: center;">
+            <div class="col"><label class="col-form-label" style="font-size: 24px;font-family: 'Playfair Display', serif;font-weight: bold;">OR</label></div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row" style="text-align: center;">
+            <div class="col" style="padding-top: 20px;"><label class="form-label" style="font-family: 'Playfair Display', serif;font-size: 22px;font-weight: bold;">Vin Number:&nbsp;&nbsp;</label><input type="text" style="font-family: 'Playfair Display', serif;font-size: 20px;"></div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col text-center align-self-center p-9"><button class="btn btn-primary" type="button" style="font-family: 'Playfair Display', serif;font-size: 22px;background: #ffffff;color: rgb(0,0,0);border-radius: 60px;border-width: 0px;border-color: #008c6f;width: 110px;font-weight: bold;">Search</button></div>
+        </div>
+    </div>
+    <script src="{% static 'assets/bootstrap/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'assets/js/addEventListener.js' %}"></script>
+    <script src="{% static 'assets/js/modelOptions.js' %}"></script>
+    <script src="{% static 'assets/js/updateDropdown.js' %}"></script>
+</body>
+{% endblock %}

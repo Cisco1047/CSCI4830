@@ -6,18 +6,17 @@
 {% endblock %}
 
 {% block content %}
-  <body>
    <section data-bs-version="5.1" class="menu menu2 cid-tJS6tZXiPa" once="menu" id="menu02-0">
 
 	<nav class="navbar navbar-dropdown navbar-fixed-top navbar-expand-lg">
 		<div class="container">
 			<div class="navbar-brand">
 				<span class="navbar-logo">
-					<a href="https://mobirise.com">
-						<img src="{% static 'assets/images/chatgpt-image-jun-27-2025-12-50-35-am-96x96.png' %}" alt="Mobirise Website Builder" style="height: 3rem;">
+					<a href="http://127.0.0.1:8000/">
+						<img src="{% static 'assets/images/chatgpt-image-jun-27-2025-12-50-35-am-96x96.png' %}" alt="Carpal logo" style="height: 3rem;">
 					</a>
 				</span>
-				<span class="navbar-caption-wrap"><a class="navbar-caption text-black text-primary display-4" href="index.html#header05-1">Carpal</a></span>
+				<span class="navbar-caption-wrap"><a class="navbar-caption text-black text-primary display-4" href="http://127.0.0.1:8000/">Carpal</a></span>
 			</div>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbarSupportedContent" data-bs-target="#navbarSupportedContent" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
 				<div class="hamburger">
@@ -39,7 +38,7 @@
 					</li></ul>
 
 				<div class="navbar-buttons mbr-section-btn">
-					<a class="btn btn-primary display-4" href="{% url 'login' %}">Login</a>
+					<a class="btn btn-primary display-4" href="{% url 'vehicle_selection' %}">Get Started</a>
 				</div>
 			</div>
 		</div>
@@ -58,8 +57,7 @@
 				<h1 class="mbr-section-title mbr-fonts-style mb-4 display-1"><strong>Welcome To CarPal</strong></h1>
 				<p class="mbr-text mbr-fonts-style mb-4 display-7">Hello and Welcome to Carpal. Please select login or sign up to get started!</p>
 				<div class="mbr-section-btn mt-3">
-					<a class="btn btn-primary display-7" href="{% url 'login' %}">Login</a>
-					<a class="btn btn-primary-outline display-7" href="index.html#gallery02-v">Sign up</a>
+					<a class="btn btn-primary display-7" href="{% url 'vehicle_selection' %}">Get Started</a>
 				</div>
 			</div>
 		</div>
@@ -204,8 +202,5 @@
         </div>
     </div>
 </section>
-
-
   <input name="animation" type="hidden">
-  </body>
 {% endblock %}
