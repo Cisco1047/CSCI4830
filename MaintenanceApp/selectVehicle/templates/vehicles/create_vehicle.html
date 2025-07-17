@@ -1,0 +1,88 @@
+<form method="post" id="vehicle-form">
+    {% csrf_token %}
+    {{ form.vin.label_tag }} {{ form.vin }}<br>
+    {{ form.make.label_tag }} {{ form.make }}<br>
+    {{ form.model.label_tag }} {{ form.model }}<br>
+    {{ form.year.label_tag }} {{ form.year }}<br>
+    {% if form.errors %}
+        <div style="color: red;">
+            {% for field in form %}
+                {% if field.errors %}
+                    {{ field.errors }}
+                {% endif %}
+            {% endfor %}
+            {{ form.non_field_errors }}
+        </div>
+    {% endif %}
+    <button type="submit">Submit</button>
+</form>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $("#id_make").change(function () {
+        const makeId = $(this).val();
+        const modelSelect = $("#id_model");
+
+        if (makeId) {
+            $.ajax({
+                url: "{% url 'selectVehicle:get_models' %}", 
+                data: {
+                    'make_id': makeId
+                },
+                dataType: 'json',
+                success: function (data) {
+                    modelSelect.empty();
+                    modelSelect.append($('<option>', {
+                        value: '',
+                        text: '---------'
+                    }));
+                    $.each(data, function (key, value) {
+                        modelSelect.append($('<option>', {
+                            value: value.id,
+                            text: value.name
+                        }));
+                    });
+                }
+            });
+        } else {
+            modelSelect.empty();
+            modelSelect.append($('<option>', {
+                value: '',
+                text: '---------'
+            }));
+        }
+    });
+
+    $(document).ready(function() {
+        const initialMakeId = $("#id_make").val();
+        const initialModelId = "{{ form.model.initial.id }}"; 
+
+        if (initialMakeId && initialModelId) {
+             $.ajax({
+                url: "{% url 'selectVehicle:get_models' %}", 
+                data: {
+                    'make_id': initialMakeId
+                },
+                dataType: 'json',
+                success: function (data) {
+                    const modelSelect = $("#id_model");
+                    modelSelect.empty();
+                    modelSelect.append($('<option>', {
+                        value: '',
+                        text: '---------'
+                    }));
+                    $.each(data, function (key, value) {
+                        const option = $('<option>', {
+                            value: value.id,
+                            text: value.name
+                        });
+                        if (String(value.id) === initialModelId) { 
+                            option.attr('selected', 'selected');
+                        }
+                        modelSelect.append(option);
+                    });
+                }
+            });
+        }
+    });
+</script>
