@@ -62,6 +62,5 @@ Challenges include limited access to manufacturer repair data, development costs
 
 ## Release Notes
 
-This is release 0.0. It is a rough prototype of features we plan on implementing. It has a home landing page, login page and search. By the next release we plan on have these feature further refined. 
-
+Release 0.2 - In this release we have improved the UI for the home page and search page. We also added the ability to select the year,model,make or vin of the car you would like to search for. On the backend we created a backend that stores Car Configurations, Car Models, maintenance tasks, Makes, Service Records, and Tasks for Configurations. These can be added to via the admin portal and a different webpage with limited functionality. Basic automated testing has also been implemented. 
 
