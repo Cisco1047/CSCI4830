@@ -1,0 +1,59 @@
+{% extends 'repairOptionsLayout.html' %}
+
+{% load static %}
+
+{% block title %}
+    CarPal Repair Options
+{% endblock %}
+
+{% block content %}
+    <header>
+        <nav>
+            <div class="logo">🔧 CarPal</div>
+            <ul>
+                <li><a href="http://127.0.0.1:8000">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Select a Repair Option</h1>
+            <p>Please choose a repair task to view step-by-step instructions.</p>
+        </section>
+
+        <section class="card-grid">
+            <div class="repair-card">
+                <h2>Oil Change</h2>
+                <p>View step-by-step guide for changing your vehicle’s oil.</p>
+                <a href="#" class="btn">View</a>
+            </div>
+            <div class="repair-card">
+                <h2>Battery Replacement</h2>
+                <p>Learn how to safely replace your car battery.</p>
+                <a href="#" class="btn">View</a>
+            </div>
+            <div class="repair-card">
+                <h2>Cabin Air Filter</h2>
+                <p>Change your cabin air filter for cleaner air.</p>
+                <a href="#" class="btn">View</a>
+            </div>
+            <div class="repair-card">
+                <h2>Engine Air Filter</h2>
+                <p>Keep your engine breathing well with this guide.</p>
+                <a href="#" class="btn">View</a>
+            </div>
+            <div class="repair-card">
+                <h2>Turn Signal Bulb</h2>
+                <p>Replace your vehicle's turn signal light safely.</p>
+                <a href="#" class="btn">View</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 CarPal | University of Nebraska-Omaha</p>
+    </footer>
+{% endblock %}
