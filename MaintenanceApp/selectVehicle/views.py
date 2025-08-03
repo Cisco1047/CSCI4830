@@ -4,8 +4,13 @@
 from django.shortcuts import render
 from django.http import JsonResponse
 from .models import Make, CarModel
-from .forms import VehicleForm
+from .forms import VehicleForm, SearchForm
 
+
+def searchView(request):
+    form = SearchForm()
+    context = {'form': form}
+    return render(request, 'vehicles/searchForm.html', context)
 
 def create_vehicle(request):
     if request.method == 'POST':

@@ -9,4 +9,6 @@ urlpatterns = [
 
     path('ajax/get-models/', views.get_models, name='get_models'),
 
+    path('search/', views.searchView, name='search_view'),
+
 ]
