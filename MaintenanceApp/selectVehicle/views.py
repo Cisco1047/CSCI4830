@@ -25,6 +25,15 @@ def create_vehicle(request):
 
 def get_models(request):
     make_id = request.GET.get('make_id')
-    models = CarModel.objects.filter(make_id=make_id).order_by('name')
-    model_list = [{'id': model.id, 'name': model.name} for model in models]
-    return JsonResponse(model_list, safe=False)
+    if make_id:
+        models = CarModel.objects.filter(make_id=make_id).order_by('name')
+        print(f"Requested make_id: {make_id}, Found models: {[m.name for m in models]}")
+        model_list = [{'id': m.id, 'name': m.name} for m in models]
+        return JsonResponse(model_list, safe=False)
+    print(f"No make_id provided. make_id={make_id}")
+    return JsonResponse([], safe=False)
+
+
+def vehicle_selection_view(request):
+    makes = Make.objects.all().order_by('name')
+    return render(request, 'vehicles/index.html', {'makes': makes})

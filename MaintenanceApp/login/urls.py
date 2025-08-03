@@ -5,6 +5,8 @@ appname = 'login'
 
 urlpatterns = [
     path('login/', views.vehicleSelectionPage, name='vehicle_selection'),
-    path('login/search.html', views.searchPage, name='search'),
-    path('login/results.html', views.resultsPage, name='results')
+    path('login/search', views.searchPage, name='search'),
+    path('login/results', views.resultsPage, name='results'),
+    path('login/repair-options/', views.repair_options_view, name='repairOptions')
+
 ]
