@@ -1,0 +1,72 @@
+<div>
+    <label for="id_year">Year:</label>
+
+
+
+<select name="year" id="id_year">
+  <option value="" selected>Year</option>
+
+  <option value="2006">2006</option>
+
+  <option value="2012">2012</option>
+
+  <option value="2013">2013</option>
+
+  <option value="2016">2016</option>
+
+</select>
+    
+</div>
+
+  <div>
+    <label for="id_make">Make:</label>
+
+
+
+<select name="make" id="id_make">
+  <option value="" selected>Make</option>
+
+  <option value="7">Honda</option>
+
+  <option value="8">Lexus</option>
+
+  <option value="4">Nissan</option>
+
+  <option value="5">Toyota</option>
+
+  <option value="6">Volkswagen</option>
+
+</select>
+    
+</div>
+
+  <div>
+    <label for="id_carModel">Carmodel:</label>
+
+
+
+<select name="carModel" id="id_carModel">
+  <option value="" selected>Model</option>
+
+  <option value="12">Accord</option>
+
+  <option value="9">GX 460</option>
+
+  <option value="11">Jetta</option>
+
+  <option value="10">Sentra</option>
+
+</select>
+    
+</div>
+
+  <div>
+    <label for="id_vin">Vin Number:</label>
+
+
+
+<input type="text" name="vin" maxlength="17" id="id_vin">
+    
+      
+    
+</div>

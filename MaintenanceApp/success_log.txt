@@ -1,0 +1,13 @@
+Results found: 1 for {'year': '2006', 'make': <Make: Lexus>, 'carModel': <CarModel: GX 460>, 'vin': ''}
+Results found: 0 for {'year': '2006', 'make': <Make: Honda>, 'carModel': <CarModel: GX 460>, 'vin': ''}
+Results found: 1 for {'year': '2006', 'make': <Make: Lexus>, 'carModel': <CarModel: GX 460>, 'vin': ''}
+Results found: 1 for {'year': '2012', 'make': <Make: Honda>, 'carModel': <CarModel: Accord>, 'vin': ''}
+Results found: 1 for {'year': '2006', 'make': <Make: Lexus>, 'carModel': <CarModel: GX 460>, 'vin': 'JTJBT20X460101850'}
+Results found: <QuerySet [<CarConfiguration: 2006 Lexus GX 460>]> 1 for {'year': '2006', 'make': <Make: Lexus>, 'carModel': <CarModel: GX 460>, 'vin': 'JTJBT20X460101850'}
+Results found: <QuerySet [<CarConfiguration: 2006 Lexus GX 460>]> 1 for {'year': '2006', 'make': <Make: Lexus>, 'carModel': <CarModel: GX 460>, 'vin': 'JTJBT20X460101850'}
+Results found: 1 for {'year': '2006', 'make': <Make: Lexus>, 'carModel': <CarModel: GX 460>, 'vin': 'JTJBT20X460101850'}
+Results found: <QuerySet [{'id': 3}]> 1 for {'year': '2006', 'make': <Make: Lexus>, 'carModel': <CarModel: GX 460>, 'vin': 'JTJBT20X460101850'}
+Results found: <QuerySet [{'id': 3}]> 1 for {'year': '2006', 'make': <Make: Lexus>, 'carModel': <CarModel: GX 460>, 'vin': 'JTJBT20X460101850'}
+Results found: <QuerySet [{'id': 3}]> 1 for {'year': '2006', 'make': <Make: Lexus>, 'carModel': <CarModel: GX 460>, 'vin': 'JTJBT20X460101850'}
+Results found: <QuerySet [{'id': 3}]> 1 for {'year': '2006', 'make': <Make: Lexus>, 'carModel': <CarModel: GX 460>, 'vin': 'JTJBT20X460101850'}
+Results found: <QuerySet [{'id': 3}]> 1 for {'year': '2006', 'make': <Make: Lexus>, 'carModel': <CarModel: GX 460>, 'vin': 'JTJBT20X460101850'}

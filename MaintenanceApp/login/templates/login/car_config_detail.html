@@ -1,0 +1,50 @@
+{# login/templates/login/car_config_detail.html #}
+{% extends 'layout.html' %}
+{% load static %}
+
+{% block content %}
+    <div class="container mt-4">
+        <nav class="navbar navbar-expand-md bg-white text-end" style="background: #00b760;border-radius: 61px;border-style: none;">
+            <div class="container-fluid"><a class="navbar-brand ms-5" href="#" style="background: var(--bs-light);font-family: 'Playfair Display', serif;font-weight: bold;"><strong>CarPal</strong></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse text-end" id="navcol-1" style="background: #ffffff;--bs-body-bg: #ffffff;">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link active" href="{% url 'search' %}">Search Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{% url 'search' %}">Back to Results</a></li> {# Or link back with previous search params #}
+                        <li class="nav-item"><a class="nav-link" href="#"><span style="color: rgba(0, 0, 0, 0.8);">Sign In</span></a></li>
+                        <li class="nav-item"><a class="nav-link" href="#"><span style="color: rgba(0, 0, 0, 0.8);">About</span></a></li>
+                        <li class="nav-item"></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <div class="container mt-4">
+            <h2>Details for Car Configuration #{{ config.id }}</h2>
+
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">{{ config.year }} {{ config.make.name }} {{ config.model.name }}</h5>
+                    <p class="card-text">
+                        <strong>Year:</strong> {{ config.year }}<br>
+                        <strong>Make:</strong> {{ config.make.name }}<br>
+                        <strong>Model:</strong> {{ config.model.name }}<br>
+                        {# Add more details from your CarConfiguration model here #}
+                        {% if config.engine_type %} <strong>Engine:</strong> {{ config.engine_type }}<br>{% endif %}
+                        {% if config.transmission %} <strong>Transmission:</strong> {{ config.transmission }}<br>{% endif %}
+                        {# ... other fields ... #}
+                    </p>
+
+                    {% if vehicles %}
+                        <h3>Associated Vehicles:</h3>
+                        <ul class="list-group mb-3">
+                            {% for vehicle in vehicles %}
+                                <li class="list-group-item">VIN: {{ vehicle.vin }}</li>
+                            {% endfor %}
+                        </ul>
+                    {% else %}
+                        <p>No specific vehicles associated with this configuration in the database.</p>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    {% endblock %}
