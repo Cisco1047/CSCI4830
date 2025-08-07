@@ -62,5 +62,5 @@ Challenges include limited access to manufacturer repair data, development costs
 
 ## Release Notes
 
-Release 0.2 - In this release we have improved the UI for the home page and search page. We also added the ability to select the year,model,make or vin of the car you would like to search for. On the backend we created a backend that stores Car Configurations, Car Models, maintenance tasks, Makes, Service Records, and Tasks for Configurations. These can be added to via the admin portal and a different webpage with limited functionality. Basic automated testing has also been implemented. 
+Release 0.3 - In this release we have improved the UI for the home page and search page. We also added another page for choosing the repair option that the user wants to do. We also refined the ability to select the year,model,make or vin of the car you would like to search for. We connected the database to the frontend by querying the database for the make and model store in it and implemented JavaScript so make it so that the Make of the vehicle selected aligns with the model, not more Ford Accord. Additional we added more comprehensive test implementing Selenium test that work using pytest and focus on dropdown selection, specifically on the page where users pick Year>Make>Model. 
 
