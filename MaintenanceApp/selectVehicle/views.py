@@ -6,12 +6,6 @@ from django.http import JsonResponse
 from .models import Make, CarModel
 from .forms import VehicleForm, SearchForm
 
-
-def searchView(request):
-    form = SearchForm()
-    context = {'form': form}
-    return render(request, 'vehicles/searchForm.html', context)
-
 def create_vehicle(request):
     if request.method == 'POST':
         form = VehicleForm(request.POST)
@@ -35,5 +29,8 @@ def get_models(request):
 
 
 def vehicle_selection_view(request):
+    years = list(range(2026, 1999, -1))
     makes = Make.objects.all().order_by('name')
-    return render(request, 'vehicles/index.html', {'makes': makes})
+    return render(request, 'login/index.html', {'years': years,'makes': makes})
+
+

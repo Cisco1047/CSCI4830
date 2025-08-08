@@ -25,6 +25,8 @@ urlpatterns = [
     path('', views.homepage),
     path('', include('login.urls')),
     path('vehicles/', include('selectVehicle.urls')),
+
+
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

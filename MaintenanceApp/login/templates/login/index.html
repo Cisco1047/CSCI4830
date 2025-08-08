@@ -15,7 +15,6 @@
             </div>
         </nav>
     </header>
-
     <!-- Vehicle Selection Section -->
     <main class="text-center">
         <div class="d-flex justify-content-center flex-wrap gap-3 mb-4">
@@ -77,35 +76,50 @@ document.addEventListener('DOMContentLoaded', () => {
     const makeOptions = document.getElementById('makeOptions');
     const modelOptions = document.getElementById('modelOptions');
     const modelDropdownButton = document.getElementById('modelDropdown');
+    const makeDropdownButton = document.getElementById('makeDropdown');
 
     makeOptions.addEventListener('click', function (event) {
         if (event.target.matches('.dropdown-item')) {
             event.preventDefault();
             const makeId = event.target.getAttribute('data-make-id');
             const makeName = event.target.textContent;
-            document.getElementById('makeDropdown').textContent = makeName;
 
-            // Fetch models based on make ID
-            fetch(`vehicles/get-models/?make_id=${makeId}`)
+            // Update make button text
+            makeDropdownButton.textContent = makeName;
+
+            // Clear old model options
+            modelOptions.innerHTML = '<li><a class="dropdown-item" href="#">Loading...</a></li>';
+
+            // Fetch new models
+            fetch(`/vehicles/get-models/?make_id=${makeId}`)
                 .then(response => response.json())
                 .then(data => {
-                    modelOptions.innerHTML = '';
-                    data.forEach(model => {
-                        const li = document.createElement('li');
-                        const a = document.createElement('a');
-                        a.classList.add('dropdown-item');
-                        a.href = '#';
-                        a.textContent = model.name;
-                        li.appendChild(a);
-                        modelOptions.appendChild(li);
-                    });
+                    modelOptions.innerHTML = ''; // Clear loading text
+                    if (data.length === 0) {
+                        modelOptions.innerHTML = '<li><a class="dropdown-item disabled" href="#">No models found</a></li>';
+                    } else {
+                        data.forEach(model => {
+                            const li = document.createElement('li');
+                            const a = document.createElement('a');
+                            a.classList.add('dropdown-item');
+                            a.href = '#';
+                            a.textContent = model.name;
+                            a.setAttribute('data-model-id', model.id);
+                            li.appendChild(a);
+                            modelOptions.appendChild(li);
+                        });
+                    }
                     modelDropdownButton.textContent = 'Select Model';
+                })
+                .catch(err => {
+                    console.error('Fetch error:', err);
+                    modelOptions.innerHTML = '<li><a class="dropdown-item disabled" href="#">Error loading models</a></li>';
                 });
         }
     });
 
     modelOptions.addEventListener('click', function (event) {
-        if (event.target.matches('.dropdown-item')) {
+        if (event.target.matches('.dropdown-item') && !event.target.classList.contains('disabled')) {
             event.preventDefault();
             const modelName = event.target.textContent;
             modelDropdownButton.textContent = modelName;
