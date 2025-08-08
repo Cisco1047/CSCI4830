@@ -12,6 +12,6 @@ urlpatterns = [
     # path('ajax/get-models/', views.get_models, name='get_models'),
     path('vehicle-selection/', views.vehicle_selection_view, name='vehicle_selection'),
 
-    path('search/', views.searchView, name='search_view'),
+    # path('search/', views.searchView, name='search_view'),
 
 ]
