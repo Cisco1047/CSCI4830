@@ -62,6 +62,5 @@ Challenges include limited access to manufacturer repair data, development costs
 
 ## Release Notes
 
-This is release 0.0. It is a rough prototype of features we plan on implementing. It has a home landing page, login page and search. By the next release we plan on have these feature further refined. 
-
+Release 0.3 - In this release we have improved the UI for the home page and search page. We also added another page for choosing the repair option that the user wants to do. We also refined the ability to select the year,model,make or vin of the car you would like to search for. We connected the database to the frontend by querying the database for the make and model store in it and implemented JavaScript so make it so that the Make of the vehicle selected aligns with the model, not more Ford Accord. Additional we added more comprehensive test implementing Selenium test that work using pytest and focus on dropdown selection, specifically on the page where users pick Year>Make>Model. 
 
