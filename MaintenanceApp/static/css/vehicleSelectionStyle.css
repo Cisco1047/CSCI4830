@@ -84,19 +84,22 @@ nav .nav-right a:hover {
 #search-button,
 .search-button {
     background-color: #2f6150;
-    color: #ffffff;
+    color: #fff;
     border: none;
     border-radius: 2rem;
-    padding: 0.5rem 1.5rem;
+    padding: 0.6rem 1.5rem;
     font-weight: bold;
-    font-size: 4.2rem;
+    font-size: 1.2rem;
     cursor: pointer;
-    width: 140px;
+    min-width: 180px;  /
+    box-sizing: border-box;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
 }
 
 #search-button:hover,
 .search-button:hover {
-    background-color: #225f60;
+    background-color: #244d40;
 }
 
 /* Footer */
@@ -112,4 +115,23 @@ footer {
 .main-wrapper {
     max-width: 100%;
     padding: 0 5vw;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-wrapper {
+    flex: 1; /* Take up all remaining space */
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1; /* Push footer to the bottom */
 }

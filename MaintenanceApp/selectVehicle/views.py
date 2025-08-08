@@ -4,7 +4,7 @@
 from django.shortcuts import render
 from django.http import JsonResponse
 from .models import Make, CarModel
-from .forms import VehicleForm, SearchForm
+from .forms import VehicleForm
 
 def create_vehicle(request):
     if request.method == 'POST':
