@@ -1,14 +1,13 @@
 from django.urls import path
-from . import views as login_views
-from selectVehicle import views as vehicle_views
-
-
-appname = 'login'
+from . import views
 
 urlpatterns = [
-    path('login/search', login_views.searchPage, name='search'),
-    path('login/results', login_views.resultsPage, name='results'),
-    path('login/repair-options/', login_views.repair_options_view, name='repairOptions'),
-    path('vehicles/', vehicle_views.vehicle_selection_view, name='vehicle_selection')
-
+    # Paths for your main app pages
+    path('search/', views.searchPage, name='search'),
+    path('results/', views.resultsPage, name='results'),
+    path('repair-options/', views.repair_options_view, name='repair_options'),
+    
+    # Path for the AJAX call to get models based on make and year
+    path('vehicles/get-models/', views.get_models_by_make, name='get_models_by_make'),
+    path('task/<int:task_id>/', views.task_detail, name='task_detail'),
 ]

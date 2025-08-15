@@ -4,7 +4,6 @@
 {% block content %}
 <div class="main-wrapper py-5">
 
-    <!-- Header / Navbar -->
     <header class="mb-5">
         <nav class="d-flex justify-content-between align-items-center px-4 py-3 rounded-pill bg-white shadow-sm">
             <div>
@@ -15,120 +14,157 @@
             </div>
         </nav>
     </header>
-    <!-- Vehicle Selection Section -->
+
     <main class="text-center">
-        <div class="d-flex justify-content-center flex-wrap gap-3 mb-4">
+        <h2>Welcome to CarPal!</h2>
+        <form action="{% url 'results' %}" method="get" id="search-form">
+            <div class="d-flex justify-content-center flex-wrap gap-3 mb-4">
 
-            <!-- Year Dropdown -->
-            <div class="dropdown">
-                <button class="btn dropdown-toggle rounded-pill px-4 py-2" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Year
-                </button>
-                <ul class="dropdown-menu">
-                    {% for year in years %}
-                        <li><a class="dropdown-item" href="#">{{ year }}</a></li>
-                    {% endfor %}
-                </ul>
+                <div class="dropdown">
+                    <button class="btn dropdown-toggle rounded-pill px-4 py-2" type="button" id="yearDropdownButton" data-bs-toggle="dropdown" aria-expanded="false">
+                        Year
+                    </button>
+                    <ul class="dropdown-menu" id="yearOptions">
+                        {% for year in years %}
+                            <li><a class="dropdown-item" href="#" data-year="{{ year }}">{{ year }}</a></li>
+                        {% endfor %}
+                    </ul>
+                </div>
+
+                <div class="dropdown">
+                    <button class="btn dropdown-toggle rounded-pill px-4 py-2" type="button" id="makeDropdownButton" data-bs-toggle="dropdown" aria-expanded="false">
+                        Make
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="makeDropdown" id="makeOptions">
+                        {% for make in makes %}
+                            <li><a class="dropdown-item" href="#" data-make-id="{{ make.id }}">{{ make.name }}</a></li>
+                        {% endfor %}
+                    </ul>
+                </div>
+
+                <div class="dropdown">
+                    <button class="btn dropdown-toggle rounded-pill px-4 py-2" type="button" id="modelDropdownButton" data-bs-toggle="dropdown" aria-expanded="false">
+                        Model
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="modelDropdown" id="modelOptions">
+                        </ul>
+                </div>
+
+                <input type="hidden" id="selected-year-input" name="year">
+                <input type="hidden" id="selected-make-input" name="make_id">
+                <input type="hidden" id="selected-model-input" name="model_id">
             </div>
 
-            <!-- Make Dropdown -->
-            <div class="dropdown">
-                <button class="btn dropdown-toggle rounded-pill px-4 py-2" type="button" id="makeDropdown" data-bs-toggle="dropdown" aria-expanded="false">
-                    Make
-                </button>
-                <ul class="dropdown-menu" aria-labelledby="makeDropdown" id="makeOptions">
-                    {% for make in makes %}
-                    <li><a class="dropdown-item" href="#" data-make-id="{{ make.id }}">{{ make.name }}</a></li>
-                    {% endfor %}
-                </ul>
+            <div class="mb-4">
+                <p class="fw-bold">OR:</p>
+                <p class="fw-bold">enter your VIN:</p>
+                <input type="text" class="form-control w-50 mx-auto" placeholder="VIN Number" name="vin">
             </div>
 
-            <!-- Model Dropdown -->
-            <div class="dropdown">
-                <button class="btn dropdown-toggle rounded-pill px-4 py-2" type="button" id="modelDropdown" data-bs-toggle="dropdown" aria-expanded="false">
-                    Model
-                </button>
-                <ul class="dropdown-menu" aria-labelledby="modelDropdown" id="modelOptions">
-                </ul>
-            </div>
-        </div>
+            <button type="submit" class="search-button">Search</button>
+        </form>
 
-        <!-- VIN Input -->
-        <div class="mb-4">
-            <p class="fw-bold">OR:</p>
-            <p class="fw-bold">enter your VIN:</p>
-            <input type="text" class="form-control w-50 mx-auto" placeholder="VIN Number">
-        </div>
-
-        <!-- Search Button -->
-        <a href="{% url 'repairOptions' %}" class="search-button">Search</a>
-        <a href="{% url 'repairOptions' %}" class="search-button">Add a Vehicle</a>
+        <a href="{% url 'repair_options' %}" class="search-button">Add a Vehicle</a>
     </main>
-    <div>
 
-    <!-- Footer -->
     <footer class="mt-5 text-center text-muted small">
         <p class="mb-0">&copy; 2025 CarPal | University of Nebraska–Omaha</p>
     </footer>
 
 
-<!-- Page-specific Scripts -->
-<script>
-document.addEventListener('DOMContentLoaded', () => {
-    const makeOptions = document.getElementById('makeOptions');
-    const modelOptions = document.getElementById('modelOptions');
-    const modelDropdownButton = document.getElementById('modelDropdown');
-    const makeDropdownButton = document.getElementById('makeDropdown');
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const makeOptions = document.getElementById('makeOptions');
+        const modelOptions = document.getElementById('modelOptions');
+        const makeDropdownButton = document.getElementById('makeDropdownButton');
+        const modelDropdownButton = document.getElementById('modelDropdownButton');
+        const yearOptions = document.getElementById('yearOptions');
+        const yearDropdownButton = document.getElementById('yearDropdownButton');
 
-    makeOptions.addEventListener('click', function (event) {
-        if (event.target.matches('.dropdown-item')) {
-            event.preventDefault();
-            const makeId = event.target.getAttribute('data-make-id');
-            const makeName = event.target.textContent;
+        // Hidden input fields
+        const selectedYearInput = document.getElementById('selected-year-input');
+        const selectedMakeInput = document.getElementById('selected-make-input');
+        const selectedModelInput = document.getElementById('selected-model-input');
 
-            // Update make button text
-            makeDropdownButton.textContent = makeName;
+        // Event listener for Year dropdown
+        yearOptions.addEventListener('click', function(event) {
+            if (event.target.matches('.dropdown-item')) {
+                event.preventDefault();
+                const year = event.target.getAttribute('data-year');
+                yearDropdownButton.textContent = year;
+                selectedYearInput.value = year;
 
-            // Clear old model options
-            modelOptions.innerHTML = '<li><a class="dropdown-item" href="#">Loading...</a></li>';
+                // Reset Make and Model dropdowns
+                makeDropdownButton.textContent = 'Make';
+                selectedMakeInput.value = '';
+                modelDropdownButton.textContent = 'Model';
+                selectedModelInput.value = '';
+                modelOptions.innerHTML = ''; // Clear model list
+            }
+        });
 
-            // Fetch new models
-            fetch(`/vehicles/get-models/?make_id=${makeId}`)
-                .then(response => response.json())
-                .then(data => {
-                    modelOptions.innerHTML = ''; // Clear loading text
-                    if (data.length === 0) {
-                        modelOptions.innerHTML = '<li><a class="dropdown-item disabled" href="#">No models found</a></li>';
-                    } else {
-                        data.forEach(model => {
-                            const li = document.createElement('li');
-                            const a = document.createElement('a');
-                            a.classList.add('dropdown-item');
-                            a.href = '#';
-                            a.textContent = model.name;
-                            a.setAttribute('data-model-id', model.id);
-                            li.appendChild(a);
-                            modelOptions.appendChild(li);
-                        });
-                    }
-                    modelDropdownButton.textContent = 'Select Model';
-                })
-                .catch(err => {
-                    console.error('Fetch error:', err);
-                    modelOptions.innerHTML = '<li><a class="dropdown-item disabled" href="#">Error loading models</a></li>';
-                });
-        }
+        // Event listener for Make dropdown
+        makeOptions.addEventListener('click', function(event) {
+            if (event.target.matches('.dropdown-item')) {
+                event.preventDefault();
+                const makeId = event.target.getAttribute('data-make-id');
+                const makeName = event.target.textContent;
+                const selectedYear = selectedYearInput.value;
+
+                makeDropdownButton.textContent = makeName;
+                selectedMakeInput.value = makeId;
+                selectedModelInput.value = '';
+                modelDropdownButton.textContent = 'Select Model';
+
+                if (!selectedYear) {
+                    modelOptions.innerHTML = '<li><a class="dropdown-item disabled" href="#">Please select a year first</a></li>';
+                    return;
+                }
+
+                modelOptions.innerHTML = '<li><a class="dropdown-item" href="#">Loading...</a></li>';
+
+                fetch(`/vehicles/get-models/?make_id=${makeId}&year=${selectedYear}`)
+                    .then(response => {
+                        if (!response.ok) {
+                            throw new Error('Network response was not ok');
+                        }
+                        return response.json();
+                    })
+                    .then(data => {
+                        modelOptions.innerHTML = '';
+                        if (data.length === 0) {
+                            modelOptions.innerHTML = '<li><a class="dropdown-item disabled" href="#">No models found</a></li>';
+                        } else {
+                            data.forEach(model => {
+                                const li = document.createElement('li');
+                                const a = document.createElement('a');
+                                a.classList.add('dropdown-item');
+                                a.href = '#';
+                                a.textContent = model.name;
+                                a.setAttribute('data-model-id', model.id);
+                                li.appendChild(a);
+                                modelOptions.appendChild(li);
+                            });
+                        }
+                    })
+                    .catch(err => {
+                        console.error('Fetch error:', err);
+                        modelOptions.innerHTML = '<li><a class="dropdown-item disabled" href="#">Error loading models</a></li>';
+                    });
+            }
+        });
+
+        // Event listener for Model dropdown
+        modelOptions.addEventListener('click', function(event) {
+            if (event.target.matches('.dropdown-item') && !event.target.classList.contains('disabled')) {
+                event.preventDefault();
+                const modelId = event.target.getAttribute('data-model-id');
+                const modelName = event.target.textContent;
+
+                modelDropdownButton.textContent = modelName;
+                selectedModelInput.value = modelId;
+            }
+        });
     });
-
-    modelOptions.addEventListener('click', function (event) {
-        if (event.target.matches('.dropdown-item') && !event.target.classList.contains('disabled')) {
-            event.preventDefault();
-            const modelName = event.target.textContent;
-            modelDropdownButton.textContent = modelName;
-        }
-    });
-});
-</script>
-
+    </script>
 {% endblock %}
-

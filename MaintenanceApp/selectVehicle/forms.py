@@ -3,56 +3,48 @@ from .models import Make, CarModel, CarConfiguration, Vehicle
 
 
 class VehicleForm(forms.ModelForm):
-    make = forms.ModelChoiceField(queryset=Make.objects.all(), label="Make")
-    model = forms.ModelChoiceField(
-        queryset=CarModel.objects.none(), label="Model")
+    make = forms.CharField(label="Make", max_length=100)
+    model = forms.CharField(label="Model", max_length=100)
     year = forms.IntegerField(label="Year", min_value=1981, max_value=2025)
 
     class Meta:
         model = Vehicle
         fields = ['vin', 'make', 'model', 'year']
+        widgets = {'vin': forms.TextInput(attrs={'required': False})
+        }
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
+        self.fields['vin'].required = False
 
-        if self.instance.pk:
-            self.fields['make'].initial = self.instance.configuration.make
-            self.fields['model'].initial = self.instance.configuration.model
-            self.fields['year'].initial = self.instance.configuration.year
-            self.fields['model'].queryset = CarModel.objects.filter(
-                make=self.instance.configuration.make)
-
-        elif 'make' in self.data:
-            try:
-                make_id = int(self.data.get('make'))
-                self.fields['model'].queryset = CarModel.objects.filter(
-                    make_id=make_id).order_by('name')
-            except (ValueError, TypeError):
-                pass
-        else:
-            self.fields['model'].queryset = CarModel.objects.none()
-
+        # Set up a text input with a datalist for make
+        self.fields['make'].widget = forms.TextInput(attrs={'list': 'make-list'})
+        
+        # Set up a text input with a datalist for model
+        self.fields['model'].widget = forms.TextInput(attrs={'list': 'model-list'})
+        
     def clean(self):
         cleaned_data = super().clean()
 
-        make = cleaned_data.get('make')
-        model = cleaned_data.get('model')
+        make_name = cleaned_data.get('make')
+        model_name = cleaned_data.get('model')
         year = cleaned_data.get('year')
 
-        if not all([make, model, year]):
+        if not all([make_name, model_name, year]):
             return cleaned_data
 
-        if model and make and model.make != make:
-            self.add_error(
-                'model', 'Selected model does not belong to the chosen make.')
+        # Find or create the Make instance
+        make, created = Make.objects.get_or_create(name__iexact=make_name, defaults={'name': make_name})
+        cleaned_data['make_instance'] = make
 
-        try:
-            config = CarConfiguration.objects.get(
-                make=make, model=model, year=year)
-        except CarConfiguration.DoesNotExist:
-            config = CarConfiguration.objects.create(
-                make=make, model=model, year=year)
+        # Find or create the CarModel instance
+        model, created = CarModel.objects.get_or_create(make=make, name__iexact=model_name, defaults={'name': model_name})
+        cleaned_data['model_instance'] = model
 
+        # Find or create the CarConfiguration instance
+        config, created = CarConfiguration.objects.get_or_create(
+            make=make, model=model, year=year
+        )
         cleaned_data['configuration'] = config
         return cleaned_data
 
@@ -62,6 +54,7 @@ class VehicleForm(forms.ModelForm):
         if commit:
             vehicle.save()
         return vehicle
+
 
 
         

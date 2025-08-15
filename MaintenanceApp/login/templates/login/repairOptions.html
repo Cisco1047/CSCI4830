@@ -1,5 +1,4 @@
 {% extends 'repairOptionsLayout.html' %}
-
 {% load static %}
 
 {% block title %}
@@ -23,31 +22,17 @@
         </section>
 
         <section class="card-grid">
-            <div class="repair-card">
-                <h2>Oil Change</h2>
-                <p>View step-by-step guide for changing your vehicle’s oil.</p>
-                <a href="#" class="btn">View</a>
-            </div>
-            <div class="repair-card">
-                <h2>Battery Replacement</h2>
-                <p>Learn how to safely replace your car battery.</p>
-                <a href="#" class="btn">View</a>
-            </div>
-            <div class="repair-card">
-                <h2>Cabin Air Filter</h2>
-                <p>Change your cabin air filter for cleaner air.</p>
-                <a href="#" class="btn">View</a>
-            </div>
-            <div class="repair-card">
-                <h2>Engine Air Filter</h2>
-                <p>Keep your engine breathing well with this guide.</p>
-                <a href="#" class="btn">View</a>
-            </div>
-            <div class="repair-card">
-                <h2>Turn Signal Bulb</h2>
-                <p>Replace your vehicle's turn signal light safely.</p>
-                <a href="#" class="btn">View</a>
-            </div>
+            {% if task_for_configs %}
+                {% for tfc in task_for_configs %}
+                    <div class="repair-card">
+                        <h2>{{ tfc.task.name }}</h2>
+                        <p>{{ tfc.task.description }}</p>
+                        <a href="{% url 'task_detail' tfc.id %}" class="btn">View</a>
+                    </div>
+                {% endfor %}
+            {% else %}
+                <p>No repair options found for your search criteria.</p>
+            {% endif %}
         </section>
     </main>
 

@@ -11,22 +11,28 @@ def create_vehicle(request):
         form = VehicleForm(request.POST)
         if form.is_valid():
             form.save()
+            form = VehicleForm() 
     else:
         form = VehicleForm()
-
-    return render(request, 'vehicles/create_vehicle.html', {'form': form})
-
+    
+    makes = Make.objects.all().order_by('name')
+    context = {
+        'form': form,
+        'makes': makes,
+    }
+    return render(request, 'vehicles/create_vehicle.html', context)
 
 def get_models(request):
-    make_id = request.GET.get('make_id')
-    if make_id:
-        models = CarModel.objects.filter(make_id=make_id).order_by('name')
-        print(f"Requested make_id: {make_id}, Found models: {[m.name for m in models]}")
-        model_list = [{'id': m.id, 'name': m.name} for m in models]
-        return JsonResponse(model_list, safe=False)
-    print(f"No make_id provided. make_id={make_id}")
-    return JsonResponse([], safe=False)
-
+    make_name = request.GET.get('make_name')
+    model_list = []
+    if make_name:
+        try:
+            make = Make.objects.get(name__iexact=make_name)
+            models = CarModel.objects.filter(make=make).order_by('name')
+            model_list = [{'name': m.name} for m in models]
+        except Make.DoesNotExist:
+            pass
+    return JsonResponse(model_list, safe=False)
 
 def vehicle_selection_view(request):
     years = list(range(2026, 1999, -1))

@@ -13,14 +13,17 @@
         <h2>Here's what we found!</h2>
 
         <div class="result-box">
-
+            {% for task in tasks %}
+                <div class="task-display">
+                    <h3>{{ task.name }}</h3>
+                    <p>{{ task.description }}</p>
+                </div>
+            {% endfor %}
         </div>
 
         <div class="result-details">
-
             <p>PlaceHolder</p>
         </div>
-
 
         {% comment %} <form action="{% url 'home' %}" method="get"> {# Example: Redirects to homepage #} {% endcomment %}
             <button type="submit" class="submit-btn looks-good-btn">Looks good!</button>

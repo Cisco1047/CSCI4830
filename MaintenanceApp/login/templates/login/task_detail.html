@@ -1,0 +1,16 @@
+{% extends 'layout.html' %}
+{% load static %}
+
+{% block title %}
+    CarPal - {{ task.name }}
+{% endblock %}
+
+{% block content %}
+    <div class="task-detail-container">
+        <h1>{{ task.name }}</h1>
+        <p>{{ task.description }}</p>
+        <p><strong>Cost:</strong> ${{ task.cost }}</p>
+        <p><strong>Duration:</strong> {{ task.duration }} hours</p>
+        <a href="{% url 'results' %}" class="back-link">Back to Results</a>
+    </div>
+{% endblock %}

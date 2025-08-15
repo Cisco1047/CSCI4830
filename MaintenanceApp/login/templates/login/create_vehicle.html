@@ -1,86 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Add New Vehicle</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-        }
+{% extends "login/index.html" %}
 
-        .form-container {
-            background-color: #fff;
-            padding: 2rem;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            width: 100%;
-            max-width: 400px;
-            box-sizing: border-box;
-        }
+{% block title %}Add New Vehicle{% endblock %}
 
-        h1 {
-            text-align: center;
-            color: #333;
-            margin-bottom: 1.5rem;
-        }
-
-        .form-field {
-            margin-bottom: 1rem;
-        }
-
-        label {
-            display: block;
-            margin-bottom: 0.5rem;
-            color: #555;
-            font-weight: bold;
-        }
-
-        input[type="text"],
-        input[type="number"],
-        select {
-            width: 100%;
-            padding: 0.75rem;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-            box-sizing: border-box;
-            font-size: 1rem;
-        }
-
-        .button {
-            width: 100%;
-            padding: 0.75rem;
-            border: none;
-            background-color: #007bff;
-            color: #fff;
-            font-size: 1rem;
-            font-weight: bold;
-            border-radius: 4px;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-
-        .button:hover {
-            background-color: #0056b3;
-        }
-
-        .errorlist {
-            color: #e74c3c;
-            list-style: none;
-            padding: 0;
-            margin-top: 0.5rem;
-        }
-    </style>
-</head>
-<body>
-
+{% block content %}
 <div class="form-container">
     <h1>Add a New Vehicle</h1>
     <form method="post" id="vehicle-form" action="{% url 'selectVehicle:create_vehicle' %}">
@@ -109,11 +31,6 @@
         <div class="form-field">
             <label for="{{ form.make.id_for_label }}">{{ form.make.label }}</label>
             {{ form.make }}
-            <datalist id="make-list">
-                {% for make in makes %}
-                <option value="{{ make.name }}">
-                {% endfor %}
-            </datalist>
             {% if form.make.errors %}
                 <ul class="errorlist">
                     {% for error in form.make.errors %}
@@ -126,7 +43,6 @@
         <div class="form-field">
             <label for="{{ form.model.id_for_label }}">{{ form.model.label }}</label>
             {{ form.model }}
-            <datalist id="model-list"></datalist>
             {% if form.model.errors %}
                 <ul class="errorlist">
                     {% for error in form.model.errors %}
@@ -155,19 +71,23 @@
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script>
     $(document).ready(function() {
-        $('#id_make').on('input', function() {
-            const makeName = $(this).val();
-            const modelDatalist = $('#model-list');
-            modelDatalist.empty();
+        // Function to load models when a make is selected
+        $('#id_make').change(function() {
+            const makeId = $(this).val();
+            const modelSelect = $('#id_model');
 
-            if (makeName) {
+            // Clear the current models dropdown
+            modelSelect.empty();
+            modelSelect.append($('<option></option>').attr('value', '').text('---------'));
+
+            if (makeId) {
                 $.ajax({
                     url: "{% url 'selectVehicle:get_models' %}",
-                    data: { 'make_name': makeName },
+                    data: { 'make_id': makeId },
                     dataType: 'json',
                     success: function(models) {
                         models.forEach(function(model) {
-                            modelDatalist.append($('<option></option>').attr('value', model.name));
+                            modelSelect.append($('<option></option>').attr('value', model.id).text(model.name));
                         });
                     },
                     error: function(xhr, status, error) {
@@ -176,8 +96,13 @@
                 });
             }
         });
+
+        // Trigger the change event on page load if a make is already selected
+        // This is important for form re-population on validation errors
+        if ($('#id_make').val()) {
+            $('#id_make').trigger('change');
+        }
     });
 </script>
 
-</body>
-</html>
+{% endblock %}
