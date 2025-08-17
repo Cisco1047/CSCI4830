@@ -102,6 +102,13 @@ class SearchForm(forms.Form):
     )
     year = forms.IntegerField(required=False, label="Year", min_value=1981, max_value=2025)
 
+    class VehicleSelectForm(forms.Form):
+        vehicle = forms.ModelChoiceField(
+            queryset=Vehicle.objects.none(),
+            empty_label="— Select your vehicle —",
+            widget=forms.Select(attrs={"class": "form-select"})  # optional styling
+        )
+
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
         if 'make' in self.data:
