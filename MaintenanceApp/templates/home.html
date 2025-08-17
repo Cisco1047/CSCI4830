@@ -12,29 +12,23 @@
 		<div class="container">
 			<div class="navbar-brand">
 				<span class="navbar-logo">
-					<a href="http://127.0.0.1:8000/">
+					<a href="{% url 'home' %}">
 						<img src="{% static 'assets/images/chatgpt-image-jun-27-2025-12-50-35-am-96x96.png' %}" alt="Carpal logo" style="height: 3rem;">
 					</a>
 				</span>
-				<span class="navbar-caption-wrap"><a class="navbar-caption text-black text-primary display-4" href="http://127.0.0.1:8000/">Carpal</a></span>
+				<span class="navbar-caption-wrap"><a class="navbar-caption text-black text-primary display-4" href="{% url 'home' %}">Carpal</a></span>
 			</div>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbarSupportedContent" data-bs-target="#navbarSupportedContent" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-				<div class="hamburger">
-					<span></span>
-					<span></span>
-					<span></span>
-					<span></span>
-				</div>
 			</button>
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 				<ul class="navbar-nav nav-dropdown" data-app-modern-menu="true"><li class="nav-item">
-						<a class="nav-link link text-black text-primary display-4" href="index.html#header01-7">About</a>
+						<a class="nav-link link text-black text-primary display-4" href="#about">About</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link link text-black text-primary display-4" href="index.html#features04-w" aria-expanded="false">Services</a>
+						<a class="nav-link link text-black text-primary display-4" href="#features04-w">Services</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link link text-black text-primary display-4" href="index.html#contacts02-9"></a>
+						<a class="nav-link link text-black text-primary display-4" href="about"></a>
 					</li></ul>
 
 				<div class="navbar-buttons mbr-section-btn">
@@ -55,7 +49,7 @@
 		<div class="row justify-content-center">
 			<div class="col-md-12 col-lg-9">
 				<h1 class="mbr-section-title mbr-fonts-style mb-4 display-1"><strong>Welcome To CarPal</strong></h1>
-				<p class="mbr-text mbr-fonts-style mb-4 display-7">Hello and Welcome to Carpal. Please select login or sign up to get started!</p>
+				<p class="mbr-text mbr-fonts-style mb-4 display-7">Your DIY companion for car maintenance. Select your vehicle and start exploring step-by-step repair guides.</p>
 				<div class="mbr-section-btn mt-3">
 					<a class="btn btn-primary display-7" href="{% url 'selectVehicle:vehicle_selection' %}">Get Started</a>
 				</div>
@@ -77,7 +71,7 @@
 			<div class="col-12 content-head">
 				<div class="mbr-section-head mb-5">
 					<h4 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2"><strong>Our Services</strong></h4>
-					<h5 class="mbr-section-subtitle mbr-fonts-style align-center mb-0 mt-4 display-7">Carpal is a vehicle maintenance assistant app designed to help everyday car owners perform basic repairs and upkeep themselves—saving time and money. Many simple tasks, like changing a light bulb or tire, seem intimidating without guidance. Our goal is to empower users by walking them through these tasks step-by-step.</h5>
+					<h5 class="mbr-section-subtitle mbr-fonts-style align-center mb-0 mt-4 display-7">Carpal is a vehicle maintenance assistant app designed to help everyday car owners perform basic repairs and upkeep themselves; saving time and money. Many simple tasks, like changing a light bulb or tire, seem intimidating without guidance. Our goal is to empower users by walking them through these tasks step-by-step.</h5>
 
 				</div>
 			</div>
@@ -93,7 +87,7 @@
 							<strong>Classic</strong></h5>
 
 						<p class="mbr-text mbr-fonts-style display-7">
-							Service Description. You can show/hide the title, subtitle, text, button in the Block Parameters
+							Keep your classic running strong with step-by-step guides tailored for older cars. Perfect for restoring and maintaining the legends.
 						</p>
 						<div class="mbr-section-btn item-footer">
 							<a href="" class="btn item-btn btn-primary display-7">Learn more</a>
@@ -109,11 +103,10 @@
 					</div>
 					<div class="item-content">
 						<h5 class="item-title mbr-fonts-style display-5">
-							<strong>New</strong></h5>
+							<strong>Modern</strong></h5>
 
 						<p class="mbr-text mbr-fonts-style display-7">
-							Service Description. You can show/hide the title, subtitle, text, button in the Block Parameters
-						</p>
+							Modern cars, modern fixes. Get easy instructions for today’s tech-heavy vehicles; from routine maintenance to advanced repairs.
 						<div class="mbr-section-btn item-footer">
 							<a href="" class="btn item-btn btn-primary display-7">Learn more</a>
 						</div>
@@ -130,7 +123,7 @@
 							<strong>Everything in Between&nbsp;</strong></h5>
 
 						<p class="mbr-text mbr-fonts-style display-7">
-							Service Description. You can show/hide the title, subtitle, text, button in the Block Parameters<br>
+							Daily drivers, project cars, or weekend cruisers — we’ve got DIY guides for the in-between vehicles you rely on most.Parameters<br>
 						</p>
 						<div class="mbr-section-btn item-footer">
 							<a href="" class="btn item-btn btn-primary display-7">Learn more</a>
@@ -142,28 +135,86 @@
 	</div>
 </section>
 
+<section data-bs-version="5.1" class="about-section py-5" id="about">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-10 text-center">
+        <h2 class="mbr-section-title mbr-fonts-style display-2"><strong>About CarPal</strong></h2>
+        <p class="mbr-text mbr-fonts-style mt-4 display-7">
+          CarPal was built by a student team at the University of Nebraska-Omaha who share a passion for making car care more accessible.
+          Too often, simple repairs and maintenance tasks feel overwhelming without guidance, so we created CarPal to empower drivers to take control of their vehicle’s health.
+        </p>
+      </div>
+    </div>
+
+    <div class="row mt-5">
+      <div class="col-md-6">
+        <h3 class="mbr-fonts-style display-5"><strong>Our Team</strong></h3>
+        <p class="mbr-text mbr-fonts-style mt-3 display-7">
+          We’re computer science students, car enthusiasts, and problem-solvers who believe in practical technology.
+          Each member brought unique skills - from coding and UX design to hands-on auto knowledge - to make CarPal simple, effective, and user-friendly.
+        </p>
+      </div>
+
+      <div class="col-md-6">
+        <h3 class="mbr-fonts-style display-5"><strong>Our Mission</strong></h3>
+        <p class="mbr-text mbr-fonts-style mt-3 display-7">
+          Our mission is to reduce the stress of car ownership by giving everyday drivers the confidence to perform DIY repairs and maintenance.
+          With step-by-step instructions, CarPal saves you money, time, and the headache of unnecessary trips to the shop.
+        </p>
+      </div>
+    </div>
+  </div>
+
+    <!-- Team -->
+    <div class="row mt-5">
+      <div class="col-12 text-center mb-4">
+        <h3 class="mbr-fonts-style display-5"><strong>Meet the Team</strong></h3>
+      </div>
+
+      <div class="col-md-3 mb-4">
+    <div class="card team-card h-100 shadow-sm border-0 text-center p-4">
+      <h5 class="mbr-fonts-style mb-1">Cisco Gonzalez</h5>
+      <div class="text-muted">Product & Frontend</div>
+    </div>
+  </div>
+
+  <div class="col-md-3 mb-4">
+    <div class="card team-card h-100 shadow-sm border-0 text-center p-4">
+      <h5 class="mbr-fonts-style mb-1">Michael Israel</h5>
+      <div class="text-muted">Backend & Data</div>
+    </div>
+  </div>
+
+  <div class="col-md-3 mb-4">
+    <div class="card team-card h-100 shadow-sm border-0 text-center p-4">
+      <h5 class="mbr-fonts-style mb-1">Coumba Guitteye</h5>
+      <div class="text-muted">Docs & QA</div>
+    </div>
+  </div>
+
+  <div class="col-md-3 mb-4">
+    <div class="card team-card h-100 shadow-sm border-0 text-center p-4">
+      <h5 class="mbr-fonts-style mb-1">Lisette Azondekon</h5>
+      <div class="text-muted">Design & UX</div>
+    </div>
+  </div>
+</div>
+</section>
+
+
 <section data-bs-version="5.1" class="footer1 programm5 cid-tJS9NNcTLZ" once="footers" id="footer03-8">
-
-
-
-
-
     <div class="container">
         <div class="row">
-
             <div class="row-links mb-4">
-                <ul class="header-menu">
-
-
-
-
-                <li class="header-menu-item mbr-fonts-style display-5">
-					<a href="index.html#header01-7" class="text-danger">About</a>
-				</li><li class="header-menu-item mbr-fonts-style display-5">
-					<a href="index.html#features04-w" class="text-danger text-primary">Services</a>
-				</li><li class="header-menu-item mbr-fonts-style display-5"></li><li class="header-menu-item mbr-fonts-style display-5">
-					<a href="index.html#gallery02-v" class="text-danger text-primary">Works</a></li></ul>
-              </div>
+				<ul class="header-menu">
+  					<li class="header-menu-item mbr-fonts-style display-5">
+    					<a href="about" class="text-danger">About</a>
+  					</li><li class="header-menu-item mbr-fonts-style display-5">
+    					<a href="#features04-w" class="text-danger text-primary">Services</a>
+  					</li>
+				</ul>
+			</div>
             <div class="col-12 mt-5">
                 <p class="mbr-fonts-style copyright display-7">
                     © Copyright 2025 University of Nebraska-Omaha - All Rights Reserved
