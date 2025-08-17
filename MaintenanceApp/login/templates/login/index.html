@@ -17,7 +17,7 @@
 
     <main class="text-center">
         <h2>Welcome to CarPal!</h2>
-        <form action="{% url 'results' %}" method="get" id="search-form">
+        <form action="{% url 'login:results' %}" method="get" id="search-form">
             <div class="d-flex justify-content-center flex-wrap gap-3 mb-4">
 
                 <div class="dropdown">
@@ -64,7 +64,7 @@
             <button type="submit" class="search-button">Search</button>
         </form>
 
-        <a href="{% url 'repair_options' %}" class="search-button">Add a Vehicle</a>
+        <a href="{% url 'selectVehicle:create_vehicle' %}" class="search-button">Add a Vehicle</a>
     </main>
 
     <footer class="mt-5 text-center text-muted small">

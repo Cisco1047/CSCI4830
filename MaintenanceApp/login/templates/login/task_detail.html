@@ -6,11 +6,30 @@
 {% endblock %}
 
 {% block content %}
-    <div class="task-detail-container">
-        <h1>{{ task.name }}</h1>
-        <p>{{ task.description }}</p>
-        <p><strong>Cost:</strong> ${{ task.cost }}</p>
-        <p><strong>Duration:</strong> {{ task.duration }} hours</p>
-        <a href="{% url 'results' %}" class="back-link">Back to Results</a>
-    </div>
+    <div class="task-detail-container" style="max-width: 800px; margin: 0 auto;">
+    <h1>{{ task.name }}</h1>
+    {% if task.description %}<p>{{ task.description }}</p>{% endif %}
+    {% if task.cost %}<p><strong>Cost:</strong> ${{ task.cost }}</p>{% endif %}
+    {% if task.duration %}<p><strong>Duration:</strong> {{ task.duration }} hours</p>{% endif %}
+
+    <hr>
+
+    <h2>Instructions</h2>
+    {% if steps and steps|length > 0 %}
+      <ol>
+        {% for s in steps %}
+          <li style="margin-bottom: 0.75rem;">
+            {% if s.title %}<div style="font-weight:600; margin-bottom: 0.25rem;">{{ s.title }}</div>{% endif %}
+            <div>{{ s.text }}</div>
+          </li>
+        {% endfor %}
+      </ol>
+    {% else %}
+      <p class="text-muted">No step-by-step instructions for this task.</p>
+    {% endif %}
+
+    <p style="margin-top: 1rem;">
+      <a href="{{ back_url }}" class="back-link">Back to Results</a>
+    </p>
+  </div>
 {% endblock %}
