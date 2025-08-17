@@ -27,7 +27,7 @@
                     <div class="repair-card">
                         <h2>{{ tfc.task.name }}</h2>
                         <p>{{ tfc.task.description }}</p>
-                        <a href="{% url 'task_detail' tfc.id %}" class="btn">View</a>
+                        <<a href="{% url 'selectVehicle:task_detail' tfc.id %}{% if request.GET %}?{{ request.GET.urlencode }}{% endif %}" class="btn">View</a>
                     </div>
                 {% endfor %}
             {% else %}

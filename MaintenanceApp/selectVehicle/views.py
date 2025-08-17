@@ -8,6 +8,22 @@ from .forms import VehicleForm
 from django.contrib import messages
 from django.urls import reverse
 
+# Fix odd characters that appear in your stored JSON
+REPLACEMENTS = {
+    "û": "–",   # en dash
+    "Æ": "’",   # apostrophe
+    "╛": "¼",   # fraction (or change to 'quarter')
+}
+
+
+def _clean_text(s: str) -> str:
+    if not isinstance(s, str):
+        return s
+    for bad, good in REPLACEMENTS.items():
+        s = s.replace(bad, good)
+    return s
+
+
 def create_vehicle(request):
     if request.method == 'POST':
         form = VehicleForm(request.POST)
@@ -24,76 +40,85 @@ def create_vehicle(request):
     }
     return render(request, 'vehicles/create_vehicle.html', context)
 
+
 def get_models(request):
-    make_name = request.GET.get('make_name')
-    model_list = []
-    if make_name:
-        try:
-            make = Make.objects.get(name__iexact=make_name)
-            models = CarModel.objects.filter(make=make).order_by('name')
-            model_list = [{'name': m.name} for m in models]
-        except Make.DoesNotExist:
-            pass
+    make_id = request.GET.get('make_id')
+    year = request.GET.get('year')
+
+    if not make_id or not year:
+        return JsonResponse([], safe=False)
+
+    models_qs = (
+        CarModel.objects
+        .filter(carconfiguration__make_id=make_id,
+                carconfiguration__year=year)
+        .distinct()
+        .order_by('name')
+    )
+
+    model_list = [{"id": m.id, "name": m.name} for m in models_qs]
     return JsonResponse(model_list, safe=False)
+
 
 def vehicle_selection_view(request):
     years = list(range(2026, 1999, -1))
     makes = Make.objects.all().order_by('name')
-    return render(request, 'login/index.html', {'years': years,'makes': makes})
+    return render(request, 'login/index.html', {'years': years, 'makes': makes})
 
-def select_vehicle(request):
-    if request.method == "POST":
-        form = VehicleSelectForm(request.POST, user=request.user)
-        if form.is_valid():
-            vehicle = form.cleaned_data["vehicle"]
-            # Redirect carrying the chosen vehicle id
-            url = f"{reverse('repair_options')}?vehicle={vehicle.id}"
-            return redirect(url)
-        else:
-            messages.error(request, "Please select a valid vehicle.")
+
+def get_instructions_panel(request, tfc_id: int):
+    tfc = get_object_or_404(TaskForConfiguration, pk=tfc_id)
+
+    raw = tfc.instructions or []
+
+    steps = []
+    if isinstance(raw, list):
+        for item in raw:
+            steps.append({
+                "n": item.get("step"),
+                "title": _clean_text(item.get("title", "")),
+                "text": _clean_text(item.get("instruction", "")),
+            })
     else:
-        form = VehicleSelectForm(user=request.user)
+        steps = []
 
-    return render(request, "repairs/select_vehicle.html", {"form": form})
-
-
-def _get_vehicle_secure(request):
-    """
-    Pull vehicle id from querystring and validate that it exists.
-    If you have per-user vehicles, also ensure ownership here.
-    """
-    vid = request.GET.get("vehicle")
-    if not vid:
-        return None
-    try:
-        v = Vehicle.objects.select_related(
-            "car_configuration",
-            "car_configuration__make",
-            "car_configuration__car_model",
-        ).get(pk=vid)
-        # Enforce ownership if your model has an owner/user field:
-        if hasattr(Vehicle, "owner"):
-            if not request.user.is_authenticated or v.owner_id != request.user.id:
-                return None
-        return v
-    except Vehicle.DoesNotExist:
-        return None
+    context = {
+        "tfc": tfc,
+        "task_name": getattr(getattr(tfc, "maintenance_task", None), "name", "Task"),
+        "steps": steps,
+    }
+    return render(request, "repair/_instructions_panel.html", context)
 
 
-def repair_options(request):
-    vehicle = _get_vehicle_secure(request)
-    if vehicle is None:
-        messages.error(request, "Select a vehicle before continuing.")
-        return redirect("repair_select_vehicle")
+def task_detail(request, tfc_id: int):
+    tfc = get_object_or_404(TaskForConfiguration, pk=tfc_id)
+    task = getattr(tfc, "task", None) or getattr(tfc, "maintenance_task", None)
 
-    # Example: filter tasks for this vehicle's configuration
-    cfg = vehicle.car_configuration
-    tasks = TaskForConfiguration.objects.select_related("task").filter(
-        car_configuration=cfg
-    ).order_by("task__name")
+    raw = tfc.instructions or []
+    steps = []
+    if isinstance(raw, list):
+        for item in raw:
+            steps.append({
+                "n": item.get("step"),
+                "title": _clean_text(item.get("title", "")),
+                "text": _clean_text(item.get("instruction", "")),
+            })
 
-    # Handle POST from this page (choosing a task, etc.) later
-    return render(request, "repairs/repair_options.html", {
-        "vehicle": vehicle,
-        "tasks": tasks,
+    qs = request.META.get("QUERY_STRING", "")
+    if qs:
+        back_url = f"{reverse('login:results')}?{qs}"
+    else:
+        cfg = getattr(tfc, "car_configuration", None)
+        if cfg:
+            back_url = (
+                f"{reverse('login:results')}"
+                f"?year={cfg.year}&make_id={cfg.make_id}&model_id={cfg.car_model_id}"
+            )
+        else:
+            back_url = reverse('login:results')
+
+    return render(request, "login/task_detail.html", {
+        "task": task,
+        "steps": steps,
+        "back_url": back_url,
     })

@@ -1,6 +1,8 @@
 from django.urls import path
 from . import views
 
+app_name = 'login'
+
 urlpatterns = [
     # Paths for your main app pages
     path('search/', views.searchPage, name='search'),
