@@ -35,15 +35,16 @@ Challenges include limited access to manufacturer repair data, development costs
 
 ## Vehicles compatible
 
-•	2006 Lexus GX460
-•	2009 Lexus GX470
-•	2012 Honda Accord
-•	2013 Nissan Sentra
-•	2016 VW Jetta
-•	2019 GMC Terrain
-•	2020 Toyota RAV4
-•	2022 Ford F-150
+- 2006 Lexus GX460
+- 2009 Lexus GX470
+- 2012 Honda Accord
+- 2013 Nissan Sentra
+- 2016 VW Jetta
+- 2019 GMC Terrain
+- 2020 Toyota RAV4
+- 2022 Ford F-150
 
+---
 
 ## Features:
 
