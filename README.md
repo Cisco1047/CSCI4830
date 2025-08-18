@@ -13,10 +13,12 @@ Challenges include limited access to manufacturer repair data, development costs
 ---
 ## Technology
 
-- Python 3
-- HTML
-- Django
+- Python 3.12
+- HTML, CSS
+- Django 5.2
 - Pillow
+- SQLite
+- pytest + Selenium
 
 ---
 
@@ -51,6 +53,33 @@ Challenges include limited access to manufacturer repair data, development costs
 - Repair search page
 - Results page
 
+
+### Vehicle search
+- Cascading **Year → Make → Model** (models filtered by selected make & year).
+- **VIN** entry supported (17 chars; client-side uppercasing; excludes I/O/Q).
+- **Client-side validation**: user must provide **VIN** _or_ complete **Year + Make + Model**.  
+  Missing dropdowns glow red and submission is blocked.
+
+### Repair options
+- Shows available maintenance tasks for the chosen vehicle configuration.
+
+### Task detail / Instructions
+- Step-by-step instructions are stored in DB (JSON) and rendered cleanly.
+- The view accepts multiple instruction shapes, including:
+  - `[{ "step": 1, "title": "…", "instruction": "…" }, ...]`
+  - `[{ "n": 1, "text": "…" }, ...]`
+  - `["Turn off engine", "Open hood", ...]` (list of strings)
+  - JSON string or plain newline-separated text
+- Odd characters from copy/paste are normalized (e.g., en-dash, apostrophe).
+
+### UI polish
+- “Search” + “Add a Vehicle” buttons are side-by-side with spacing.
+- Sticky footer on all screen sizes.
+- Results page preserves the user’s query string when navigating back.
+
+### Testing
+- **pytest + Selenium** cover the selector flow (dropdown interactions, etc.).
+
 ---
 
 ## Backend: 
@@ -62,5 +91,15 @@ Challenges include limited access to manufacturer repair data, development costs
 
 ## Release Notes
 
-Release 0.3 - In this release we have improved the UI for the home page and search page. We also added another page for choosing the repair option that the user wants to do. We also refined the ability to select the year,model,make or vin of the car you would like to search for. We connected the database to the frontend by querying the database for the make and model store in it and implemented JavaScript so make it so that the Make of the vehicle selected aligns with the model, not more Ford Accord. Additional we added more comprehensive test implementing Selenium test that work using pytest and focus on dropdown selection, specifically on the page where users pick Year>Make>Model. 
+### 1.0 — Highlights
+
+- **New:** Added a **Repair Options** page where users choose the task they want to perform after selecting a vehicle.
+- **Improved UI:** Polished the **Home** and **Vehicle Search** pages (clearer layout, better button placement).
+- **Refined vehicle selection:**
+  - Cascading **Year → Make → Model** flow.
+  - Optional **VIN** search.
+  - Models are now fetched from the DB for the selected **make + year**, preventing mismatches (e.g., no more “Ford Accord”).
+- **Data integration:** The frontend now queries the database for available **makes/models** rather than relying on static lists.
+- **Testing:** Added more comprehensive **Selenium** tests (run via **pytest**) focused on the dropdown workflow on the Year → Make → Model page.
+
 
