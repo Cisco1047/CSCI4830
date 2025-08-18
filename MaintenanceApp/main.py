@@ -1,8 +1,10 @@
 from vinDecoder import decode_vin
 
 def main():
-    test_vin = "1HGCM82633A004352"
+    test_vin = "3VW267AJ5GM371022"
     vehicle = decode_vin(test_vin)
+
+    print('test')
 
     if vehicle:
         print("Decoded Vehicle Info:")
