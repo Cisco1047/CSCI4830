@@ -1,0 +1,41 @@
+# Essential settings only - everything else uses defaults
+PROJECT_NAME           = "CarPal Documentation"
+PROJECT_NUMBER         = "v1.0"
+PROJECT_BRIEF          = "Automated Django car maintenance guide documentation"
+
+# Input/Output
+INPUT                  = MaintenanceApp/ README.md
+RECURSIVE              = YES
+OUTPUT_DIRECTORY       = docs/
+HTML_OUTPUT            = html
+
+# File patterns
+FILE_PATTERNS          = *.py *.md
+EXCLUDE_PATTERNS       = */migrations/* \
+                        */venv/* \
+                        */__pycache__/* \
+                        */static/* \
+                        */media/* \
+                        */.git/* \
+                        */node_modules/*
+
+# Auto-extract everything
+EXTRACT_ALL            = YES
+EXTRACT_PRIVATE        = NO
+EXTRACT_STATIC         = YES
+EXTRACT_LOCAL_CLASSES  = YES
+
+# HTML settings
+GENERATE_HTML          = YES
+GENERATE_LATEX         = NO
+HTML_THEME             = 
+DISABLE_INDEX          = NO
+GENERATE_TREEVIEW      = YES
+
+# Search
+SEARCHENGINE           = YES
+SERVER_BASED_SEARCH    = NO
+
+# Source code
+SOURCE_BROWSER         = YES
+INLINE_SOURCES         = NO
