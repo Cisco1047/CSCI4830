@@ -1,0 +1,5012 @@
+[
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "admin",
+        "model": "logentry"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "auth",
+        "model": "permission"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "auth",
+        "model": "group"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "auth",
+        "model": "user"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "contenttypes",
+        "model": "contenttype"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "sessions",
+        "model": "session"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "selectVehicle",
+        "model": "carmodel"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "selectVehicle",
+        "model": "taskforconfiguration"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "selectVehicle",
+        "model": "carconfiguration"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "selectVehicle",
+        "model": "maintenancetask"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "selectVehicle",
+        "model": "servicerecord"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "selectVehicle",
+        "model": "make"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "selectVehicle",
+        "model": "vehicle"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "login",
+        "model": "taskforconfiguration"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "0xepjh32zpibx0cmjoupkma325m1ozeu",
+    "fields": {
+        "session_data": ".eJxVjEEOwiAQRe_C2hBLBygu3XsGMsxMpWogKe3KeHfbpAvdvvf-f6uI65Lj2mSOE6uL6tTplyWkp5Rd8APLvWqqZZmnpPdEH7bpW2V5XY_27yBjy9u6HwzDCEB4ZmchWABL_RjIbCRI6gAxUPIsDpOARXbMvjeDN-ISefX5Au03OJM:1ucYrZ:PYqtcmfzrBjAwze6_dCJ5CwijcX6PhXLC_KWQe-MSms",
+        "expire_date": "2025-08-01T00:22:09.985Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "2sfsy5a7u7qjrhvsbr9qodsc6dirko4v",
+    "fields": {
+        "session_data": ".eJxVjEEOwiAQRe_C2hBLBygu3XsGMsxMpWogKe3KeHfbpAvdvvf-f6uI65Lj2mSOE6uL6tTplyWkp5Rd8APLvWqqZZmnpPdEH7bpW2V5XY_27yBjy9u6HwzDCEB4ZmchWABL_RjIbCRI6gAxUPIsDpOARXbMvjeDN-ISefX5Au03OJM:1ungxb:KfpA_C1eDKQLosnAiKTyHloZogSxXSRbrAJQdG8UfLY",
+        "expire_date": "2025-08-31T17:14:23.847Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "6bao8c0zfo891md11weyl2hg1ni1jd7b",
+    "fields": {
+        "session_data": ".eJxVjEEOwiAQRe_C2hBLBygu3XsGMsxMpWogKe3KeHfbpAvdvvf-f6uI65Lj2mSOE6uL6tTplyWkp5Rd8APLvWqqZZmnpPdEH7bpW2V5XY_27yBjy9u6HwzDCEB4ZmchWABL_RjIbCRI6gAxUPIsDpOARXbMvjeDN-ISefX5Au03OJM:1uiep5:d5o2yGAHz4-cB0_qqIc-QeZMfxTfPoDSTWPaTzj3xI0",
+        "expire_date": "2025-08-17T19:56:47.355Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "q0v1ym3vgwjhx7lc2zxrfcwjhl2kwjgf",
+    "fields": {
+        "session_data": ".eJxVjEEOwiAQRe_C2hBLBygu3XsGMsxMpWogKe3KeHfbpAvdvvf-f6uI65Lj2mSOE6uL6tTplyWkp5Rd8APLvWqqZZmnpPdEH7bpW2V5XY_27yBjy9u6HwzDCEB4ZmchWABL_RjIbCRI6gAxUPIsDpOARXbMvjeDN-ISefX5Au03OJM:1ucZko:DqL_Q0-PJQ3z4sj9JBKHtU6zsBD-HJz186fT2w8iOS4",
+        "expire_date": "2025-08-01T01:19:14.063Z"
+    }
+},
+{
+    "model": "selectVehicle.make",
+    "pk": 4,
+    "fields": {
+        "name": "Nissan"
+    }
+},
+{
+    "model": "selectVehicle.make",
+    "pk": 5,
+    "fields": {
+        "name": "Toyota"
+    }
+},
+{
+    "model": "selectVehicle.make",
+    "pk": 6,
+    "fields": {
+        "name": "Volkswagen"
+    }
+},
+{
+    "model": "selectVehicle.make",
+    "pk": 7,
+    "fields": {
+        "name": "Honda"
+    }
+},
+{
+    "model": "selectVehicle.make",
+    "pk": 8,
+    "fields": {
+        "name": "Lexus"
+    }
+},
+{
+    "model": "selectVehicle.make",
+    "pk": 9,
+    "fields": {
+        "name": "Ford"
+    }
+},
+{
+    "model": "selectVehicle.make",
+    "pk": 11,
+    "fields": {
+        "name": "GMC"
+    }
+},
+{
+    "model": "selectVehicle.carmodel",
+    "pk": 9,
+    "fields": {
+        "make": 8,
+        "name": "GX 460"
+    }
+},
+{
+    "model": "selectVehicle.carmodel",
+    "pk": 10,
+    "fields": {
+        "make": 4,
+        "name": "Sentra"
+    }
+},
+{
+    "model": "selectVehicle.carmodel",
+    "pk": 11,
+    "fields": {
+        "make": 6,
+        "name": "Jetta"
+    }
+},
+{
+    "model": "selectVehicle.carmodel",
+    "pk": 12,
+    "fields": {
+        "make": 7,
+        "name": "Accord"
+    }
+},
+{
+    "model": "selectVehicle.carmodel",
+    "pk": 13,
+    "fields": {
+        "make": 9,
+        "name": "F150"
+    }
+},
+{
+    "model": "selectVehicle.carmodel",
+    "pk": 14,
+    "fields": {
+        "make": 8,
+        "name": "GX470"
+    }
+},
+{
+    "model": "selectVehicle.carmodel",
+    "pk": 15,
+    "fields": {
+        "make": 11,
+        "name": "Terrain"
+    }
+},
+{
+    "model": "selectVehicle.carmodel",
+    "pk": 16,
+    "fields": {
+        "make": 5,
+        "name": "Rav4"
+    }
+},
+{
+    "model": "selectVehicle.carconfiguration",
+    "pk": 3,
+    "fields": {
+        "make": 8,
+        "model": 9,
+        "year": 2006
+    }
+},
+{
+    "model": "selectVehicle.carconfiguration",
+    "pk": 4,
+    "fields": {
+        "make": 4,
+        "model": 10,
+        "year": 2013
+    }
+},
+{
+    "model": "selectVehicle.carconfiguration",
+    "pk": 5,
+    "fields": {
+        "make": 7,
+        "model": 12,
+        "year": 2012
+    }
+},
+{
+    "model": "selectVehicle.carconfiguration",
+    "pk": 6,
+    "fields": {
+        "make": 6,
+        "model": 11,
+        "year": 2016
+    }
+},
+{
+    "model": "selectVehicle.carconfiguration",
+    "pk": 7,
+    "fields": {
+        "make": 8,
+        "model": 14,
+        "year": 2009
+    }
+},
+{
+    "model": "selectVehicle.carconfiguration",
+    "pk": 8,
+    "fields": {
+        "make": 5,
+        "model": 16,
+        "year": 2020
+    }
+},
+{
+    "model": "selectVehicle.carconfiguration",
+    "pk": 9,
+    "fields": {
+        "make": 9,
+        "model": 13,
+        "year": 2022
+    }
+},
+{
+    "model": "selectVehicle.carconfiguration",
+    "pk": 10,
+    "fields": {
+        "make": 11,
+        "model": 15,
+        "year": 2019
+    }
+},
+{
+    "model": "selectVehicle.vehicle",
+    "pk": 1,
+    "fields": {
+        "vin": "",
+        "configuration": 7
+    }
+},
+{
+    "model": "selectVehicle.maintenancetask",
+    "pk": 1,
+    "fields": {
+        "name": "Oil Change",
+        "description": ""
+    }
+},
+{
+    "model": "selectVehicle.maintenancetask",
+    "pk": 2,
+    "fields": {
+        "name": "Battery Change",
+        "description": ""
+    }
+},
+{
+    "model": "selectVehicle.maintenancetask",
+    "pk": 3,
+    "fields": {
+        "name": "Cabin Air Filter",
+        "description": ""
+    }
+},
+{
+    "model": "selectVehicle.maintenancetask",
+    "pk": 4,
+    "fields": {
+        "name": "Engine Air Filter",
+        "description": ""
+    }
+},
+{
+    "model": "selectVehicle.maintenancetask",
+    "pk": 5,
+    "fields": {
+        "name": "Turn Signal Bulb",
+        "description": ""
+    }
+},
+{
+    "model": "selectVehicle.maintenancetask",
+    "pk": 6,
+    "fields": {
+        "name": "Windsheild Wipers",
+        "description": ""
+    }
+},
+{
+    "model": "selectVehicle.taskforconfiguration",
+    "pk": 1,
+    "fields": {
+        "task": 1,
+        "configuration": 3,
+        "instructions": [
+            {
+                "step": 1,
+                "title": "Gather Supplies",
+                "instruction": "Get 6.5 quarts of 5W-30 motor oil (synthetic recommended), a new oil filter (Toyota OEM #90915-YZZD3 or equivalent), drain pan, oil filter wrench, 14mm socket for drain plug, and a torque wrench (optional)."
+            },
+            {
+                "step": 2,
+                "title": "Warm Up Engine",
+                "instruction": "Run the engine for 5–10 minutes to warm the oil, then shut it off."
+            },
+            {
+                "step": 3,
+                "title": "Raise Vehicle",
+                "instruction": "Use a jack to raise the front of the vehicle and secure it with jack stands on level ground. Ensure the parking brake is engaged."
+            },
+            {
+                "step": 4,
+                "title": "Locate Drain Plug",
+                "instruction": "Find the 14mm oil drain plug on the oil pan, usually toward the rear of the engine block. Position the drain pan beneath it."
+            },
+            {
+                "step": 5,
+                "title": "Drain Old Oil",
+                "instruction": "Carefully remove the drain plug and let the oil drain completely. Inspect the gasket and replace it if worn."
+            },
+            {
+                "step": 6,
+                "title": "Reinstall Drain Plug",
+                "instruction": "Reinstall the drain plug. Tighten securely, or torque to 27 ft-lbs (37 Nm) if using a torque wrench. Do not overtighten."
+            },
+            {
+                "step": 7,
+                "title": "Locate Oil Filter",
+                "instruction": "Locate the oil filter, typically on the driver’s side below the alternator. Place the drain pan beneath the filter."
+            },
+            {
+                "step": 8,
+                "title": "Remove Old Filter",
+                "instruction": "Use an oil filter wrench to loosen and remove the old filter. Expect some oil to spill."
+            },
+            {
+                "step": 9,
+                "title": "Prepare New Filter",
+                "instruction": "Apply a thin layer of new oil to the rubber gasket of the new filter. Install by hand until snug, then tighten an additional 3/4 turn. Do not use a wrench to overtighten."
+            },
+            {
+                "step": 10,
+                "title": "Lower Vehicle",
+                "instruction": "Safely lower the vehicle from the jack stands."
+            },
+            {
+                "step": 11,
+                "title": "Open Oil Filler Cap",
+                "instruction": "Remove the oil filler cap located on top of the engine."
+            },
+            {
+                "step": 12,
+                "title": "Add New Oil",
+                "instruction": "Pour in about 6 quarts of new 5W-30 oil using a funnel for accuracy."
+            },
+            {
+                "step": 13,
+                "title": "Run Engine and Check Leaks",
+                "instruction": "Replace the oil filler cap, start the engine, and let it run for 1–2 minutes. Check for leaks around the drain plug and filter."
+            },
+            {
+                "step": 14,
+                "title": "Wait and Recheck Level",
+                "instruction": "Shut off the engine and wait 5–10 minutes for oil to settle. Use the dipstick to check oil level."
+            },
+            {
+                "step": 15,
+                "title": "Top Off if Needed",
+                "instruction": "Add oil in small amounts until the dipstick shows the level between the 'low' and 'full' marks. Avoid overfilling."
+            },
+            {
+                "step": 16,
+                "title": "Dispose of Old Oil",
+                "instruction": "Properly dispose of the old oil and filter at an authorized recycling center."
+            },
+            {
+                "step": 17,
+                "title": "Reset Maintenance Light",
+                "instruction": "Turn ignition to ON (engine off). Press and hold the Odometer reset button until the 'MAINT REQD' light turns off (about 10 seconds). Turn ignition off."
+            }
+        ]
+    }
+},
+{
+    "model": "selectVehicle.taskforconfiguration",
+    "pk": 2,
+    "fields": {
+        "task": 2,
+        "configuration": 3,
+        "instructions": [
+            {
+                "step": 1,
+                "title": "Gather Supplies",
+                "instruction": "Obtain a new 12V automotive battery (Group 24F or specified in owner's manual). Gather 10mm and 13mm wrenches, a battery terminal brush, battery terminal protector spray, baking soda and water solution for cleaning corrosion, rags or paper towels, and wear eye protection and gloves."
+            },
+            {
+                "step": 2,
+                "title": "Prepare Vehicle",
+                "instruction": "Turn off the vehicle, engage the parking brake, set transmission to Park (P), and remove the key from the ignition for safety."
+            },
+            {
+                "step": 3,
+                "title": "Locate Battery",
+                "instruction": "Open the hood and locate the battery, typically on the passenger side of the engine bay."
+            },
+            {
+                "step": 4,
+                "title": "Disconnect Negative Terminal",
+                "instruction": "Using a 10mm wrench, loosen the nut on the negative (-) terminal clamp. Twist and remove the cable, moving it aside to prevent accidental contact."
+            },
+            {
+                "step": 5,
+                "title": "Disconnect Positive Terminal",
+                "instruction": "Using a 10mm wrench, loosen the nut on the positive (+) terminal clamp. Twist and remove the cable, moving it aside from the battery."
+            },
+            {
+                "step": 6,
+                "title": "Remove Hold-Down Clamp",
+                "instruction": "Use a 13mm wrench to loosen the nut on the battery hold-down clamp. Remove the clamp securing the battery."
+            },
+            {
+                "step": 7,
+                "title": "Remove Old Battery",
+                "instruction": "Lift the old battery straight up and out of the tray carefully. Batteries are heavy, so use proper lifting technique or ask for assistance."
+            },
+            {
+                "step": 8,
+                "title": "Clean Tray and Terminals",
+                "instruction": "Inspect the battery tray and clamps for corrosion. Clean with a baking soda and water solution, scrub with a brush, rinse, and dry thoroughly."
+            },
+            {
+                "step": 9,
+                "title": "Place New Battery",
+                "instruction": "Position the new battery in the tray, making sure it sits flat with terminals oriented the same as the old battery."
+            },
+            {
+                "step": 10,
+                "title": "Secure Battery",
+                "instruction": "Reinstall the hold-down clamp and tighten the 13mm nut firmly, ensuring the battery is secure but not overtightened."
+            },
+            {
+                "step": 11,
+                "title": "Protect Positive Terminal",
+                "instruction": "Spray battery terminal protector onto the positive (+) terminal."
+            },
+            {
+                "step": 12,
+                "title": "Reconnect Positive Cable",
+                "instruction": "Attach the positive (+) cable clamp to the positive terminal and tighten the 10mm nut securely."
+            },
+            {
+                "step": 13,
+                "title": "Protect Negative Terminal",
+                "instruction": "Spray battery terminal protector onto the negative (-) terminal."
+            },
+            {
+                "step": 14,
+                "title": "Reconnect Negative Cable",
+                "instruction": "Attach the negative (-) cable clamp to the negative terminal and tighten the 10mm nut securely."
+            },
+            {
+                "step": 15,
+                "title": "Finish and Test",
+                "instruction": "Close the hood and start the vehicle to confirm proper installation. Reset radio presets or other electronics if needed."
+            }
+        ]
+    }
+},
+{
+    "model": "selectVehicle.taskforconfiguration",
+    "pk": 3,
+    "fields": {
+        "task": 3,
+        "configuration": 3,
+        "instructions": [
+            {
+                "step": 1,
+                "title": "Gather Supplies",
+                "instruction": "Get a new cabin air filter (confirm correct part number for Lexus GX 470). Have a small flathead screwdriver handy if clips need prying."
+            },
+            {
+                "step": 2,
+                "title": "Empty Glove Box",
+                "instruction": "Open the passenger-side glove compartment and remove all contents."
+            },
+            {
+                "step": 3,
+                "title": "Release Stopper Tabs",
+                "instruction": "Locate the two plastic stopper tabs inside the glove compartment (one on each side). Push them inward to allow the glove box to swing down further."
+            },
+            {
+                "step": 4,
+                "title": "Detach Damper Arm",
+                "instruction": "On the right side of the glove box, gently unclip or slide off the damper arm if present, so the glove box can drop fully."
+            },
+            {
+                "step": 5,
+                "title": "Locate Filter Housing",
+                "instruction": "With the glove box lowered or detached, locate the rectangular cabin air filter housing behind it. It will have a plastic cover with clips."
+            },
+            {
+                "step": 6,
+                "title": "Remove Housing Cover",
+                "instruction": "Unclip the two retaining clips on the sides of the filter housing cover and remove the cover."
+            },
+            {
+                "step": 7,
+                "title": "Remove Old Filter",
+                "instruction": "Slide the old cabin air filter element straight out. Note the airflow arrow direction printed on the filter."
+            },
+            {
+                "step": 8,
+                "title": "Clean Housing",
+                "instruction": "Inspect the housing for debris or leaves and clean as necessary."
+            },
+            {
+                "step": 9,
+                "title": "Orient New Filter",
+                "instruction": "Align the new cabin air filter with the airflow arrow pointing in the same direction as the old filter (typically downward)."
+            },
+            {
+                "step": 10,
+                "title": "Insert New Filter",
+                "instruction": "Slide the new filter element fully into the housing until it sits firmly."
+            },
+            {
+                "step": 11,
+                "title": "Reattach Cover",
+                "instruction": "Replace the housing cover and snap the retaining clips securely into place."
+            },
+            {
+                "step": 12,
+                "title": "Reconnect Damper Arm",
+                "instruction": "Reattach the damper arm to the glove compartment if applicable."
+            },
+            {
+                "step": 13,
+                "title": "Reposition Glove Box",
+                "instruction": "Push the glove box back up until the stopper tabs engage, returning it to normal operation."
+            },
+            {
+                "step": 14,
+                "title": "Finish",
+                "instruction": "Close the glove compartment and dispose of the old filter properly."
+            }
+        ]
+    }
+},
+{
+    "model": "selectVehicle.taskforconfiguration",
+    "pk": 4,
+    "fields": {
+        "task": 4,
+        "configuration": 3,
+        "instructions": [
+            {
+                "step": 1,
+                "title": "Gather Supplies",
+                "instruction": "Obtain a new engine air filter (confirm correct part number for the Lexus GX 470). Have a flathead screwdriver or 10mm socket if your airbox uses screws or bolts."
+            },
+            {
+                "step": 2,
+                "title": "Prepare Vehicle",
+                "instruction": "Ensure the vehicle is turned off and the engine is cool before starting."
+            },
+            {
+                "step": 3,
+                "title": "Locate Air Filter Housing",
+                "instruction": "Open the hood and find the air filter housing. On the GX 470 (4.7L V8), it is usually a large black plastic box on the passenger side of the engine bay, connected to the intake manifold by a tube."
+            },
+            {
+                "step": 4,
+                "title": "Release Retaining Clips",
+                "instruction": "Unclip the 2–4 retaining clips around the air filter housing. If your model uses a screw or bolt, remove it instead."
+            },
+            {
+                "step": 5,
+                "title": "Open Housing",
+                "instruction": "Carefully lift the top half of the air filter housing. It may pivot open on a hinge. Slightly pull away from intake hoses if necessary."
+            },
+            {
+                "step": 6,
+                "title": "Remove Old Filter",
+                "instruction": "Take out the old, dirty air filter element from the lower half of the housing."
+            },
+            {
+                "step": 7,
+                "title": "Clean Housing",
+                "instruction": "Inspect the air filter housing for leaves, dust, or debris. Wipe it clean with a rag if needed."
+            },
+            {
+                "step": 8,
+                "title": "Insert New Filter",
+                "instruction": "Place the new air filter element into the lower housing, ensuring it fits snugly in the grooves."
+            },
+            {
+                "step": 9,
+                "title": "Close Housing",
+                "instruction": "Align the top half of the housing with the bottom half and press firmly to seal."
+            },
+            {
+                "step": 10,
+                "title": "Secure Housing",
+                "instruction": "Re-engage all retaining clips. Reinstall and tighten any screws or bolts if applicable."
+            },
+            {
+                "step": 11,
+                "title": "Check Intake Hoses",
+                "instruction": "Ensure all intake hoses connected to the airbox are properly secured."
+            },
+            {
+                "step": 12,
+                "title": "Finish",
+                "instruction": "Close the hood to complete the replacement."
+            }
+        ]
+    }
+},
+{
+    "model": "selectVehicle.taskforconfiguration",
+    "pk": 5,
+    "fields": {
+        "task": 5,
+        "configuration": 3,
+        "instructions": [
+            {
+                "step": 1,
+                "title": "Gather Supplies",
+                "instruction": "Obtain the correct replacement turn signal bulb (e.g., 7440A/7440NA for front or rear, verify via owner's manual or old bulb). Have a small flathead screwdriver ready if clips need prying."
+            },
+            {
+                "step": 2,
+                "title": "Prepare Vehicle",
+                "instruction": "Ensure the vehicle and lights are turned off. Allow any recently used bulbs to cool before handling."
+            },
+            {
+                "step": 3,
+                "title": "Determine Location",
+                "instruction": "Identify if you are replacing a front or rear turn signal bulb, as the access method differs slightly."
+            },
+            {
+                "step": 4,
+                "title": "Access Front Turn Signal",
+                "instruction": "Open the hood. Locate the back of the headlight assembly and find the turn signal bulb socket. You may need to remove a plastic cover or shield for access."
+            },
+            {
+                "step": 5,
+                "title": "Access Rear Turn Signal",
+                "instruction": "Open the rear hatch or trunk. Remove the access panel or unscrew clips/nuts securing the taillight assembly. Carefully pull the assembly away or twist the socket out from behind if accessible."
+            },
+            {
+                "step": 6,
+                "title": "Remove Bulb Socket",
+                "instruction": "Grasp the turn signal bulb socket and twist it counter-clockwise about a quarter turn to unlock. Pull the socket straight out of the housing."
+            },
+            {
+                "step": 7,
+                "title": "Remove Old Bulb",
+                "instruction": "Pull the old bulb straight out of the socket. Wiggle gently if needed. Use caution to avoid breaking the bulb."
+            },
+            {
+                "step": 8,
+                "title": "Insert New Bulb",
+                "instruction": "Insert the new bulb firmly into the socket. Avoid touching the glass with bare hands; use a cloth or gloves."
+            },
+            {
+                "step": 9,
+                "title": "Test New Bulb",
+                "instruction": "Turn on the ignition and activate the turn signal or hazard lights to confirm the bulb is working correctly."
+            },
+            {
+                "step": 10,
+                "title": "Reinstall Socket",
+                "instruction": "Insert the bulb socket back into the housing and twist clockwise to lock it securely in place."
+            },
+            {
+                "step": 11,
+                "title": "Reassemble",
+                "instruction": "Reattach any removed covers, shields, or taillight assemblies. Secure with screws, clips, or nuts as required."
+            },
+            {
+                "step": 12,
+                "title": "Close Vehicle",
+                "instruction": "Close the hood or rear hatch to complete the replacement process."
+            }
+        ]
+    }
+},
+{
+    "model": "selectVehicle.taskforconfiguration",
+    "pk": 6,
+    "fields": {
+        "task": 6,
+        "configuration": 3,
+        "instructions": [
+            {
+                "step": 1,
+                "title": "Gather Supplies",
+                "instruction": "Get new windshield wiper blades (confirm correct lengths for driver and passenger sides, e.g., Driver: 22 inches, Passenger: 20–21 inches for a GX 470). Also have a clean rag or small towel ready."
+            },
+            {
+                "step": 2,
+                "title": "Prepare Vehicle",
+                "instruction": "Turn off the vehicle. For easier access, turn the wipers on once, then switch off the ignition when they stop in the upright position."
+            },
+            {
+                "step": 3,
+                "title": "Work Safely",
+                "instruction": "Work on one wiper at a time to avoid scratching the windshield if a wiper arm snaps down accidentally."
+            },
+            {
+                "step": 4,
+                "title": "Lift Wiper Arm",
+                "instruction": "Lift the wiper arm away from the windshield until it locks into the upright service position. Be careful not to let it snap back onto the glass."
+            },
+            {
+                "step": 5,
+                "title": "Locate Release Mechanism",
+                "instruction": "Find the release mechanism on the old wiper blade. Most GX 470s use a J-hook style with a tab or button to press or lift."
+            },
+            {
+                "step": 6,
+                "title": "Remove Old Blade",
+                "instruction": "Press or lift the tab and slide the old blade down and off the J-hook. Wiggle gently if needed."
+            },
+            {
+                "step": 7,
+                "title": "Protect Windshield",
+                "instruction": "Place a rag or towel on the windshield under the exposed arm to prevent damage if it falls."
+            },
+            {
+                "step": 8,
+                "title": "Attach New Blade",
+                "instruction": "Open the new wiper blade packaging. Hook the J-hook through the opening on the new blade’s attachment point. Pull upward until it clicks securely into place. Check that it’s locked."
+            },
+            {
+                "step": 9,
+                "title": "Lower Wiper Arm",
+                "instruction": "Carefully lower the wiper arm back onto the windshield without snapping it down."
+            },
+            {
+                "step": 10,
+                "title": "Repeat for Other Side",
+                "instruction": "Repeat the same process for the second wiper blade."
+            },
+            {
+                "step": 11,
+                "title": "Test Wipers",
+                "instruction": "Turn on the vehicle and test the wipers to confirm they work properly and clear the windshield effectively."
+            }
+        ]
+    }
+},
+{
+    "model": "selectVehicle.taskforconfiguration",
+    "pk": 7,
+    "fields": {
+        "task": 1,
+        "configuration": 4,
+        "instructions": [
+            {
+                "step": 1,
+                "title": "Warm Up Engine",
+                "instruction": "Warm up the engine for a few minutes to help the oil flow more easily."
+            },
+            {
+                "step": 2,
+                "title": "Lift Vehicle",
+                "instruction": "Use a jack to lift the car and secure it with jack stands on a level surface."
+            },
+            {
+                "step": 3,
+                "title": "Position Drain Pan",
+                "instruction": "Place an oil drain pan directly under the oil drain plug."
+            },
+            {
+                "step": 4,
+                "title": "Drain Old Oil",
+                "instruction": "Remove the drain plug and let the oil drain completely into the pan."
+            },
+            {
+                "step": 5,
+                "title": "Remove Old Oil Filter",
+                "instruction": "Unscrew and remove the old oil filter, allowing any remaining oil to drain."
+            },
+            {
+                "step": 6,
+                "title": "Install New Oil Filter",
+                "instruction": "Install the new oil filter, tightening it by hand until snug."
+            },
+            {
+                "step": 7,
+                "title": "Reinstall Drain Plug",
+                "instruction": "Reinsert the drain plug and tighten it securely."
+            },
+            {
+                "step": 8,
+                "title": "Add New Oil",
+                "instruction": "Pour the correct type and amount of new oil into the engine through the oil filler cap."
+            },
+            {
+                "step": 9,
+                "title": "Check Oil Level",
+                "instruction": "Use the dipstick to check the oil level, ensuring it’s between the min and max marks."
+            },
+            {
+                "step": 10,
+                "title": "Check for Leaks",
+                "instruction": "Start the engine and let it run briefly, then inspect for leaks around the drain plug and filter."
+            }
+        ]
+    }
+},
+{
+    "model": "selectVehicle.taskforconfiguration",
+    "pk": 8,
+    "fields": {
+        "task": 2,
+        "configuration": 4,
+        "instructions": [
+            {
+                "step": 1,
+                "title": "Turn Off Engine",
+                "instruction": "Turn off the engine and remove the key from the ignition for safety."
+            },
+            {
+                "step": 2,
+                "title": "Locate Battery",
+                "instruction": "Open the hood and locate the vehicle’s battery in the engine compartment."
+            },
+            {
+                "step": 3,
+                "title": "Disconnect Cables",
+                "instruction": "Disconnect the negative (-) cable first, then the positive (+) cable."
+            },
+            {
+                "step": 4,
+                "title": "Remove Hold-Down Clamp",
+                "instruction": "Loosen and remove the battery hold-down clamp that secures the battery in place."
+            },
+            {
+                "step": 5,
+                "title": "Remove Old Battery",
+                "instruction": "Lift the old battery straight up and out of the tray carefully (it may be heavy)."
+            },
+            {
+                "step": 6,
+                "title": "Install New Battery",
+                "instruction": "Place the new battery into the tray, ensuring it sits securely."
+            },
+            {
+                "step": 7,
+                "title": "Reconnect Cables",
+                "instruction": "Reconnect the positive (+) cable first, then the negative (-) cable."
+            },
+            {
+                "step": 8,
+                "title": "Secure Battery",
+                "instruction": "Reinstall and tighten the battery hold-down clamp to keep the battery in place."
+            },
+            {
+                "step": 9,
+                "title": "Test Installation",
+                "instruction": "Start the vehicle to verify the new battery is installed and functioning correctly."
+            }
+        ]
+    }
+},
+{
+    "model": "selectVehicle.taskforconfiguration",
+    "pk": 9,
+    "fields": {
+        "task": 3,
+        "configuration": 4,
+        "instructions": [
+            {
+                "step": 1,
+                "title": "Empty Glove Box",
+                "instruction": "Open the glove box and remove all its contents."
+            },
+            {
+                "step": 2,
+                "title": "Release Glove Box",
+                "instruction": "Push in the sides of the glove box to release the stops and let it drop down."
+            },
+            {
+                "step": 3,
+                "title": "Access Filter Compartment",
+                "instruction": "Locate the cabin air filter compartment behind the glove box and open the cover."
+            },
+            {
+                "step": 4,
+                "title": "Remove Old Filter",
+                "instruction": "Pull out the old cabin air filter and discard it."
+            },
+            {
+                "step": 5,
+                "title": "Insert New Filter",
+                "instruction": "Insert the new filter with the airflow arrows pointing downward."
+            },
+            {
+                "step": 6,
+                "title": "Reattach Glove Box",
+                "instruction": "Close the filter compartment cover and reattach the glove box securely."
+            }
+        ]
+    }
+},
+{
+    "model": "selectVehicle.taskforconfiguration",
+    "pk": 10,
+    "fields": {
+        "task": 4,
+        "configuration": 4,
+        "instructions": [
+            {
+                "step": 1,
+                "title": "Locate Air Filter Box",
+                "instruction": "Open the hood and locate the air filter box in the engine compartment."
+            },
+            {
+                "step": 2,
+                "title": "Remove Air Filter Cover",
+                "instruction": "Unclip or unscrew the air filter box cover to access the filter."
+            },
+            {
+                "step": 3,
+                "title": "Remove Old Air Filter",
+                "instruction": "Take out the old air filter from the box and set it aside."
+            },
+            {
+                "step": 4,
+                "title": "Clean Air Filter Box",
+                "instruction": "Check inside the air filter box and clean out any dirt or debris."
+            },
+            {
+                "step": 5,
+                "title": "Insert New Air Filter",
+                "instruction": "Place the new air filter into the box, ensuring it sits properly."
+            },
+            {
+                "step": 6,
+                "title": "Secure Air Filter Cover",
+                "instruction": "Reattach the air filter box cover by clipping or screwing it back into place."
+            }
+        ]
+    }
+},
+{
+    "model": "selectVehicle.taskforconfiguration",
+    "pk": 11,
+    "fields": {
+        "task": 5,
+        "configuration": 4,
+        "instructions": [
+            {
+                "step": 1,
+                "title": "Turn Off Engine and Open Hood",
+                "instruction": "Turn off the engine and open the hood to access the headlight assembly."
+            },
+            {
+                "step": 2,
+                "title": "Locate Turn Signal Socket",
+                "instruction": "Find the turn signal socket positioned behind the headlight."
+            },
+            {
+                "step": 3,
+                "title": "Remove Socket",
+                "instruction": "Twist and pull out the socket carefully from the headlight housing."
+            },
+            {
+                "step": 4,
+                "title": "Replace Bulb",
+                "instruction": "Remove the old bulb and insert a new one of the correct type."
+            },
+            {
+                "step": 5,
+                "title": "Reinsert Socket",
+                "instruction": "Place the socket back into the housing and twist it to lock securely."
+            },
+            {
+                "step": 6,
+                "title": "Test Turn Signal",
+                "instruction": "Turn on the vehicle’s turn signal to confirm the new bulb works correctly."
+            }
+        ]
+    }
+},
+{
+    "model": "selectVehicle.taskforconfiguration",
+    "pk": 12,
+    "fields": {
+        "task": 6,
+        "configuration": 4,
+        "instructions": [
+            {
+                "step": 1,
+                "title": "Lift Wiper Arms",
+                "instruction": "Lift the wiper arms off the windshield and position them upright."
+            },
+            {
+                "step": 2,
+                "title": "Press Release Tab",
+                "instruction": "Locate and press the release tab on the wiper blade to unlock it."
+            },
+            {
+                "step": 3,
+                "title": "Remove Old Blade",
+                "instruction": "Slide the old blade off the hook and set it aside."
+            },
+            {
+                "step": 4,
+                "title": "Align New Blade",
+                "instruction": "Position the new blade so the hook aligns with the attachment point."
+            },
+            {
+                "step": 5,
+                "title": "Secure New Blade",
+                "instruction": "Slide the new blade into place and press until it clicks securely."
+            },
+            {
+                "step": 6,
+                "title": "Lower Wiper Arms",
+                "instruction": "Lower the wiper arms gently back onto the windshield."
+            }
+        ]
+    }
+},
+{
+    "model": "selectVehicle.taskforconfiguration",
+    "pk": 13,
+    "fields": {
+        "task": 6,
+        "configuration": 6,
+        "instructions": [
+            {
+                "step": 1,
+                "title": "Lift the Wiper Arm",
+                "instruction": "Lift the wiper arms away from the windshield."
+            },
+            {
+                "step": 2,
+                "title": "Remove Old Blade",
+                "instruction": "Press the tab where the blade meets the arm and slide it off."
+            },
+            {
+                "step": 3,
+                "title": "Install New Blade",
+                "instruction": "Align the new blade and click it into place."
+            }
+        ]
+    }
+},
+{
+    "model": "selectVehicle.taskforconfiguration",
+    "pk": 14,
+    "fields": {
+        "task": 5,
+        "configuration": 6,
+        "instructions": [
+            {
+                "step": 1,
+                "title": "Turn Off the Vehicle",
+                "instruction": "Ensure the vehicle is turned off and the keys are removed from the ignition."
+            },
+            {
+                "step": 2,
+                "title": "Access the Turn Signal Housing",
+                "instruction": "Open the hood (for front signals) or trunk (for rear signals) to locate the back of the turn signal housing."
+            },
+            {
+                "step": 3,
+                "title": "Remove the Bulb Socket",
+                "instruction": "Twist the bulb socket counterclockwise and gently pull it out from the housing."
+            },
+            {
+                "step": 4,
+                "title": "Remove the Old Bulb",
+                "instruction": "Pull the old bulb straight out from the socket."
+            },
+            {
+                "step": 5,
+                "title": "Install the New Bulb",
+                "instruction": "Insert the new turn signal bulb into the socket until it clicks into place."
+            },
+            {
+                "step": 6,
+                "title": "Reinsert the Socket",
+                "instruction": "Place the socket back into the housing and twist it clockwise to secure it."
+            },
+            {
+                "step": 7,
+                "title": "Test the Turn Signal",
+                "instruction": "Turn on the vehicle and activate the turn signal to ensure itÆs working properly."
+            }
+        ]
+    }
+},
+{
+    "model": "selectVehicle.taskforconfiguration",
+    "pk": 15,
+    "fields": {
+        "task": 4,
+        "configuration": 6,
+        "instructions": [
+            {
+                "step": 1,
+                "title": "Turn Off the Engine",
+                "instruction": "Ensure the vehicle is parked, turned off, and the key is removed from the ignition."
+            },
+            {
+                "step": 2,
+                "title": "Open the Hood",
+                "instruction": "Release the hood latch and lift the hood. Use the prop rod if necessary to hold it open."
+            },
+            {
+                "step": 3,
+                "title": "Locate the Air Filter Housing",
+                "instruction": "Find the air filter housing ù typically a rectangular black box with clips or screws, usually near the top of the engine."
+            },
+            {
+                "step": 4,
+                "title": "Open the Housing",
+                "instruction": "Unclip or unscrew the air filter housing cover and lift it to expose the air filter inside."
+            },
+            {
+                "step": 5,
+                "title": "Remove the Old Filter",
+                "instruction": "Take out the old air filter and inspect the housing for dirt or debris. Wipe it clean with a dry cloth if needed."
+            },
+            {
+                "step": 6,
+                "title": "Insert the New Filter",
+                "instruction": "Place the new air filter in the same orientation as the old one. Make sure it fits snugly and seals properly."
+            },
+            {
+                "step": 7,
+                "title": "Close the Housing",
+                "instruction": "Reattach the housing cover by snapping the clips back into place or tightening the screws."
+            },
+            {
+                "step": 8,
+                "title": "Close the Hood",
+                "instruction": "Lower the hood and ensure it is securely latched."
+            }
+        ]
+    }
+},
+{
+    "model": "selectVehicle.taskforconfiguration",
+    "pk": 16,
+    "fields": {
+        "task": 3,
+        "configuration": 6,
+        "instructions": [
+            {
+                "step": 1,
+                "title": "Turn Off the Vehicle",
+                "instruction": "Ensure the engine is off and the keys are removed from the ignition."
+            },
+            {
+                "step": 2,
+                "title": "Open the Glove Box",
+                "instruction": "Open the glove box and remove any contents to prevent obstruction during the process."
+            },
+            {
+                "step": 3,
+                "title": "Detach the Glove Box Stops",
+                "instruction": "Locate the side stoppers inside the glove box. Gently press in on the sides of the glove box to release the stops and allow it to hang freely."
+            },
+            {
+                "step": 4,
+                "title": "Locate the Cabin Air Filter Cover",
+                "instruction": "Behind the glove box, you should see a rectangular plastic coverùthis protects the cabin air filter."
+            },
+            {
+                "step": 5,
+                "title": "Remove the Filter Cover",
+                "instruction": "Press the tabs or unscrew the cover to remove it and expose the old cabin air filter."
+            },
+            {
+                "step": 6,
+                "title": "Take Out the Old Filter",
+                "instruction": "Slide the old filter straight out, paying attention to the airflow direction arrows printed on it."
+            },
+            {
+                "step": 7,
+                "title": "Install the New Filter",
+                "instruction": "Insert the new cabin air filter in the same orientation as the old one, making sure the airflow arrows point in the correct direction."
+            },
+            {
+                "step": 8,
+                "title": "Reinstall the Cover and Glove Box",
+                "instruction": "Snap the filter cover back into place and gently lift and push the glove box back into its tracks until it clicks into place."
+            }
+        ]
+    }
+},
+{
+    "model": "selectVehicle.taskforconfiguration",
+    "pk": 17,
+    "fields": {
+        "task": 2,
+        "configuration": 6,
+        "instructions": [
+            {
+                "step": 1,
+                "title": "Turn Off the Engine",
+                "instruction": "Ensure the engine is completely off and remove the keys from the ignition. Engage the parking brake."
+            },
+            {
+                "step": 2,
+                "title": "Open the Hood",
+                "instruction": "Pull the hood release lever inside the car, then open the hood and secure it with the prop rod if needed."
+            },
+            {
+                "step": 3,
+                "title": "Locate the Battery",
+                "instruction": "Find the batteryùusually located on either side of the engine bay, in a plastic housing or tray."
+            },
+            {
+                "step": 4,
+                "title": "Disconnect the Negative Cable",
+                "instruction": "Using a wrench, loosen the nut on the negative (-) battery terminal and remove the cable. Move it aside to prevent contact."
+            },
+            {
+                "step": 5,
+                "title": "Disconnect the Positive Cable",
+                "instruction": "Loosen the nut on the positive (+) terminal and remove the cable. Avoid touching any metal with the wrench."
+            },
+            {
+                "step": 6,
+                "title": "Remove Battery Hold-Down Clamp",
+                "instruction": "If the battery is secured with a bracket or clamp, remove it using a socket or wrench."
+            },
+            {
+                "step": 7,
+                "title": "Remove the Old Battery",
+                "instruction": "Lift the battery straight out using both hands. Batteries are heavyùuse proper lifting technique."
+            },
+            {
+                "step": 8,
+                "title": "Clean the Terminals (Optional)",
+                "instruction": "Use a wire brush or terminal cleaner to remove any corrosion from the cable ends and battery tray."
+            },
+            {
+                "step": 9,
+                "title": "Install the New Battery",
+                "instruction": "Place the new battery into the tray with terminals in the same orientation. Reinstall the hold-down clamp if applicable."
+            },
+            {
+                "step": 10,
+                "title": "Reconnect the Positive Cable",
+                "instruction": "Attach and tighten the positive (+) battery cable first."
+            },
+            {
+                "step": 11,
+                "title": "Reconnect the Negative Cable",
+                "instruction": "Attach and tighten the negative (-) cable last."
+            },
+            {
+                "step": 12,
+                "title": "Close the Hood and Start the Vehicle",
+                "instruction": "Ensure all tools are removed from the engine bay. Close the hood securely and start the engine to confirm the battery is functioning."
+            }
+        ]
+    }
+},
+{
+    "model": "selectVehicle.taskforconfiguration",
+    "pk": 18,
+    "fields": {
+        "task": 1,
+        "configuration": 6,
+        "instructions": [
+            {
+                "step": 1,
+                "title": "Gather Tools and Supplies",
+                "instruction": "You'll need engine oil (refer to owner's manual, e.g., 5W-30 synthetic), a new oil filter, a wrench or socket set, an oil filter wrench, a funnel, a drain pan, gloves, and rags."
+            },
+            {
+                "step": 2,
+                "title": "Warm Up the Engine",
+                "instruction": "Run the engine for 5û10 minutes to warm the oil. This helps it drain more easily. Turn off the engine and let it cool slightly for safety."
+            },
+            {
+                "step": 3,
+                "title": "Raise and Secure the Vehicle",
+                "instruction": "Use a jack and jack stands or ramps to lift the front of the vehicle. Ensure itÆs stable and parked on a level surface. Engage the parking brake."
+            },
+            {
+                "step": 4,
+                "title": "Place Drain Pan Under the Oil Pan",
+                "instruction": "Locate the oil pan under the engine. Position the drain pan beneath the oil drain plug."
+            },
+            {
+                "step": 5,
+                "title": "Remove the Oil Drain Plug",
+                "instruction": "Use a wrench or socket to loosen and remove the drain plug. Allow all the oil to drain (this may take 5û10 minutes)."
+            },
+            {
+                "step": 6,
+                "title": "Remove the Old Oil Filter",
+                "instruction": "Use an oil filter wrench to loosen the filter. Be prepared for additional oil to spill. Check that the old rubber gasket is removed with the filter."
+            },
+            {
+                "step": 7,
+                "title": "Install the New Oil Filter",
+                "instruction": "Apply a bit of new oil to the rubber gasket on the new filter. Screw it on by hand until snug, then tighten it another ╛ turn (do not over-tighten)."
+            },
+            {
+                "step": 8,
+                "title": "Reinstall the Oil Drain Plug",
+                "instruction": "Once the oil has fully drained, wipe the area and reinsert the drain plug. Tighten securely but donÆt over-torque (typically 25û30 ft-lbs)."
+            },
+            {
+                "step": 9,
+                "title": "Add New Engine Oil",
+                "instruction": "Open the hood and remove the oil filler cap. Using a funnel, pour in the correct amount of oil (e.g., 4.5û5 quarts of 5W-30 synthetic)."
+            },
+            {
+                "step": 10,
+                "title": "Check Oil Level",
+                "instruction": "Wait a minute for oil to settle. Use the dipstick to check the level. It should be between the min and max marks. Add more if necessary."
+            },
+            {
+                "step": 11,
+                "title": "Start Engine and Check for Leaks",
+                "instruction": "Start the engine and let it run for 1û2 minutes. Check underneath for any leaks around the drain plug or filter."
+            },
+            {
+                "step": 12,
+                "title": "Dispose of Old Oil and Filter Properly",
+                "instruction": "Pour used oil into a sealed container. Recycle the oil and filter at an auto parts store or local hazardous waste center."
+            },
+            {
+                "step": 13,
+                "title": "Reset Oil Life Monitor (if applicable)",
+                "instruction": "Use the dashboard menu or button sequence (refer to your manual) to reset the oil change reminder light."
+            }
+        ]
+    }
+},
+{
+    "model": "selectVehicle.taskforconfiguration",
+    "pk": 19,
+    "fields": {
+        "task": 1,
+        "configuration": 5,
+        "instructions": [
+            {
+                "step": 1,
+                "title": "Gather Supplies",
+                "instruction": "Get 4.5 quarts of 5W-20 motor oil (0W-20 is also acceptable), a new oil filter (Honda OEM 15400-PLM-A02 or equivalent), a 17mm socket for the drain plug, a drain pan, funnel, oil filter wrench, and a new drain plug washer. Wear gloves and safety glasses."
+            },
+            {
+                "step": 2,
+                "title": "Warm Up Engine",
+                "instruction": "Run the engine for 5–10 minutes to warm the oil slightly, then shut it off."
+            },
+            {
+                "step": 3,
+                "title": "Raise Vehicle",
+                "instruction": "Use a jack to raise the front of the car and secure it with jack stands on level ground. Engage the parking brake."
+            },
+            {
+                "step": 4,
+                "title": "Locate Drain Plug",
+                "instruction": "Locate the oil drain plug (17mm) on the bottom of the oil pan. Position the drain pan underneath."
+            },
+            {
+                "step": 5,
+                "title": "Drain Old Oil",
+                "instruction": "Remove the drain plug with the 17mm socket and let the oil drain completely. Replace the crush washer with a new one."
+            },
+            {
+                "step": 6,
+                "title": "Reinstall Drain Plug",
+                "instruction": "Reinstall the drain plug with the new washer. Torque to 29 ft-lbs (40 Nm). Do not overtighten."
+            },
+            {
+                "step": 7,
+                "title": "Locate Oil Filter",
+                "instruction": "Locate the oil filter. On the 2.4L I4 it’s mounted on the front of the engine; on the 3.5L V6 it’s underneath near the exhaust pipe. Place the drain pan beneath it."
+            },
+            {
+                "step": 8,
+                "title": "Remove Old Filter",
+                "instruction": "Loosen and remove the old oil filter with a wrench. Expect some oil to spill out."
+            },
+            {
+                "step": 9,
+                "title": "Install New Filter",
+                "instruction": "Apply a thin coat of fresh oil to the new filter’s rubber gasket. Screw it on by hand until snug, then tighten an additional 3/4 turn."
+            },
+            {
+                "step": 10,
+                "title": "Lower Vehicle",
+                "instruction": "Carefully lower the vehicle back to the ground."
+            },
+            {
+                "step": 11,
+                "title": "Add New Oil",
+                "instruction": "Remove the oil filler cap on top of the engine and pour in about 4.5 quarts of fresh oil (check manual for exact capacity by engine type)."
+            },
+            {
+                "step": 12,
+                "title": "Run Engine and Check Leaks",
+                "instruction": "Replace the oil cap, start the engine, and let it run for a minute. Check under the car for leaks around the drain plug and filter."
+            },
+            {
+                "step": 13,
+                "title": "Check Oil Level",
+                "instruction": "Shut off the engine and wait 5 minutes. Pull the dipstick, wipe, reinsert, and check the oil level. Add small amounts as needed until full (do not overfill)."
+            },
+            {
+                "step": 14,
+                "title": "Dispose of Old Oil",
+                "instruction": "Pour the used oil into a sealed container and recycle it along with the old filter at an auto parts store or recycling center."
+            },
+            {
+                "step": 15,
+                "title": "Reset Maintenance Minder",
+                "instruction": "Turn ignition to ON. Press the Select/Reset knob until the oil life indicator is displayed. Hold it for 10 seconds until the oil life blinks, then hold again until it resets to 100%."
+            }
+        ]
+    }
+},
+{
+    "model": "selectVehicle.taskforconfiguration",
+    "pk": 20,
+    "fields": {
+        "task": 2,
+        "configuration": 5,
+        "instructions": [
+            {
+                "step": 1,
+                "title": "Gather Supplies",
+                "instruction": "Get a new 12V automotive battery (Group 35, ~550–650 CCA recommended), 10mm wrench or socket, battery terminal brush, gloves, and safety glasses. Optional: memory saver to retain radio presets."
+            },
+            {
+                "step": 2,
+                "title": "Prepare Vehicle",
+                "instruction": "Turn off the engine, remove the key, engage the parking brake, and ensure the transmission is in Park (P)."
+            },
+            {
+                "step": 3,
+                "title": "Locate Battery",
+                "instruction": "Open the hood and locate the battery. On the 2012 Accord, it is mounted in the engine bay on the driver’s side."
+            },
+            {
+                "step": 4,
+                "title": "Disconnect Negative Cable",
+                "instruction": "Use a 10mm wrench to loosen the nut on the negative (-) battery terminal clamp. Remove the cable and move it aside to prevent contact."
+            },
+            {
+                "step": 5,
+                "title": "Disconnect Positive Cable",
+                "instruction": "Loosen the nut on the positive (+) terminal clamp and remove the cable. Move it aside from the battery."
+            },
+            {
+                "step": 6,
+                "title": "Remove Hold-Down Clamp",
+                "instruction": "Remove the battery hold-down bracket by loosening the bolts. Set it aside."
+            },
+            {
+                "step": 7,
+                "title": "Remove Old Battery",
+                "instruction": "Lift the old battery out of the tray carefully. Batteries are heavy—use proper lifting technique."
+            },
+            {
+                "step": 8,
+                "title": "Clean Tray and Terminals",
+                "instruction": "Inspect the battery tray and clamps. Clean any corrosion with a terminal brush or a baking soda/water solution, then dry thoroughly."
+            },
+            {
+                "step": 9,
+                "title": "Install New Battery",
+                "instruction": "Place the new battery in the tray with the terminals positioned the same way as the old one (positive on the correct side)."
+            },
+            {
+                "step": 10,
+                "title": "Secure Battery",
+                "instruction": "Reinstall the hold-down bracket and tighten the bolts so the battery is secure but not overly tight."
+            },
+            {
+                "step": 11,
+                "title": "Reconnect Positive Cable",
+                "instruction": "Attach the positive (+) cable to the positive terminal and tighten the 10mm nut securely."
+            },
+            {
+                "step": 12,
+                "title": "Reconnect Negative Cable",
+                "instruction": "Attach the negative (-) cable to the negative terminal and tighten the 10mm nut securely."
+            },
+            {
+                "step": 13,
+                "title": "Test Installation",
+                "instruction": "Start the engine to confirm the battery is working correctly. Reset the clock and radio presets if needed."
+            },
+            {
+                "step": 14,
+                "title": "Finish",
+                "instruction": "Close the hood and dispose of the old battery at an auto parts store or recycling center."
+            }
+        ]
+    }
+},
+{
+    "model": "selectVehicle.taskforconfiguration",
+    "pk": 21,
+    "fields": {
+        "task": 3,
+        "configuration": 5,
+        "instructions": [
+            {
+                "step": 1,
+                "title": "Gather Supplies",
+                "instruction": "Get a new cabin air filter (Honda OEM 80292-SDA-A01 or equivalent) and a small flathead screwdriver if needed. Wear gloves to keep the filter clean."
+            },
+            {
+                "step": 2,
+                "title": "Empty Glove Box",
+                "instruction": "Open the passenger-side glove box and remove all contents."
+            },
+            {
+                "step": 3,
+                "title": "Release Stopper Tabs",
+                "instruction": "Locate the two stopper tabs on the sides of the glove box. Push them inward to allow the glove box to swing down further."
+            },
+            {
+                "step": 4,
+                "title": "Detach Damper Arm",
+                "instruction": "On the right side of the glove box, detach the small damper arm by sliding or unclipping it so the glove box drops fully."
+            },
+            {
+                "step": 5,
+                "title": "Locate Filter Housing",
+                "instruction": "Behind the glove box, find the rectangular cabin air filter housing cover. It has clips on both sides."
+            },
+            {
+                "step": 6,
+                "title": "Remove Filter Cover",
+                "instruction": "Unclip the latches on both sides of the housing cover and remove it."
+            },
+            {
+                "step": 7,
+                "title": "Remove Old Filter",
+                "instruction": "Slide the old cabin air filter straight out. Note the airflow arrow direction printed on the side."
+            },
+            {
+                "step": 8,
+                "title": "Clean Housing",
+                "instruction": "Check inside the housing for leaves or debris and clean it if necessary."
+            },
+            {
+                "step": 9,
+                "title": "Insert New Filter",
+                "instruction": "Place the new cabin air filter into the housing with the airflow arrow pointing down, the same direction as the old filter."
+            },
+            {
+                "step": 10,
+                "title": "Reinstall Cover",
+                "instruction": "Reattach the filter housing cover and ensure the clips snap into place."
+            },
+            {
+                "step": 11,
+                "title": "Reconnect Damper Arm",
+                "instruction": "Slide or clip the damper arm back onto the glove box."
+            },
+            {
+                "step": 12,
+                "title": "Reposition Glove Box",
+                "instruction": "Lift the glove box back up until the stopper tabs engage, securing it in place."
+            },
+            {
+                "step": 13,
+                "title": "Finish",
+                "instruction": "Close the glove box and dispose of the old filter properly."
+            }
+        ]
+    }
+},
+{
+    "model": "selectVehicle.taskforconfiguration",
+    "pk": 22,
+    "fields": {
+        "task": 4,
+        "configuration": 5,
+        "instructions": [
+            {
+                "step": 1,
+                "title": "Gather Supplies",
+                "instruction": "Get a new engine air filter (Honda OEM 17220-R40-A00 for 2.4L or 17220-RCA-A00 for 3.5L V6, or equivalent). You may also need a screwdriver to open the air filter housing."
+            },
+            {
+                "step": 2,
+                "title": "Prepare Vehicle",
+                "instruction": "Turn off the engine and ensure the car is parked on a flat surface with the parking brake engaged."
+            },
+            {
+                "step": 3,
+                "title": "Locate Air Filter Box",
+                "instruction": "Open the hood. The air filter box is a large black plastic box on the driver’s side of the engine bay (connected to the intake tube)."
+            },
+            {
+                "step": 4,
+                "title": "Release Housing Clips",
+                "instruction": "Unclip the metal retaining clips (or remove screws if equipped) around the air filter housing."
+            },
+            {
+                "step": 5,
+                "title": "Open Housing",
+                "instruction": "Lift the top half of the air filter housing and pivot it open carefully to access the filter."
+            },
+            {
+                "step": 6,
+                "title": "Remove Old Filter",
+                "instruction": "Take out the old engine air filter and set it aside."
+            },
+            {
+                "step": 7,
+                "title": "Inspect Housing",
+                "instruction": "Check inside the housing for dust, leaves, or debris. Wipe it clean with a rag if necessary."
+            },
+            {
+                "step": 8,
+                "title": "Insert New Filter",
+                "instruction": "Place the new filter into the housing, ensuring it fits snugly in the grooves and sits flat."
+            },
+            {
+                "step": 9,
+                "title": "Close Housing",
+                "instruction": "Lower the top half of the housing back into position and align it properly with the lower half."
+            },
+            {
+                "step": 10,
+                "title": "Secure Housing",
+                "instruction": "Reattach the clips (or screws) to secure the air filter housing tightly."
+            },
+            {
+                "step": 11,
+                "title": "Finish",
+                "instruction": "Close the hood. Dispose of the old filter properly."
+            }
+        ]
+    }
+},
+{
+    "model": "selectVehicle.taskforconfiguration",
+    "pk": 23,
+    "fields": {
+        "task": 5,
+        "configuration": 5,
+        "instructions": [
+            {
+                "step": 1,
+                "title": "Gather Supplies",
+                "instruction": "Get the correct replacement turn signal bulb (front: 7440/7440A amber, rear: 7440/7440NA amber). Have a flathead screwdriver or trim tool if panels need prying, and gloves to keep oils off the bulb."
+            },
+            {
+                "step": 2,
+                "title": "Prepare Vehicle",
+                "instruction": "Turn off the engine, remove the key, and make sure the lights are off. Allow hot bulbs to cool before handling."
+            },
+            {
+                "step": 3,
+                "title": "Locate Bulb Housing",
+                "instruction": "Determine if you are replacing a front or rear bulb. Front bulbs are in the headlight assembly; rear bulbs are in the taillight assembly."
+            },
+            {
+                "step": 4,
+                "title": "Access Front Turn Signal",
+                "instruction": "Open the hood and look behind the headlight assembly. Locate the turn signal socket (usually the amber bulb). Twist and remove the socket."
+            },
+            {
+                "step": 5,
+                "title": "Access Rear Turn Signal",
+                "instruction": "Open the trunk. Pull back the trunk liner to expose the taillight assembly. Locate the turn signal bulb socket and twist it counterclockwise to remove."
+            },
+            {
+                "step": 6,
+                "title": "Remove Old Bulb",
+                "instruction": "Pull the old bulb straight out of the socket. Use gloves or a cloth to avoid skin oils if the bulb breaks."
+            },
+            {
+                "step": 7,
+                "title": "Insert New Bulb",
+                "instruction": "Push the new bulb firmly into the socket until seated. Do not touch the glass with bare hands."
+            },
+            {
+                "step": 8,
+                "title": "Test Bulb",
+                "instruction": "Turn on the ignition and activate the turn signal or hazard lights to check that the new bulb works."
+            },
+            {
+                "step": 9,
+                "title": "Reinstall Socket",
+                "instruction": "Insert the bulb socket back into the housing and twist clockwise to lock it securely."
+            },
+            {
+                "step": 10,
+                "title": "Reassemble",
+                "instruction": "For the rear, reposition the trunk liner. For the front, close the hood."
+            },
+            {
+                "step": 11,
+                "title": "Finish",
+                "instruction": "Dispose of the old bulb properly."
+            }
+        ]
+    }
+},
+{
+    "model": "selectVehicle.taskforconfiguration",
+    "pk": 24,
+    "fields": {
+        "task": 6,
+        "configuration": 5,
+        "instructions": [
+            {
+                "step": 1,
+                "title": "Gather Supplies",
+                "instruction": "Get the correct replacement wiper blades (Driver side: 26 inches, Passenger side: 19 inches, Rear wiper if coupe: 16 inches). Have a towel or rag to protect the windshield."
+            },
+            {
+                "step": 2,
+                "title": "Prepare Vehicle",
+                "instruction": "Turn off the ignition. For easier access, turn the wipers on once, then turn the ignition off when they stop in the upright position."
+            },
+            {
+                "step": 3,
+                "title": "Work on One Wiper at a Time",
+                "instruction": "Lift one wiper arm away from the windshield until it locks into the service position. Place a towel on the windshield to prevent damage if the arm snaps down."
+            },
+            {
+                "step": 4,
+                "title": "Release Old Blade",
+                "instruction": "Locate the small release tab on the wiper blade where it meets the J-hook. Press the tab and slide the blade downward to remove it from the hook."
+            },
+            {
+                "step": 5,
+                "title": "Attach New Blade",
+                "instruction": "Align the new blade with the J-hook on the wiper arm. Pull it upward until it clicks into place. Tug gently to ensure it is locked."
+            },
+            {
+                "step": 6,
+                "title": "Lower Wiper Arm",
+                "instruction": "Carefully lower the wiper arm back onto the windshield."
+            },
+            {
+                "step": 7,
+                "title": "Repeat for Other Side",
+                "instruction": "Repeat the same process for the other wiper blade."
+            },
+            {
+                "step": 8,
+                "title": "Test Wipers",
+                "instruction": "Turn on the wipers to confirm they are functioning correctly and clear the windshield smoothly."
+            }
+        ]
+    }
+},
+{
+    "model": "selectVehicle.taskforconfiguration",
+    "pk": 25,
+    "fields": {
+        "task": 1,
+        "configuration": 7,
+        "instructions": [
+            {
+                "step": 1,
+                "title": "Gather Supplies",
+                "instruction": "Get 6.5 quarts of 5W-30 synthetic motor oil, new oil filter (Toyota OEM #90915-YZZD3 or equivalent), 14mm socket for drain plug, torque wrench (optional), oil filter wrench, drain pan, funnel, gloves, and rags."
+            },
+            {
+                "step": 2,
+                "title": "Warm Up Engine",
+                "instruction": "Run the engine for 5–10 minutes to thin the oil, then shut it off."
+            },
+            {
+                "step": 3,
+                "title": "Raise Vehicle",
+                "instruction": "Lift the vehicle front with a jack and secure it on jack stands on level ground. Engage parking brake."
+            },
+            {
+                "step": 4,
+                "title": "Drain Old Oil",
+                "instruction": "Locate the 14mm oil drain plug on the oil pan. Position drain pan, remove the plug, and allow oil to drain completely. Replace crush washer if worn."
+            },
+            {
+                "step": 5,
+                "title": "Reinstall Drain Plug",
+                "instruction": "Tighten drain plug securely, torquing to 27 ft-lbs (37 Nm) if using a torque wrench."
+            },
+            {
+                "step": 6,
+                "title": "Replace Oil Filter",
+                "instruction": "Remove old filter (driver’s side, below alternator). Apply fresh oil to the gasket of the new filter, install by hand, and tighten 3/4 turn past snug."
+            },
+            {
+                "step": 7,
+                "title": "Add New Oil",
+                "instruction": "Lower the vehicle. Open oil filler cap and pour in about 6 quarts of oil. Replace cap."
+            },
+            {
+                "step": 8,
+                "title": "Run Engine and Check",
+                "instruction": "Start engine for 1–2 minutes. Check for leaks at drain plug and filter."
+            },
+            {
+                "step": 9,
+                "title": "Check Oil Level",
+                "instruction": "Wait 5–10 minutes. Use dipstick to check oil level and top off as needed. Avoid overfilling."
+            },
+            {
+                "step": 10,
+                "title": "Dispose of Old Oil",
+                "instruction": "Recycle used oil and filter at an auto parts store or recycling facility."
+            },
+            {
+                "step": 11,
+                "title": "Reset Maintenance Light",
+                "instruction": "Turn ignition to ON, hold the odometer reset button until 'MAINT REQD' light clears, then turn ignition off."
+            }
+        ]
+    }
+},
+{
+    "model": "selectVehicle.taskforconfiguration",
+    "pk": 26,
+    "fields": {
+        "task": 2,
+        "configuration": 7,
+        "instructions": [
+            {
+                "step": 1,
+                "title": "Gather Supplies",
+                "instruction": "Get a Group 24F 12V battery, 10mm and 13mm wrenches, terminal brush, battery protector spray, baking soda solution, gloves, and eye protection."
+            },
+            {
+                "step": 2,
+                "title": "Prepare Vehicle",
+                "instruction": "Turn off engine, remove key, set transmission to Park, and engage parking brake."
+            },
+            {
+                "step": 3,
+                "title": "Disconnect Negative Cable",
+                "instruction": "Loosen 10mm nut on negative (-) cable and move it aside."
+            },
+            {
+                "step": 4,
+                "title": "Disconnect Positive Cable",
+                "instruction": "Loosen 10mm nut on positive (+) cable and move it aside."
+            },
+            {
+                "step": 5,
+                "title": "Remove Hold-Down Clamp",
+                "instruction": "Use 13mm wrench to remove the hold-down clamp."
+            },
+            {
+                "step": 6,
+                "title": "Remove Old Battery",
+                "instruction": "Lift the old battery straight up. Use proper lifting technique—it is heavy."
+            },
+            {
+                "step": 7,
+                "title": "Clean Tray and Terminals",
+                "instruction": "Neutralize corrosion with baking soda solution, scrub with brush, rinse, and dry."
+            },
+            {
+                "step": 8,
+                "title": "Install New Battery",
+                "instruction": "Place new battery in tray with terminals oriented correctly."
+            },
+            {
+                "step": 9,
+                "title": "Secure Battery",
+                "instruction": "Reinstall hold-down clamp and tighten firmly."
+            },
+            {
+                "step": 10,
+                "title": "Reconnect Positive Cable",
+                "instruction": "Attach positive (+) cable and tighten securely."
+            },
+            {
+                "step": 11,
+                "title": "Reconnect Negative Cable",
+                "instruction": "Attach negative (-) cable and tighten securely."
+            },
+            {
+                "step": 12,
+                "title": "Finish",
+                "instruction": "Start vehicle to confirm installation. Reset clock and radio presets if needed. Dispose of old battery at a recycling center."
+            }
+        ]
+    }
+},
+{
+    "model": "selectVehicle.taskforconfiguration",
+    "pk": 27,
+    "fields": {
+        "task": 3,
+        "configuration": 7,
+        "instructions": [
+            {
+                "step": 1,
+                "title": "Gather Supplies",
+                "instruction": "Get a new cabin air filter (Toyota OEM 87139-50100 or equivalent)."
+            },
+            {
+                "step": 2,
+                "title": "Empty Glove Box",
+                "instruction": "Open passenger glove box and remove all contents."
+            },
+            {
+                "step": 3,
+                "title": "Release Stopper Tabs",
+                "instruction": "Push inward on both glove box side tabs so it can drop down."
+            },
+            {
+                "step": 4,
+                "title": "Detach Damper Arm",
+                "instruction": "Unclip the damper arm on the right side to fully lower glove box."
+            },
+            {
+                "step": 5,
+                "title": "Locate Filter Housing",
+                "instruction": "Find rectangular filter cover behind glove box."
+            },
+            {
+                "step": 6,
+                "title": "Remove Cover",
+                "instruction": "Unclip both sides of the cover and remove it."
+            },
+            {
+                "step": 7,
+                "title": "Remove Old Filter",
+                "instruction": "Slide out old filter, noting airflow direction."
+            },
+            {
+                "step": 8,
+                "title": "Clean Housing",
+                "instruction": "Remove debris inside housing with a rag if necessary."
+            },
+            {
+                "step": 9,
+                "title": "Insert New Filter",
+                "instruction": "Place new filter with airflow arrow pointing downward."
+            },
+            {
+                "step": 10,
+                "title": "Reattach Cover",
+                "instruction": "Snap housing cover back in place."
+            },
+            {
+                "step": 11,
+                "title": "Reconnect Glove Box",
+                "instruction": "Reattach damper arm and push glove box up until tabs lock in."
+            },
+            {
+                "step": 12,
+                "title": "Finish",
+                "instruction": "Close glove box and dispose of old filter."
+            }
+        ]
+    }
+},
+{
+    "model": "selectVehicle.taskforconfiguration",
+    "pk": 28,
+    "fields": {
+        "task": 4,
+        "configuration": 7,
+        "instructions": [
+            {
+                "step": 1,
+                "title": "Gather Supplies",
+                "instruction": "Get a new engine air filter (Toyota OEM 17801-50040 or equivalent)."
+            },
+            {
+                "step": 2,
+                "title": "Locate Air Box",
+                "instruction": "Open hood and locate large black plastic air box on passenger side."
+            },
+            {
+                "step": 3,
+                "title": "Release Housing Clips",
+                "instruction": "Unclip 2–4 retaining clips or remove screws as needed."
+            },
+            {
+                "step": 4,
+                "title": "Open Housing",
+                "instruction": "Lift top of air box upward to access filter."
+            },
+            {
+                "step": 5,
+                "title": "Remove Old Filter",
+                "instruction": "Take out old filter element."
+            },
+            {
+                "step": 6,
+                "title": "Clean Housing",
+                "instruction": "Wipe out dirt or leaves with a rag."
+            },
+            {
+                "step": 7,
+                "title": "Insert New Filter",
+                "instruction": "Place new filter snugly into grooves in lower housing."
+            },
+            {
+                "step": 8,
+                "title": "Close Housing",
+                "instruction": "Align and close the top of the air box."
+            },
+            {
+                "step": 9,
+                "title": "Secure Housing",
+                "instruction": "Reattach clips or screws to lock housing in place."
+            },
+            {
+                "step": 10,
+                "title": "Finish",
+                "instruction": "Close hood and dispose of old filter."
+            }
+        ]
+    }
+},
+{
+    "model": "selectVehicle.taskforconfiguration",
+    "pk": 29,
+    "fields": {
+        "task": 5,
+        "configuration": 7,
+        "instructions": [
+            {
+                "step": 1,
+                "title": "Gather Supplies",
+                "instruction": "Get the correct turn signal bulb (front/rear: 7440 or 7440A). Have gloves to avoid touching bulb glass."
+            },
+            {
+                "step": 2,
+                "title": "Prepare Vehicle",
+                "instruction": "Turn off vehicle and lights. Allow bulbs to cool."
+            },
+            {
+                "step": 3,
+                "title": "Access Front Bulb",
+                "instruction": "Open hood and locate turn signal socket behind headlight. Twist counterclockwise to remove."
+            },
+            {
+                "step": 4,
+                "title": "Access Rear Bulb",
+                "instruction": "Open rear hatch, remove interior trim panel or screws, and access taillight assembly. Twist socket counterclockwise to remove."
+            },
+            {
+                "step": 5,
+                "title": "Remove Old Bulb",
+                "instruction": "Pull bulb straight out of socket."
+            },
+            {
+                "step": 6,
+                "title": "Install New Bulb",
+                "instruction": "Insert new bulb firmly into socket without touching the glass."
+            },
+            {
+                "step": 7,
+                "title": "Test Bulb",
+                "instruction": "Activate turn signal or hazards to confirm function."
+            },
+            {
+                "step": 8,
+                "title": "Reinstall Socket",
+                "instruction": "Twist socket clockwise back into housing until secure."
+            },
+            {
+                "step": 9,
+                "title": "Reassemble",
+                "instruction": "Reinstall any covers, trim, or screws removed earlier."
+            }
+        ]
+    }
+},
+{
+    "model": "selectVehicle.taskforconfiguration",
+    "pk": 30,
+    "fields": {
+        "task": 6,
+        "configuration": 7,
+        "instructions": [
+            {
+                "step": 1,
+                "title": "Gather Supplies",
+                "instruction": "Get replacement blades (Driver: 22 in, Passenger: 21 in, Rear: 12 in if equipped)."
+            },
+            {
+                "step": 2,
+                "title": "Prepare Vehicle",
+                "instruction": "Turn off ignition. Lift wiper arms away from windshield."
+            },
+            {
+                "step": 3,
+                "title": "Protect Windshield",
+                "instruction": "Place towel on windshield to prevent damage if arm snaps back."
+            },
+            {
+                "step": 4,
+                "title": "Remove Old Blade",
+                "instruction": "Press release tab on old blade at J-hook connection. Slide blade downward and off."
+            },
+            {
+                "step": 5,
+                "title": "Attach New Blade",
+                "instruction": "Align new blade with J-hook and pull upward until it clicks securely."
+            },
+            {
+                "step": 6,
+                "title": "Lower Wiper Arm",
+                "instruction": "Carefully lower arm back onto windshield."
+            },
+            {
+                "step": 7,
+                "title": "Repeat Process",
+                "instruction": "Repeat for other wiper (and rear if equipped)."
+            },
+            {
+                "step": 8,
+                "title": "Test Wipers",
+                "instruction": "Turn on wipers to confirm smooth and proper operation."
+            }
+        ]
+    }
+},
+{
+    "model": "selectVehicle.taskforconfiguration",
+    "pk": 31,
+    "fields": {
+        "task": 1,
+        "configuration": 9,
+        "instructions": [
+            {
+                "step": 1,
+                "title": "Gather Supplies",
+                "instruction": "Get 6.0–7.0 quarts of 5W-30 synthetic motor oil (or 0W-30 for EcoBoost, check owner’s manual), new oil filter (Motorcraft FL-500S or specified type), 15mm socket for drain plug, torque wrench, drain pan, funnel, gloves, and rags."
+            },
+            {
+                "step": 2,
+                "title": "Warm Up Engine",
+                "instruction": "Run the engine for 5–10 minutes, then shut it off to warm and thin the oil."
+            },
+            {
+                "step": 3,
+                "title": "Raise Vehicle",
+                "instruction": "If needed, lift the front of the truck with a jack and secure with jack stands, or use ramps. Engage parking brake."
+            },
+            {
+                "step": 4,
+                "title": "Drain Old Oil",
+                "instruction": "Locate the drain plug on the oil pan (15mm). Position drain pan, remove the plug, and let oil drain completely."
+            },
+            {
+                "step": 5,
+                "title": "Reinstall Drain Plug",
+                "instruction": "Install new washer if applicable. Tighten drain plug to 20–30 ft-lbs torque."
+            },
+            {
+                "step": 6,
+                "title": "Replace Oil Filter",
+                "instruction": "Locate the oil filter (varies by engine, typically front or side of block). Use wrench to remove, let oil drain, apply fresh oil to new filter gasket, and install hand-tight plus 3/4 turn."
+            },
+            {
+                "step": 7,
+                "title": "Add New Oil",
+                "instruction": "Remove filler cap and pour in correct quantity of oil for your engine. Replace cap."
+            },
+            {
+                "step": 8,
+                "title": "Run Engine and Check",
+                "instruction": "Start engine, idle 1–2 minutes, and inspect for leaks around plug and filter."
+            },
+            {
+                "step": 9,
+                "title": "Check Oil Level",
+                "instruction": "Wait 5–10 minutes. Use dipstick to confirm oil level is between min and max. Add as needed."
+            },
+            {
+                "step": 10,
+                "title": "Dispose of Oil",
+                "instruction": "Recycle old oil and filter at an auto parts store or waste facility."
+            },
+            {
+                "step": 11,
+                "title": "Reset Oil Life Monitor",
+                "instruction": "On the steering wheel controls, go to Settings > Vehicle > Oil Life Reset. Hold OK until reset to 100%."
+            }
+        ]
+    }
+},
+{
+    "model": "selectVehicle.taskforconfiguration",
+    "pk": 32,
+    "fields": {
+        "task": 2,
+        "configuration": 9,
+        "instructions": [
+            {
+                "step": 1,
+                "title": "Gather Supplies",
+                "instruction": "Get a new 12V battery (Group 48/H6 AGM recommended), 10mm wrench, terminal brush, protector spray, gloves, and safety glasses."
+            },
+            {
+                "step": 2,
+                "title": "Prepare Vehicle",
+                "instruction": "Turn off engine, set parking brake, remove key/fob, and open hood."
+            },
+            {
+                "step": 3,
+                "title": "Disconnect Negative Cable",
+                "instruction": "Loosen 10mm nut on negative (-) terminal and move cable aside."
+            },
+            {
+                "step": 4,
+                "title": "Disconnect Positive Cable",
+                "instruction": "Loosen 10mm nut on positive (+) terminal and move cable aside."
+            },
+            {
+                "step": 5,
+                "title": "Remove Hold-Down Clamp",
+                "instruction": "Loosen and remove hold-down bolt/bracket at the base of the battery."
+            },
+            {
+                "step": 6,
+                "title": "Remove Old Battery",
+                "instruction": "Lift battery straight up carefully. It is heavy—use proper lifting."
+            },
+            {
+                "step": 7,
+                "title": "Clean Tray and Terminals",
+                "instruction": "Clean corrosion with terminal brush or baking soda solution. Dry thoroughly."
+            },
+            {
+                "step": 8,
+                "title": "Install New Battery",
+                "instruction": "Place new battery in tray with correct orientation."
+            },
+            {
+                "step": 9,
+                "title": "Secure Battery",
+                "instruction": "Reinstall hold-down bracket and tighten bolt."
+            },
+            {
+                "step": 10,
+                "title": "Reconnect Positive Cable",
+                "instruction": "Attach positive (+) cable first and tighten."
+            },
+            {
+                "step": 11,
+                "title": "Reconnect Negative Cable",
+                "instruction": "Attach negative (-) cable last and tighten."
+            },
+            {
+                "step": 12,
+                "title": "Finish",
+                "instruction": "Start vehicle to confirm installation. Reset clock and radio presets if needed."
+            }
+        ]
+    }
+},
+{
+    "model": "selectVehicle.taskforconfiguration",
+    "pk": 33,
+    "fields": {
+        "task": 3,
+        "configuration": 9,
+        "instructions": [
+            {
+                "step": 1,
+                "title": "Gather Supplies",
+                "instruction": "Get a new cabin air filter (Motorcraft FP-92 or equivalent)."
+            },
+            {
+                "step": 2,
+                "title": "Access Glove Box",
+                "instruction": "Open glove box and remove all items."
+            },
+            {
+                "step": 3,
+                "title": "Release Glove Box",
+                "instruction": "Press inward on both sides of glove box to release the stoppers and let it swing down."
+            },
+            {
+                "step": 4,
+                "title": "Locate Filter Housing",
+                "instruction": "Behind the glove box, locate the rectangular filter housing cover."
+            },
+            {
+                "step": 5,
+                "title": "Remove Old Filter",
+                "instruction": "Unclip housing cover and slide out old filter. Note airflow direction arrows."
+            },
+            {
+                "step": 6,
+                "title": "Install New Filter",
+                "instruction": "Insert new filter with airflow arrows pointing downward. Ensure snug fit."
+            },
+            {
+                "step": 7,
+                "title": "Reassemble",
+                "instruction": "Reattach housing cover, lift glove box back into place, and close it."
+            }
+        ]
+    }
+},
+{
+    "model": "selectVehicle.taskforconfiguration",
+    "pk": 34,
+    "fields": {
+        "task": 4,
+        "configuration": 9,
+        "instructions": [
+            {
+                "step": 1,
+                "title": "Gather Supplies",
+                "instruction": "Get a new engine air filter (Motorcraft FA-1927 or equivalent)."
+            },
+            {
+                "step": 2,
+                "title": "Locate Air Box",
+                "instruction": "Open hood. Air box is on driver’s side, near front of engine bay."
+            },
+            {
+                "step": 3,
+                "title": "Open Housing",
+                "instruction": "Unclip metal retaining clamps or remove screws holding the top cover."
+            },
+            {
+                "step": 4,
+                "title": "Remove Old Filter",
+                "instruction": "Lift cover slightly and pull out old filter."
+            },
+            {
+                "step": 5,
+                "title": "Clean Housing",
+                "instruction": "Remove leaves or debris from inside housing."
+            },
+            {
+                "step": 6,
+                "title": "Install New Filter",
+                "instruction": "Place new filter snugly in housing with rubber seal facing upward."
+            },
+            {
+                "step": 7,
+                "title": "Secure Housing",
+                "instruction": "Reinstall cover and snap clips/screws securely."
+            }
+        ]
+    }
+},
+{
+    "model": "selectVehicle.taskforconfiguration",
+    "pk": 35,
+    "fields": {
+        "task": 5,
+        "configuration": 9,
+        "instructions": [
+            {
+                "step": 1,
+                "title": "Gather Supplies",
+                "instruction": "Get correct turn signal bulb (front: 7440A amber, rear: 3157A amber, check owner’s manual). Have gloves to avoid touching bulb glass."
+            },
+            {
+                "step": 2,
+                "title": "Prepare Vehicle",
+                "instruction": "Turn off engine and lights. Let bulbs cool if recently used."
+            },
+            {
+                "step": 3,
+                "title": "Access Front Bulb",
+                "instruction": "Open hood, reach behind headlight assembly, locate socket, twist counterclockwise to remove."
+            },
+            {
+                "step": 4,
+                "title": "Access Rear Bulb",
+                "instruction": "Open tailgate, remove screws securing taillight, pull assembly outward, twist socket to remove bulb."
+            },
+            {
+                "step": 5,
+                "title": "Replace Bulb",
+                "instruction": "Pull old bulb straight out, insert new bulb firmly without touching glass."
+            },
+            {
+                "step": 6,
+                "title": "Test Bulb",
+                "instruction": "Turn on turn signals or hazards to confirm operation."
+            },
+            {
+                "step": 7,
+                "title": "Reassemble",
+                "instruction": "Reinstall socket, headlight cover, or taillight assembly as needed."
+            }
+        ]
+    }
+},
+{
+    "model": "selectVehicle.taskforconfiguration",
+    "pk": 36,
+    "fields": {
+        "task": 6,
+        "configuration": 9,
+        "instructions": [
+            {
+                "step": 1,
+                "title": "Gather Supplies",
+                "instruction": "Get correct replacement blades (Driver: 22 in, Passenger: 22 in, Rear: 8–9 in if equipped)."
+            },
+            {
+                "step": 2,
+                "title": "Prepare Vehicle",
+                "instruction": "Turn off ignition. If needed, switch wipers on then off to leave them upright."
+            },
+            {
+                "step": 3,
+                "title": "Lift Wiper Arms",
+                "instruction": "Lift one wiper arm away from windshield until locked in service position."
+            },
+            {
+                "step": 4,
+                "title": "Remove Old Blade",
+                "instruction": "Press release tab on blade where it meets J-hook. Slide blade downward to remove."
+            },
+            {
+                "step": 5,
+                "title": "Attach New Blade",
+                "instruction": "Align new blade with J-hook, pull upward until it clicks. Tug gently to confirm secure fit."
+            },
+            {
+                "step": 6,
+                "title": "Lower Wiper Arm",
+                "instruction": "Carefully lower arm back onto windshield."
+            },
+            {
+                "step": 7,
+                "title": "Repeat and Test",
+                "instruction": "Repeat for other blade. Turn on wipers to confirm smooth operation."
+            }
+        ]
+    }
+},
+{
+    "model": "selectVehicle.taskforconfiguration",
+    "pk": 37,
+    "fields": {
+        "task": 1,
+        "configuration": 10,
+        "instructions": [
+            {
+                "step": 1,
+                "title": "Gather Supplies",
+                "instruction": "Get the correct amount of oil (typically 5.0 quarts of SAE 0W-20 full synthetic for 1.5L and 2.0L gas engines, or 6.0 quarts of dexos2 5W-30 for 1.6L diesel). Also have a new oil filter (ACDelco PF64 or equivalent), 15mm socket, drain pan, funnel, gloves, and rags."
+            },
+            {
+                "step": 2,
+                "title": "Warm Up Engine",
+                "instruction": "Run the engine for 5 minutes to warm the oil, then shut it off."
+            },
+            {
+                "step": 3,
+                "title": "Raise Vehicle",
+                "instruction": "Lift the front with a jack and secure on jack stands, or use ramps. Engage the parking brake."
+            },
+            {
+                "step": 4,
+                "title": "Drain Old Oil",
+                "instruction": "Locate the oil drain plug on the oil pan (15mm). Place the drain pan beneath and remove the plug. Allow oil to drain completely."
+            },
+            {
+                "step": 5,
+                "title": "Reinstall Drain Plug",
+                "instruction": "Replace the crush washer if needed. Reinstall plug and torque to about 18–20 ft-lbs. Do not overtighten."
+            },
+            {
+                "step": 6,
+                "title": "Replace Oil Filter",
+                "instruction": "Locate the oil filter (PF64, front underside of engine). Remove with a filter wrench, apply oil to gasket of new filter, and hand-tighten until snug plus 3/4 turn."
+            },
+            {
+                "step": 7,
+                "title": "Add New Oil",
+                "instruction": "Lower the vehicle. Remove filler cap and add 5.0–6.0 quarts of correct oil (depending on engine)."
+            },
+            {
+                "step": 8,
+                "title": "Check for Leaks",
+                "instruction": "Start the engine, let it run 1–2 minutes, and inspect around filter and drain plug for leaks."
+            },
+            {
+                "step": 9,
+                "title": "Check Oil Level",
+                "instruction": "Shut off engine, wait 5 minutes, and check dipstick. Add oil as needed without overfilling."
+            },
+            {
+                "step": 10,
+                "title": "Dispose of Oil",
+                "instruction": "Recycle used oil and filter at an auto parts store or recycling facility."
+            },
+            {
+                "step": 11,
+                "title": "Reset Oil Life",
+                "instruction": "Turn ignition ON. Use steering wheel controls: Home > Info > Oil Life. Hold checkmark button until oil life resets to 100%."
+            }
+        ]
+    }
+},
+{
+    "model": "selectVehicle.taskforconfiguration",
+    "pk": 38,
+    "fields": {
+        "task": 2,
+        "configuration": 10,
+        "instructions": [
+            {
+                "step": 1,
+                "title": "Gather Supplies",
+                "instruction": "Get a Group H5/47 (gas) or H6/48 (diesel) AGM battery, 10mm and 13mm wrenches, terminal cleaner, protector spray, gloves, and eye protection."
+            },
+            {
+                "step": 2,
+                "title": "Prepare Vehicle",
+                "instruction": "Turn off engine, set parking brake, remove key/fob, and open hood."
+            },
+            {
+                "step": 3,
+                "title": "Locate Battery",
+                "instruction": "Battery is located in the engine bay on the driver’s side near the firewall."
+            },
+            {
+                "step": 4,
+                "title": "Disconnect Negative Cable",
+                "instruction": "Loosen 10mm nut on negative (-) terminal and move cable aside."
+            },
+            {
+                "step": 5,
+                "title": "Disconnect Positive Cable",
+                "instruction": "Loosen 10mm nut on positive (+) terminal and move cable aside."
+            },
+            {
+                "step": 6,
+                "title": "Remove Hold-Down Clamp",
+                "instruction": "Remove 13mm bolt securing the clamp at the base of the battery."
+            },
+            {
+                "step": 7,
+                "title": "Remove Old Battery",
+                "instruction": "Lift out old battery carefully. It is heavy—use proper technique."
+            },
+            {
+                "step": 8,
+                "title": "Clean Tray and Terminals",
+                "instruction": "Clean corrosion with brush or baking soda solution, rinse, and dry."
+            },
+            {
+                "step": 9,
+                "title": "Install New Battery",
+                "instruction": "Place new battery in tray with terminals oriented correctly."
+            },
+            {
+                "step": 10,
+                "title": "Secure Battery",
+                "instruction": "Reinstall hold-down clamp and tighten bolt."
+            },
+            {
+                "step": 11,
+                "title": "Reconnect Positive Cable",
+                "instruction": "Attach positive (+) cable first, then tighten securely."
+            },
+            {
+                "step": 12,
+                "title": "Reconnect Negative Cable",
+                "instruction": "Attach negative (-) cable last, then tighten securely."
+            },
+            {
+                "step": 13,
+                "title": "Finish",
+                "instruction": "Start engine to confirm. Reset clock, radio presets, or memory settings if needed."
+            }
+        ]
+    }
+},
+{
+    "model": "selectVehicle.taskforconfiguration",
+    "pk": 39,
+    "fields": {
+        "task": 3,
+        "configuration": 10,
+        "instructions": [
+            {
+                "step": 1,
+                "title": "Gather Supplies",
+                "instruction": "Get a new cabin air filter (ACDelco CF11819 or equivalent)."
+            },
+            {
+                "step": 2,
+                "title": "Empty Glove Box",
+                "instruction": "Open glove box and remove all contents."
+            },
+            {
+                "step": 3,
+                "title": "Release Glove Box Stops",
+                "instruction": "Press inward on the side tabs of the glove box to release and let it drop fully."
+            },
+            {
+                "step": 4,
+                "title": "Locate Filter Housing",
+                "instruction": "Behind the glove box, find the rectangular filter housing cover."
+            },
+            {
+                "step": 5,
+                "title": "Remove Old Filter",
+                "instruction": "Unclip the cover, slide out old filter, noting airflow direction."
+            },
+            {
+                "step": 6,
+                "title": "Install New Filter",
+                "instruction": "Insert new filter with airflow arrows pointing downward. Ensure proper seating."
+            },
+            {
+                "step": 7,
+                "title": "Reassemble",
+                "instruction": "Reattach cover and lift glove box back into place."
+            }
+        ]
+    }
+},
+{
+    "model": "selectVehicle.taskforconfiguration",
+    "pk": 40,
+    "fields": {
+        "task": 4,
+        "configuration": 10,
+        "instructions": [
+            {
+                "step": 1,
+                "title": "Gather Supplies",
+                "instruction": "Get a new engine air filter (ACDelco A3181C for 1.5L/2.0L, A3228C for 1.6L diesel, or equivalent)."
+            },
+            {
+                "step": 2,
+                "title": "Locate Air Box",
+                "instruction": "Open hood. Air box is located in front driver’s side of engine bay."
+            },
+            {
+                "step": 3,
+                "title": "Open Housing",
+                "instruction": "Release the retaining clips or screws securing the top of the air box."
+            },
+            {
+                "step": 4,
+                "title": "Remove Old Filter",
+                "instruction": "Lift the housing lid and remove the old filter."
+            },
+            {
+                "step": 5,
+                "title": "Clean Housing",
+                "instruction": "Remove any leaves or debris with a rag."
+            },
+            {
+                "step": 6,
+                "title": "Install New Filter",
+                "instruction": "Insert new filter into housing with rubber gasket seated properly."
+            },
+            {
+                "step": 7,
+                "title": "Secure Housing",
+                "instruction": "Reinstall lid and fasten clips or screws."
+            }
+        ]
+    }
+},
+{
+    "model": "selectVehicle.taskforconfiguration",
+    "pk": 41,
+    "fields": {
+        "task": 5,
+        "configuration": 10,
+        "instructions": [
+            {
+                "step": 1,
+                "title": "Gather Supplies",
+                "instruction": "Get correct bulbs (Front: 7444NA amber, Rear: 7440 or 3157A depending on trim). Have gloves to avoid skin oils on glass."
+            },
+            {
+                "step": 2,
+                "title": "Prepare Vehicle",
+                "instruction": "Turn off engine and lights. Let bulbs cool if recently on."
+            },
+            {
+                "step": 3,
+                "title": "Access Front Bulb",
+                "instruction": "Open hood, reach behind headlight assembly, twist bulb socket counterclockwise, and pull out."
+            },
+            {
+                "step": 4,
+                "title": "Access Rear Bulb",
+                "instruction": "Open liftgate, remove screws securing taillight assembly, pull assembly outward, twist socket counterclockwise, and remove."
+            },
+            {
+                "step": 5,
+                "title": "Replace Bulb",
+                "instruction": "Remove old bulb from socket and insert new one firmly."
+            },
+            {
+                "step": 6,
+                "title": "Test Bulb",
+                "instruction": "Activate turn signals or hazards to verify function."
+            },
+            {
+                "step": 7,
+                "title": "Reassemble",
+                "instruction": "Reinstall sockets and assemblies securely."
+            }
+        ]
+    }
+},
+{
+    "model": "selectVehicle.taskforconfiguration",
+    "pk": 42,
+    "fields": {
+        "task": 6,
+        "configuration": 10,
+        "instructions": [
+            {
+                "step": 1,
+                "title": "Gather Supplies",
+                "instruction": "Get replacement blades (Driver: 24 in, Passenger: 18 in, Rear: 12 in if equipped)."
+            },
+            {
+                "step": 2,
+                "title": "Prepare Vehicle",
+                "instruction": "Turn off ignition. Lift wiper arms away from windshield."
+            },
+            {
+                "step": 3,
+                "title": "Remove Old Blade",
+                "instruction": "Press release tab where blade connects to J-hook, then slide blade downward to remove."
+            },
+            {
+                "step": 4,
+                "title": "Attach New Blade",
+                "instruction": "Align new blade with J-hook, slide upward until it clicks securely."
+            },
+            {
+                "step": 5,
+                "title": "Lower Arm",
+                "instruction": "Carefully lower wiper arm back onto windshield."
+            },
+            {
+                "step": 6,
+                "title": "Repeat",
+                "instruction": "Repeat process for other blades (and rear if equipped)."
+            },
+            {
+                "step": 7,
+                "title": "Test Wipers",
+                "instruction": "Turn on wipers to confirm smooth and proper function."
+            }
+        ]
+    }
+},
+{
+    "model": "selectVehicle.taskforconfiguration",
+    "pk": 43,
+    "fields": {
+        "task": 1,
+        "configuration": 8,
+        "instructions": [
+            {
+                "step": 1,
+                "title": "Gather Supplies",
+                "instruction": "Get 4.8 quarts of 0W-16 full synthetic oil (Toyota spec), new oil filter (Toyota OEM 04152-YZZA6 or equivalent), 14mm socket, torque wrench, drain pan, funnel, gloves, and rags."
+            },
+            {
+                "step": 2,
+                "title": "Warm Up Engine",
+                "instruction": "Run engine 5 minutes to thin oil, then shut it off."
+            },
+            {
+                "step": 3,
+                "title": "Raise Vehicle",
+                "instruction": "Use jack and jack stands or ramps to lift front end. Engage parking brake."
+            },
+            {
+                "step": 4,
+                "title": "Drain Old Oil",
+                "instruction": "Locate drain plug (14mm) on oil pan. Place drain pan, remove plug, and let oil drain fully."
+            },
+            {
+                "step": 5,
+                "title": "Reinstall Drain Plug",
+                "instruction": "Replace washer if worn. Torque drain plug to 30 ft-lbs (40 Nm)."
+            },
+            {
+                "step": 6,
+                "title": "Replace Oil Filter",
+                "instruction": "Oil filter is a cartridge style, located under engine. Remove housing with filter wrench, replace cartridge and O-rings, lubricate new O-ring, and reinstall housing to 18 ft-lbs torque."
+            },
+            {
+                "step": 7,
+                "title": "Add New Oil",
+                "instruction": "Lower vehicle. Remove filler cap and pour in 4.8 quarts of 0W-16 oil. Replace cap."
+            },
+            {
+                "step": 8,
+                "title": "Run Engine and Check",
+                "instruction": "Start engine for 1–2 minutes, check for leaks around plug and filter."
+            },
+            {
+                "step": 9,
+                "title": "Check Oil Level",
+                "instruction": "Shut off engine, wait 5–10 minutes, use dipstick to verify level. Add oil if necessary."
+            },
+            {
+                "step": 10,
+                "title": "Dispose of Oil",
+                "instruction": "Recycle used oil and filter properly."
+            },
+            {
+                "step": 11,
+                "title": "Reset Maintenance Light",
+                "instruction": "Turn ignition to ON, use steering wheel controls: Settings > Vehicle Settings > Maintenance Reset. Confirm reset."
+            }
+        ]
+    }
+},
+{
+    "model": "selectVehicle.taskforconfiguration",
+    "pk": 44,
+    "fields": {
+        "task": 2,
+        "configuration": 8,
+        "instructions": [
+            {
+                "step": 1,
+                "title": "Gather Supplies",
+                "instruction": "Get a Group 35 12V battery (AGM recommended), 10mm wrench, terminal brush, protector spray, gloves, and safety glasses."
+            },
+            {
+                "step": 2,
+                "title": "Prepare Vehicle",
+                "instruction": "Turn off engine, remove key/fob, set to Park, and engage parking brake."
+            },
+            {
+                "step": 3,
+                "title": "Locate Battery",
+                "instruction": "Battery is under the hood on the driver’s side."
+            },
+            {
+                "step": 4,
+                "title": "Disconnect Negative Cable",
+                "instruction": "Loosen 10mm nut and remove negative (-) cable. Move aside."
+            },
+            {
+                "step": 5,
+                "title": "Disconnect Positive Cable",
+                "instruction": "Loosen 10mm nut and remove positive (+) cable. Move aside."
+            },
+            {
+                "step": 6,
+                "title": "Remove Hold-Down Clamp",
+                "instruction": "Loosen bolts securing the battery hold-down bracket and remove it."
+            },
+            {
+                "step": 7,
+                "title": "Remove Old Battery",
+                "instruction": "Lift out battery carefully—it is heavy."
+            },
+            {
+                "step": 8,
+                "title": "Clean Tray and Terminals",
+                "instruction": "Clean any corrosion with brush or baking soda solution, then dry."
+            },
+            {
+                "step": 9,
+                "title": "Install New Battery",
+                "instruction": "Place new battery in tray with correct terminal orientation."
+            },
+            {
+                "step": 10,
+                "title": "Secure Battery",
+                "instruction": "Reinstall hold-down bracket and tighten bolts."
+            },
+            {
+                "step": 11,
+                "title": "Reconnect Positive Cable",
+                "instruction": "Attach positive (+) cable first, tighten securely."
+            },
+            {
+                "step": 12,
+                "title": "Reconnect Negative Cable",
+                "instruction": "Attach negative (-) cable last, tighten securely."
+            },
+            {
+                "step": 13,
+                "title": "Finish",
+                "instruction": "Start vehicle to confirm. Reset clock and radio presets if needed."
+            }
+        ]
+    }
+},
+{
+    "model": "selectVehicle.taskforconfiguration",
+    "pk": 45,
+    "fields": {
+        "task": 3,
+        "configuration": 8,
+        "instructions": [
+            {
+                "step": 1,
+                "title": "Gather Supplies",
+                "instruction": "Get a new cabin air filter (Toyota OEM 87139-58010 or equivalent)."
+            },
+            {
+                "step": 2,
+                "title": "Empty Glove Box",
+                "instruction": "Open glove box and remove all contents."
+            },
+            {
+                "step": 3,
+                "title": "Release Glove Box",
+                "instruction": "Push in on both sides to release stops so glove box swings down."
+            },
+            {
+                "step": 4,
+                "title": "Locate Filter Housing",
+                "instruction": "Behind glove box, locate rectangular filter housing cover."
+            },
+            {
+                "step": 5,
+                "title": "Remove Old Filter",
+                "instruction": "Unclip housing cover, slide out old filter, note airflow direction."
+            },
+            {
+                "step": 6,
+                "title": "Install New Filter",
+                "instruction": "Insert new filter with airflow arrows pointing down. Ensure snug fit."
+            },
+            {
+                "step": 7,
+                "title": "Reassemble",
+                "instruction": "Reattach housing cover and lift glove box back into place."
+            }
+        ]
+    }
+},
+{
+    "model": "selectVehicle.taskforconfiguration",
+    "pk": 46,
+    "fields": {
+        "task": 4,
+        "configuration": 8,
+        "instructions": [
+            {
+                "step": 1,
+                "title": "Gather Supplies",
+                "instruction": "Get a new engine air filter (Toyota OEM 17801-25060 or equivalent)."
+            },
+            {
+                "step": 2,
+                "title": "Locate Air Box",
+                "instruction": "Open hood. Air box is on driver’s side near the front."
+            },
+            {
+                "step": 3,
+                "title": "Open Housing",
+                "instruction": "Release retaining clips or remove screws holding the top cover."
+            },
+            {
+                "step": 4,
+                "title": "Remove Old Filter",
+                "instruction": "Lift cover slightly, remove old filter."
+            },
+            {
+                "step": 5,
+                "title": "Clean Housing",
+                "instruction": "Wipe out dirt or leaves with a rag."
+            },
+            {
+                "step": 6,
+                "title": "Install New Filter",
+                "instruction": "Place new filter snugly in housing with rubber edge sealed properly."
+            },
+            {
+                "step": 7,
+                "title": "Secure Housing",
+                "instruction": "Reinstall cover and fasten clips or screws securely."
+            }
+        ]
+    }
+},
+{
+    "model": "selectVehicle.taskforconfiguration",
+    "pk": 47,
+    "fields": {
+        "task": 5,
+        "configuration": 8,
+        "instructions": [
+            {
+                "step": 1,
+                "title": "Gather Supplies",
+                "instruction": "Get correct bulbs (Front: 7444NA amber, Rear: 7440A amber). Gloves recommended to avoid touching bulb glass."
+            },
+            {
+                "step": 2,
+                "title": "Prepare Vehicle",
+                "instruction": "Turn off engine and lights. Let bulbs cool before handling."
+            },
+            {
+                "step": 3,
+                "title": "Access Front Bulb",
+                "instruction": "Open hood, reach behind headlight assembly, twist turn signal socket counterclockwise, and pull out."
+            },
+            {
+                "step": 4,
+                "title": "Access Rear Bulb",
+                "instruction": "Open liftgate, remove screws securing taillight assembly, pull assembly outward, twist socket counterclockwise, and remove."
+            },
+            {
+                "step": 5,
+                "title": "Replace Bulb",
+                "instruction": "Pull old bulb straight out. Insert new bulb firmly into socket."
+            },
+            {
+                "step": 6,
+                "title": "Test Bulb",
+                "instruction": "Turn on hazards or turn signals to confirm new bulb works."
+            },
+            {
+                "step": 7,
+                "title": "Reassemble",
+                "instruction": "Reinstall socket and secure taillight or headlight housing."
+            }
+        ]
+    }
+},
+{
+    "model": "selectVehicle.taskforconfiguration",
+    "pk": 48,
+    "fields": {
+        "task": 6,
+        "configuration": 8,
+        "instructions": [
+            {
+                "step": 1,
+                "title": "Gather Supplies",
+                "instruction": "Get correct wiper blades (Driver: 26 in, Passenger: 16 in, Rear: 12 in)."
+            },
+            {
+                "step": 2,
+                "title": "Prepare Vehicle",
+                "instruction": "Turn off ignition. Lift wiper arms into service position."
+            },
+            {
+                "step": 3,
+                "title": "Remove Old Blade",
+                "instruction": "Press release tab where blade meets J-hook, slide blade downward to remove."
+            },
+            {
+                "step": 4,
+                "title": "Attach New Blade",
+                "instruction": "Align new blade with J-hook, slide upward until it clicks. Tug gently to confirm secure fit."
+            },
+            {
+                "step": 5,
+                "title": "Lower Wiper Arm",
+                "instruction": "Carefully lower wiper arm back onto windshield."
+            },
+            {
+                "step": 6,
+                "title": "Repeat",
+                "instruction": "Repeat for other wipers including rear if equipped."
+            },
+            {
+                "step": 7,
+                "title": "Test Wipers",
+                "instruction": "Turn on wipers and washer fluid to confirm smooth operation."
+            }
+        ]
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add log entry",
+        "content_type": [
+            "admin",
+            "logentry"
+        ],
+        "codename": "add_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change log entry",
+        "content_type": [
+            "admin",
+            "logentry"
+        ],
+        "codename": "change_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete log entry",
+        "content_type": [
+            "admin",
+            "logentry"
+        ],
+        "codename": "delete_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view log entry",
+        "content_type": [
+            "admin",
+            "logentry"
+        ],
+        "codename": "view_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add permission",
+        "content_type": [
+            "auth",
+            "permission"
+        ],
+        "codename": "add_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change permission",
+        "content_type": [
+            "auth",
+            "permission"
+        ],
+        "codename": "change_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete permission",
+        "content_type": [
+            "auth",
+            "permission"
+        ],
+        "codename": "delete_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view permission",
+        "content_type": [
+            "auth",
+            "permission"
+        ],
+        "codename": "view_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add group",
+        "content_type": [
+            "auth",
+            "group"
+        ],
+        "codename": "add_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change group",
+        "content_type": [
+            "auth",
+            "group"
+        ],
+        "codename": "change_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete group",
+        "content_type": [
+            "auth",
+            "group"
+        ],
+        "codename": "delete_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view group",
+        "content_type": [
+            "auth",
+            "group"
+        ],
+        "codename": "view_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add user",
+        "content_type": [
+            "auth",
+            "user"
+        ],
+        "codename": "add_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change user",
+        "content_type": [
+            "auth",
+            "user"
+        ],
+        "codename": "change_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete user",
+        "content_type": [
+            "auth",
+            "user"
+        ],
+        "codename": "delete_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view user",
+        "content_type": [
+            "auth",
+            "user"
+        ],
+        "codename": "view_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add content type",
+        "content_type": [
+            "contenttypes",
+            "contenttype"
+        ],
+        "codename": "add_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change content type",
+        "content_type": [
+            "contenttypes",
+            "contenttype"
+        ],
+        "codename": "change_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete content type",
+        "content_type": [
+            "contenttypes",
+            "contenttype"
+        ],
+        "codename": "delete_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view content type",
+        "content_type": [
+            "contenttypes",
+            "contenttype"
+        ],
+        "codename": "view_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add session",
+        "content_type": [
+            "sessions",
+            "session"
+        ],
+        "codename": "add_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change session",
+        "content_type": [
+            "sessions",
+            "session"
+        ],
+        "codename": "change_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete session",
+        "content_type": [
+            "sessions",
+            "session"
+        ],
+        "codename": "delete_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view session",
+        "content_type": [
+            "sessions",
+            "session"
+        ],
+        "codename": "view_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add task for configuration",
+        "content_type": [
+            "selectVehicle",
+            "taskforconfiguration"
+        ],
+        "codename": "add_taskforconfiguration"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change task for configuration",
+        "content_type": [
+            "selectVehicle",
+            "taskforconfiguration"
+        ],
+        "codename": "change_taskforconfiguration"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete task for configuration",
+        "content_type": [
+            "selectVehicle",
+            "taskforconfiguration"
+        ],
+        "codename": "delete_taskforconfiguration"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view task for configuration",
+        "content_type": [
+            "selectVehicle",
+            "taskforconfiguration"
+        ],
+        "codename": "view_taskforconfiguration"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add car configuration",
+        "content_type": [
+            "selectVehicle",
+            "carconfiguration"
+        ],
+        "codename": "add_carconfiguration"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change car configuration",
+        "content_type": [
+            "selectVehicle",
+            "carconfiguration"
+        ],
+        "codename": "change_carconfiguration"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete car configuration",
+        "content_type": [
+            "selectVehicle",
+            "carconfiguration"
+        ],
+        "codename": "delete_carconfiguration"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view car configuration",
+        "content_type": [
+            "selectVehicle",
+            "carconfiguration"
+        ],
+        "codename": "view_carconfiguration"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add car model",
+        "content_type": [
+            "selectVehicle",
+            "carmodel"
+        ],
+        "codename": "add_carmodel"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change car model",
+        "content_type": [
+            "selectVehicle",
+            "carmodel"
+        ],
+        "codename": "change_carmodel"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete car model",
+        "content_type": [
+            "selectVehicle",
+            "carmodel"
+        ],
+        "codename": "delete_carmodel"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view car model",
+        "content_type": [
+            "selectVehicle",
+            "carmodel"
+        ],
+        "codename": "view_carmodel"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add maintenance task",
+        "content_type": [
+            "selectVehicle",
+            "maintenancetask"
+        ],
+        "codename": "add_maintenancetask"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change maintenance task",
+        "content_type": [
+            "selectVehicle",
+            "maintenancetask"
+        ],
+        "codename": "change_maintenancetask"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete maintenance task",
+        "content_type": [
+            "selectVehicle",
+            "maintenancetask"
+        ],
+        "codename": "delete_maintenancetask"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view maintenance task",
+        "content_type": [
+            "selectVehicle",
+            "maintenancetask"
+        ],
+        "codename": "view_maintenancetask"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add service record",
+        "content_type": [
+            "selectVehicle",
+            "servicerecord"
+        ],
+        "codename": "add_servicerecord"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change service record",
+        "content_type": [
+            "selectVehicle",
+            "servicerecord"
+        ],
+        "codename": "change_servicerecord"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete service record",
+        "content_type": [
+            "selectVehicle",
+            "servicerecord"
+        ],
+        "codename": "delete_servicerecord"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view service record",
+        "content_type": [
+            "selectVehicle",
+            "servicerecord"
+        ],
+        "codename": "view_servicerecord"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add make",
+        "content_type": [
+            "selectVehicle",
+            "make"
+        ],
+        "codename": "add_make"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change make",
+        "content_type": [
+            "selectVehicle",
+            "make"
+        ],
+        "codename": "change_make"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete make",
+        "content_type": [
+            "selectVehicle",
+            "make"
+        ],
+        "codename": "delete_make"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view make",
+        "content_type": [
+            "selectVehicle",
+            "make"
+        ],
+        "codename": "view_make"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add vehicle",
+        "content_type": [
+            "selectVehicle",
+            "vehicle"
+        ],
+        "codename": "add_vehicle"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change vehicle",
+        "content_type": [
+            "selectVehicle",
+            "vehicle"
+        ],
+        "codename": "change_vehicle"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete vehicle",
+        "content_type": [
+            "selectVehicle",
+            "vehicle"
+        ],
+        "codename": "delete_vehicle"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view vehicle",
+        "content_type": [
+            "selectVehicle",
+            "vehicle"
+        ],
+        "codename": "view_vehicle"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add task for configuration",
+        "content_type": [
+            "login",
+            "taskforconfiguration"
+        ],
+        "codename": "add_taskforconfiguration"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change task for configuration",
+        "content_type": [
+            "login",
+            "taskforconfiguration"
+        ],
+        "codename": "change_taskforconfiguration"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete task for configuration",
+        "content_type": [
+            "login",
+            "taskforconfiguration"
+        ],
+        "codename": "delete_taskforconfiguration"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view task for configuration",
+        "content_type": [
+            "login",
+            "taskforconfiguration"
+        ],
+        "codename": "view_taskforconfiguration"
+    }
+},
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$1000000$X6nl1qQmMXCG7orlbMLGjM$GWtN+sCh4ub2tbf8DDeoNrWYOOZr7US5+I1ITSekJRQ=",
+        "last_login": "2025-08-17T17:14:23.841Z",
+        "is_superuser": true,
+        "username": "cisco",
+        "first_name": "",
+        "last_name": "",
+        "email": "ciscogonzalez@unomaha.edu",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2025-07-18T00:21:36.969Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1,
+    "fields": {
+        "action_time": "2025-07-18T00:51:31.093Z",
+        "user": [
+            "cisco"
+        ],
+        "content_type": [
+            "selectVehicle",
+            "carconfiguration"
+        ],
+        "object_id": "6",
+        "object_repr": "2016 Volkswagen Jetta",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 2,
+    "fields": {
+        "action_time": "2025-07-18T00:51:33.256Z",
+        "user": [
+            "cisco"
+        ],
+        "content_type": [
+            "selectVehicle",
+            "carconfiguration"
+        ],
+        "object_id": "6",
+        "object_repr": "2016 Volkswagen Jetta",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3,
+    "fields": {
+        "action_time": "2025-07-18T00:56:23.504Z",
+        "user": [
+            "cisco"
+        ],
+        "content_type": [
+            "selectVehicle",
+            "taskforconfiguration"
+        ],
+        "object_id": "7",
+        "object_repr": "Windsheild Wipers for 2016 Volkswagen Jetta",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 4,
+    "fields": {
+        "action_time": "2025-07-18T00:57:23.340Z",
+        "user": [
+            "cisco"
+        ],
+        "content_type": [
+            "selectVehicle",
+            "taskforconfiguration"
+        ],
+        "object_id": "8",
+        "object_repr": "Turn Signal Bulb for 2016 Volkswagen Jetta",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 5,
+    "fields": {
+        "action_time": "2025-07-18T00:58:12.580Z",
+        "user": [
+            "cisco"
+        ],
+        "content_type": [
+            "selectVehicle",
+            "taskforconfiguration"
+        ],
+        "object_id": "9",
+        "object_repr": "Engine Air Filter for 2016 Volkswagen Jetta",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 6,
+    "fields": {
+        "action_time": "2025-07-18T00:59:00.696Z",
+        "user": [
+            "cisco"
+        ],
+        "content_type": [
+            "selectVehicle",
+            "taskforconfiguration"
+        ],
+        "object_id": "10",
+        "object_repr": "Cabin Air Filter for 2016 Volkswagen Jetta",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 7,
+    "fields": {
+        "action_time": "2025-07-18T01:00:05.465Z",
+        "user": [
+            "cisco"
+        ],
+        "content_type": [
+            "selectVehicle",
+            "taskforconfiguration"
+        ],
+        "object_id": "11",
+        "object_repr": "Battery Change for 2016 Volkswagen Jetta",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 8,
+    "fields": {
+        "action_time": "2025-07-18T01:01:26.205Z",
+        "user": [
+            "cisco"
+        ],
+        "content_type": [
+            "selectVehicle",
+            "taskforconfiguration"
+        ],
+        "object_id": "12",
+        "object_repr": "Oil Change for 2016 Volkswagen Jetta",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 9,
+    "fields": {
+        "action_time": "2025-07-18T01:43:04.137Z",
+        "user": [
+            "cisco"
+        ],
+        "content_type": [
+            "selectVehicle",
+            "taskforconfiguration"
+        ],
+        "object_id": "13",
+        "object_repr": "Windsheild Wipers for 2016 Volkswagen Jetta",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 10,
+    "fields": {
+        "action_time": "2025-07-18T01:43:18.371Z",
+        "user": [
+            "cisco"
+        ],
+        "content_type": [
+            "selectVehicle",
+            "taskforconfiguration"
+        ],
+        "object_id": "14",
+        "object_repr": "Turn Signal Bulb for 2016 Volkswagen Jetta",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 11,
+    "fields": {
+        "action_time": "2025-07-18T01:43:33.068Z",
+        "user": [
+            "cisco"
+        ],
+        "content_type": [
+            "selectVehicle",
+            "taskforconfiguration"
+        ],
+        "object_id": "15",
+        "object_repr": "Engine Air Filter for 2016 Volkswagen Jetta",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 12,
+    "fields": {
+        "action_time": "2025-07-18T01:43:48.527Z",
+        "user": [
+            "cisco"
+        ],
+        "content_type": [
+            "selectVehicle",
+            "taskforconfiguration"
+        ],
+        "object_id": "16",
+        "object_repr": "Cabin Air Filter for 2016 Volkswagen Jetta",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 13,
+    "fields": {
+        "action_time": "2025-07-18T01:43:59.608Z",
+        "user": [
+            "cisco"
+        ],
+        "content_type": [
+            "selectVehicle",
+            "taskforconfiguration"
+        ],
+        "object_id": "17",
+        "object_repr": "Battery Change for 2016 Volkswagen Jetta",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 14,
+    "fields": {
+        "action_time": "2025-07-18T01:44:16.810Z",
+        "user": [
+            "cisco"
+        ],
+        "content_type": [
+            "selectVehicle",
+            "taskforconfiguration"
+        ],
+        "object_id": "18",
+        "object_repr": "Oil Change for 2016 Volkswagen Jetta",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 15,
+    "fields": {
+        "action_time": "2025-08-06T00:19:44.381Z",
+        "user": [
+            "cisco"
+        ],
+        "content_type": [
+            "selectVehicle",
+            "make"
+        ],
+        "object_id": "9",
+        "object_repr": "Ford",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 16,
+    "fields": {
+        "action_time": "2025-08-06T00:20:23.030Z",
+        "user": [
+            "cisco"
+        ],
+        "content_type": [
+            "selectVehicle",
+            "carmodel"
+        ],
+        "object_id": "13",
+        "object_repr": "Ford F150",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 17,
+    "fields": {
+        "action_time": "2025-08-06T00:39:12.567Z",
+        "user": [
+            "cisco"
+        ],
+        "content_type": [
+            "selectVehicle",
+            "make"
+        ],
+        "object_id": "10",
+        "object_repr": "GMC",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 18,
+    "fields": {
+        "action_time": "2025-08-06T00:44:41.611Z",
+        "user": [
+            "cisco"
+        ],
+        "content_type": [
+            "selectVehicle",
+            "make"
+        ],
+        "object_id": "10",
+        "object_repr": "GMC",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 19,
+    "fields": {
+        "action_time": "2025-08-07T05:23:18.659Z",
+        "user": [
+            "cisco"
+        ],
+        "content_type": [
+            "selectVehicle",
+            "make"
+        ],
+        "object_id": "11",
+        "object_repr": "GMC",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 20,
+    "fields": {
+        "action_time": "2025-08-17T23:52:50.888Z",
+        "user": [
+            "cisco"
+        ],
+        "content_type": [
+            "selectVehicle",
+            "taskforconfiguration"
+        ],
+        "object_id": "12",
+        "object_repr": "Windsheild Wipers for 2013 Nissan Sentra",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Instructions\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 21,
+    "fields": {
+        "action_time": "2025-08-17T23:53:09.390Z",
+        "user": [
+            "cisco"
+        ],
+        "content_type": [
+            "selectVehicle",
+            "taskforconfiguration"
+        ],
+        "object_id": "11",
+        "object_repr": "Turn Signal Bulb for 2013 Nissan Sentra",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Instructions\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 22,
+    "fields": {
+        "action_time": "2025-08-17T23:53:28.386Z",
+        "user": [
+            "cisco"
+        ],
+        "content_type": [
+            "selectVehicle",
+            "taskforconfiguration"
+        ],
+        "object_id": "10",
+        "object_repr": "Engine Air Filter for 2013 Nissan Sentra",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Instructions\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 23,
+    "fields": {
+        "action_time": "2025-08-17T23:53:53.641Z",
+        "user": [
+            "cisco"
+        ],
+        "content_type": [
+            "selectVehicle",
+            "taskforconfiguration"
+        ],
+        "object_id": "9",
+        "object_repr": "Cabin Air Filter for 2013 Nissan Sentra",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Instructions\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 24,
+    "fields": {
+        "action_time": "2025-08-17T23:54:16.336Z",
+        "user": [
+            "cisco"
+        ],
+        "content_type": [
+            "selectVehicle",
+            "taskforconfiguration"
+        ],
+        "object_id": "8",
+        "object_repr": "Battery Change for 2013 Nissan Sentra",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Instructions\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 25,
+    "fields": {
+        "action_time": "2025-08-17T23:54:37.566Z",
+        "user": [
+            "cisco"
+        ],
+        "content_type": [
+            "selectVehicle",
+            "taskforconfiguration"
+        ],
+        "object_id": "7",
+        "object_repr": "Oil Change for 2013 Nissan Sentra",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Instructions\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 26,
+    "fields": {
+        "action_time": "2025-08-17T23:55:08.815Z",
+        "user": [
+            "cisco"
+        ],
+        "content_type": [
+            "selectVehicle",
+            "taskforconfiguration"
+        ],
+        "object_id": "6",
+        "object_repr": "Windsheild Wipers for 2006 Lexus GX 460",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Instructions\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 27,
+    "fields": {
+        "action_time": "2025-08-17T23:55:35.537Z",
+        "user": [
+            "cisco"
+        ],
+        "content_type": [
+            "selectVehicle",
+            "taskforconfiguration"
+        ],
+        "object_id": "5",
+        "object_repr": "Turn Signal Bulb for 2006 Lexus GX 460",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Instructions\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 28,
+    "fields": {
+        "action_time": "2025-08-17T23:55:47.243Z",
+        "user": [
+            "cisco"
+        ],
+        "content_type": [
+            "selectVehicle",
+            "taskforconfiguration"
+        ],
+        "object_id": "5",
+        "object_repr": "Turn Signal Bulb for 2006 Lexus GX 460",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 29,
+    "fields": {
+        "action_time": "2025-08-17T23:56:20.439Z",
+        "user": [
+            "cisco"
+        ],
+        "content_type": [
+            "selectVehicle",
+            "taskforconfiguration"
+        ],
+        "object_id": "4",
+        "object_repr": "Engine Air Filter for 2006 Lexus GX 460",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Instructions\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 30,
+    "fields": {
+        "action_time": "2025-08-17T23:56:44.828Z",
+        "user": [
+            "cisco"
+        ],
+        "content_type": [
+            "selectVehicle",
+            "taskforconfiguration"
+        ],
+        "object_id": "3",
+        "object_repr": "Cabin Air Filter for 2006 Lexus GX 460",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Instructions\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 31,
+    "fields": {
+        "action_time": "2025-08-17T23:57:06.222Z",
+        "user": [
+            "cisco"
+        ],
+        "content_type": [
+            "selectVehicle",
+            "taskforconfiguration"
+        ],
+        "object_id": "2",
+        "object_repr": "Battery Change for 2006 Lexus GX 460",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Instructions\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 32,
+    "fields": {
+        "action_time": "2025-08-17T23:57:38.877Z",
+        "user": [
+            "cisco"
+        ],
+        "content_type": [
+            "selectVehicle",
+            "taskforconfiguration"
+        ],
+        "object_id": "1",
+        "object_repr": "Oil Change for 2006 Lexus GX 460",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Instructions\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 33,
+    "fields": {
+        "action_time": "2025-08-17T23:59:53.178Z",
+        "user": [
+            "cisco"
+        ],
+        "content_type": [
+            "selectVehicle",
+            "taskforconfiguration"
+        ],
+        "object_id": "19",
+        "object_repr": "Oil Change for 2012 Honda Accord",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 34,
+    "fields": {
+        "action_time": "2025-08-18T00:00:36.735Z",
+        "user": [
+            "cisco"
+        ],
+        "content_type": [
+            "selectVehicle",
+            "taskforconfiguration"
+        ],
+        "object_id": "20",
+        "object_repr": "Battery Change for 2012 Honda Accord",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 35,
+    "fields": {
+        "action_time": "2025-08-18T00:01:11.817Z",
+        "user": [
+            "cisco"
+        ],
+        "content_type": [
+            "selectVehicle",
+            "taskforconfiguration"
+        ],
+        "object_id": "21",
+        "object_repr": "Cabin Air Filter for 2012 Honda Accord",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 36,
+    "fields": {
+        "action_time": "2025-08-18T00:01:38.162Z",
+        "user": [
+            "cisco"
+        ],
+        "content_type": [
+            "selectVehicle",
+            "taskforconfiguration"
+        ],
+        "object_id": "22",
+        "object_repr": "Engine Air Filter for 2012 Honda Accord",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 37,
+    "fields": {
+        "action_time": "2025-08-18T00:02:14.151Z",
+        "user": [
+            "cisco"
+        ],
+        "content_type": [
+            "selectVehicle",
+            "taskforconfiguration"
+        ],
+        "object_id": "23",
+        "object_repr": "Turn Signal Bulb for 2012 Honda Accord",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 38,
+    "fields": {
+        "action_time": "2025-08-18T00:02:47.821Z",
+        "user": [
+            "cisco"
+        ],
+        "content_type": [
+            "selectVehicle",
+            "taskforconfiguration"
+        ],
+        "object_id": "24",
+        "object_repr": "Windsheild Wipers for 2012 Honda Accord",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 39,
+    "fields": {
+        "action_time": "2025-08-18T00:05:09.218Z",
+        "user": [
+            "cisco"
+        ],
+        "content_type": [
+            "selectVehicle",
+            "taskforconfiguration"
+        ],
+        "object_id": "25",
+        "object_repr": "Oil Change for 2009 Lexus GX470",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 40,
+    "fields": {
+        "action_time": "2025-08-18T00:05:26.933Z",
+        "user": [
+            "cisco"
+        ],
+        "content_type": [
+            "selectVehicle",
+            "taskforconfiguration"
+        ],
+        "object_id": "26",
+        "object_repr": "Battery Change for 2009 Lexus GX470",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 41,
+    "fields": {
+        "action_time": "2025-08-18T00:05:46.371Z",
+        "user": [
+            "cisco"
+        ],
+        "content_type": [
+            "selectVehicle",
+            "taskforconfiguration"
+        ],
+        "object_id": "27",
+        "object_repr": "Cabin Air Filter for 2009 Lexus GX470",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 42,
+    "fields": {
+        "action_time": "2025-08-18T00:05:56.538Z",
+        "user": [
+            "cisco"
+        ],
+        "content_type": [
+            "selectVehicle",
+            "taskforconfiguration"
+        ],
+        "object_id": "28",
+        "object_repr": "Engine Air Filter for 2009 Lexus GX470",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 43,
+    "fields": {
+        "action_time": "2025-08-18T00:06:08.849Z",
+        "user": [
+            "cisco"
+        ],
+        "content_type": [
+            "selectVehicle",
+            "taskforconfiguration"
+        ],
+        "object_id": "29",
+        "object_repr": "Turn Signal Bulb for 2009 Lexus GX470",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 44,
+    "fields": {
+        "action_time": "2025-08-18T00:06:23.504Z",
+        "user": [
+            "cisco"
+        ],
+        "content_type": [
+            "selectVehicle",
+            "taskforconfiguration"
+        ],
+        "object_id": "30",
+        "object_repr": "Windsheild Wipers for 2009 Lexus GX470",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 45,
+    "fields": {
+        "action_time": "2025-08-18T00:08:01.973Z",
+        "user": [
+            "cisco"
+        ],
+        "content_type": [
+            "selectVehicle",
+            "carmodel"
+        ],
+        "object_id": "15",
+        "object_repr": "GMC Terrain",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 46,
+    "fields": {
+        "action_time": "2025-08-18T00:08:20.290Z",
+        "user": [
+            "cisco"
+        ],
+        "content_type": [
+            "selectVehicle",
+            "carmodel"
+        ],
+        "object_id": "16",
+        "object_repr": "Toyota Rav4",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 47,
+    "fields": {
+        "action_time": "2025-08-18T00:08:50.409Z",
+        "user": [
+            "cisco"
+        ],
+        "content_type": [
+            "selectVehicle",
+            "carconfiguration"
+        ],
+        "object_id": "8",
+        "object_repr": "2020 Toyota Rav4",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 48,
+    "fields": {
+        "action_time": "2025-08-18T00:08:57.990Z",
+        "user": [
+            "cisco"
+        ],
+        "content_type": [
+            "selectVehicle",
+            "carconfiguration"
+        ],
+        "object_id": "9",
+        "object_repr": "2022 Ford F150",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 49,
+    "fields": {
+        "action_time": "2025-08-18T00:09:16.362Z",
+        "user": [
+            "cisco"
+        ],
+        "content_type": [
+            "selectVehicle",
+            "carconfiguration"
+        ],
+        "object_id": "10",
+        "object_repr": "2019 GMC Terrain",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 50,
+    "fields": {
+        "action_time": "2025-08-18T00:10:46.377Z",
+        "user": [
+            "cisco"
+        ],
+        "content_type": [
+            "selectVehicle",
+            "taskforconfiguration"
+        ],
+        "object_id": "31",
+        "object_repr": "Oil Change for 2022 Ford F150",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 51,
+    "fields": {
+        "action_time": "2025-08-18T00:10:56.675Z",
+        "user": [
+            "cisco"
+        ],
+        "content_type": [
+            "selectVehicle",
+            "taskforconfiguration"
+        ],
+        "object_id": "32",
+        "object_repr": "Battery Change for 2022 Ford F150",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 52,
+    "fields": {
+        "action_time": "2025-08-18T00:11:07.754Z",
+        "user": [
+            "cisco"
+        ],
+        "content_type": [
+            "selectVehicle",
+            "taskforconfiguration"
+        ],
+        "object_id": "33",
+        "object_repr": "Cabin Air Filter for 2022 Ford F150",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 53,
+    "fields": {
+        "action_time": "2025-08-18T00:11:18.085Z",
+        "user": [
+            "cisco"
+        ],
+        "content_type": [
+            "selectVehicle",
+            "taskforconfiguration"
+        ],
+        "object_id": "34",
+        "object_repr": "Engine Air Filter for 2022 Ford F150",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 54,
+    "fields": {
+        "action_time": "2025-08-18T00:11:31.766Z",
+        "user": [
+            "cisco"
+        ],
+        "content_type": [
+            "selectVehicle",
+            "taskforconfiguration"
+        ],
+        "object_id": "35",
+        "object_repr": "Turn Signal Bulb for 2022 Ford F150",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 55,
+    "fields": {
+        "action_time": "2025-08-18T00:11:45.851Z",
+        "user": [
+            "cisco"
+        ],
+        "content_type": [
+            "selectVehicle",
+            "taskforconfiguration"
+        ],
+        "object_id": "36",
+        "object_repr": "Windsheild Wipers for 2022 Ford F150",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 56,
+    "fields": {
+        "action_time": "2025-08-18T00:12:22.683Z",
+        "user": [
+            "cisco"
+        ],
+        "content_type": [
+            "selectVehicle",
+            "taskforconfiguration"
+        ],
+        "object_id": "37",
+        "object_repr": "Oil Change for 2019 GMC Terrain",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 57,
+    "fields": {
+        "action_time": "2025-08-18T00:12:33.969Z",
+        "user": [
+            "cisco"
+        ],
+        "content_type": [
+            "selectVehicle",
+            "taskforconfiguration"
+        ],
+        "object_id": "38",
+        "object_repr": "Battery Change for 2019 GMC Terrain",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 58,
+    "fields": {
+        "action_time": "2025-08-18T00:12:46.735Z",
+        "user": [
+            "cisco"
+        ],
+        "content_type": [
+            "selectVehicle",
+            "taskforconfiguration"
+        ],
+        "object_id": "39",
+        "object_repr": "Cabin Air Filter for 2019 GMC Terrain",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 59,
+    "fields": {
+        "action_time": "2025-08-18T00:13:02.320Z",
+        "user": [
+            "cisco"
+        ],
+        "content_type": [
+            "selectVehicle",
+            "taskforconfiguration"
+        ],
+        "object_id": "40",
+        "object_repr": "Engine Air Filter for 2019 GMC Terrain",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 60,
+    "fields": {
+        "action_time": "2025-08-18T00:13:15.922Z",
+        "user": [
+            "cisco"
+        ],
+        "content_type": [
+            "selectVehicle",
+            "taskforconfiguration"
+        ],
+        "object_id": "41",
+        "object_repr": "Turn Signal Bulb for 2019 GMC Terrain",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 61,
+    "fields": {
+        "action_time": "2025-08-18T00:13:26.021Z",
+        "user": [
+            "cisco"
+        ],
+        "content_type": [
+            "selectVehicle",
+            "taskforconfiguration"
+        ],
+        "object_id": "42",
+        "object_repr": "Windsheild Wipers for 2019 GMC Terrain",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 62,
+    "fields": {
+        "action_time": "2025-08-18T00:14:09.438Z",
+        "user": [
+            "cisco"
+        ],
+        "content_type": [
+            "selectVehicle",
+            "taskforconfiguration"
+        ],
+        "object_id": "43",
+        "object_repr": "Oil Change for 2020 Toyota Rav4",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 63,
+    "fields": {
+        "action_time": "2025-08-18T00:14:18.549Z",
+        "user": [
+            "cisco"
+        ],
+        "content_type": [
+            "selectVehicle",
+            "taskforconfiguration"
+        ],
+        "object_id": "44",
+        "object_repr": "Battery Change for 2020 Toyota Rav4",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 64,
+    "fields": {
+        "action_time": "2025-08-18T00:14:30.694Z",
+        "user": [
+            "cisco"
+        ],
+        "content_type": [
+            "selectVehicle",
+            "taskforconfiguration"
+        ],
+        "object_id": "45",
+        "object_repr": "Cabin Air Filter for 2020 Toyota Rav4",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 65,
+    "fields": {
+        "action_time": "2025-08-18T00:14:47.074Z",
+        "user": [
+            "cisco"
+        ],
+        "content_type": [
+            "selectVehicle",
+            "taskforconfiguration"
+        ],
+        "object_id": "46",
+        "object_repr": "Engine Air Filter for 2020 Toyota Rav4",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 66,
+    "fields": {
+        "action_time": "2025-08-18T00:15:01.141Z",
+        "user": [
+            "cisco"
+        ],
+        "content_type": [
+            "selectVehicle",
+            "taskforconfiguration"
+        ],
+        "object_id": "47",
+        "object_repr": "Turn Signal Bulb for 2020 Toyota Rav4",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 67,
+    "fields": {
+        "action_time": "2025-08-18T00:15:19.932Z",
+        "user": [
+            "cisco"
+        ],
+        "content_type": [
+            "selectVehicle",
+            "taskforconfiguration"
+        ],
+        "object_id": "48",
+        "object_repr": "Windsheild Wipers for 2020 Toyota Rav4",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+}
+]
